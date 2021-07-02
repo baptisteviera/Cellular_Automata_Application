@@ -1,0 +1,67 @@
+\hypertarget{class_d_g_transition}{}\doxysection{DGTransition Class Reference}
+\label{class_d_g_transition}\index{DGTransition@{DGTransition}}
+
+
+{\ttfamily \#include $<$transition\+\_\+strategy.\+h$>$}
+
+Inheritance diagram for DGTransition\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_d_g_transition}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_d_g_transition_a7c83b29f70424ec4b2478420e4fdb711}{DGTransition}} (std\+::string name=\char`\"{}David Griffeath Transition\char`\"{})
+\item 
+\mbox{\hyperlink{class_cell}{Cell}} $\ast$ \mbox{\hyperlink{class_d_g_transition_af04200dd83ec613199af24d910176d7c}{calc\+Next\+Cell}} (\mbox{\hyperlink{class_cell}{Cell}} $\ast$c, \mbox{\hyperlink{class_cell}{Cell}} $\ast$$\ast$neighbors, int neighbor\+Size, \mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$$\ast$available\+States, int nb\+States) const override
+\begin{DoxyCompactList}\small\item\em calc\+Next\+Cell méthode concrète qui définit la fonction virtuelle pure de la classe mère pour la \mbox{\hyperlink{class_d_g_transition}{DGTransition}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_d_g_transition_a7c83b29f70424ec4b2478420e4fdb711}\label{class_d_g_transition_a7c83b29f70424ec4b2478420e4fdb711}} 
+\index{DGTransition@{DGTransition}!DGTransition@{DGTransition}}
+\index{DGTransition@{DGTransition}!DGTransition@{DGTransition}}
+\doxysubsubsection{\texorpdfstring{DGTransition()}{DGTransition()}}
+{\footnotesize\ttfamily DGTransition\+::\+DGTransition (\begin{DoxyParamCaption}\item[{std\+::string}]{name = {\ttfamily \char`\"{}David~Griffeath~Transition\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_d_g_transition_af04200dd83ec613199af24d910176d7c}\label{class_d_g_transition_af04200dd83ec613199af24d910176d7c}} 
+\index{DGTransition@{DGTransition}!calcNextCell@{calcNextCell}}
+\index{calcNextCell@{calcNextCell}!DGTransition@{DGTransition}}
+\doxysubsubsection{\texorpdfstring{calcNextCell()}{calcNextCell()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cell}{Cell}} $\ast$ DGTransition\+::calc\+Next\+Cell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cell}{Cell}} $\ast$}]{c,  }\item[{\mbox{\hyperlink{class_cell}{Cell}} $\ast$$\ast$}]{neighbors,  }\item[{int}]{neighbor\+Size,  }\item[{\mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$$\ast$}]{available\+States,  }\item[{int}]{nb\+States }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+calc\+Next\+Cell méthode concrète qui définit la fonction virtuelle pure de la classe mère pour la \mbox{\hyperlink{class_d_g_transition}{DGTransition}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & cellule étudiée que l\textquotesingle{}on modifiera ou non \\
+\hline
+{\em neighbors} & tableau de voisin de la cellule \\
+\hline
+{\em neighbor\+Size} & nombre de voisins de la cellule \\
+\hline
+{\em available\+States} & tableau d\textquotesingle{}états disponibles \\
+\hline
+{\em nb\+States} & nombre d\textquotesingle{}états possibles \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+une nouvelle cellule (identique à c ou différente) suivant les règles de transition 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_outer_totalistic_transition_a0d6132f55d5ecd1a57509fcc2cd998ce}{Outer\+Totalistic\+Transition}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/utils/\mbox{\hyperlink{transition__strategy_8h}{transition\+\_\+strategy.\+h}}\item 
+src/utils/\mbox{\hyperlink{transition__strategy_8cpp}{transition\+\_\+strategy.\+cpp}}\end{DoxyCompactItemize}

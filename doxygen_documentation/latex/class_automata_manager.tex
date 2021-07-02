@@ -1,0 +1,184 @@
+\hypertarget{class_automata_manager}{}\doxysection{Automata\+Manager Class Reference}
+\label{class_automata_manager}\index{AutomataManager@{AutomataManager}}
+
+
+Singleton Automate\+Manager gérant les automates.  
+
+
+
+
+{\ttfamily \#include $<$automata\+\_\+manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_automata}{Automata}} $\ast$ \mbox{\hyperlink{class_automata_manager_a7036fd9f583470d14515463dfd975d58}{get\+Automata}} (int id) const
+\begin{DoxyCompactList}\small\item\em get\+Automata Acesseur en lecture d\textquotesingle{}un élément du tableau d\textquotesingle{}automate \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_automata_manager_a3f4d9aa5271ecc5a93b26842b3570471}{change\+Automata}} (int id, \mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$$\ast$available\+States, \mbox{\hyperlink{class_transition_strategy}{Transition\+Strategy}} $\ast$transition, \mbox{\hyperlink{class_neighborhood_strategy}{Neighborhood\+Strategy}} $\ast$neighborhood, int nb\+States=0, string name=\char`\"{}\char`\"{}, string desc=\char`\"{}\char`\"{}, string author=\char`\"{}\char`\"{}, int year=2021)
+\begin{DoxyCompactList}\small\item\em change\+Automata modifier un automate dont le numéro est donné en entrée \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_automata_manager_a6f81f7fb424bfadb7d2d3a1d96b037da}{add\+Automata}} (\mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$$\ast$available\+States, \mbox{\hyperlink{class_transition_strategy}{Transition\+Strategy}} $\ast$transition, \mbox{\hyperlink{class_neighborhood_strategy}{Neighborhood\+Strategy}} $\ast$neighborhood, int nb\+States=0, string name=\char`\"{}\char`\"{}, string desc=\char`\"{}\char`\"{}, string author=\char`\"{}\char`\"{}, int year=2021)
+\begin{DoxyCompactList}\small\item\em add\+Automata ajoute un automate à la liste des automates \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_automata_manager_a9274186368150872e8cbd58b73721fdd}{remove\+Automata}} (int id)
+\begin{DoxyCompactList}\small\item\em remove\+Automata supprime l\textquotesingle{}automate à l\textquotesingle{}indice donné \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_automata_manager_a851a7818e7b191bb9539f537aa390c02}{get\+Nb\+Automatas}} () const
+\begin{DoxyCompactList}\small\item\em get\+Nb\+Automatas accesseur en lecture du nombre courant d\textquotesingle{}automates \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_automata_manager_aa99d152e2a61ce1e126bb1e51b2a3cba}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Supprimer toutes les automates dans memoires. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_automata_manager}{Automata\+Manager}} $\ast$ \mbox{\hyperlink{class_automata_manager_aeb96687ebb32b454f99509964725e27b}{get\+Automata\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em get\+Automata\+Manager Accesseur en lecture de l\textquotesingle{}instance unique \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_automata_manager_a7ede950dbc902bc0b56db4c6c6339d9b}{destroy\+Automata\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em destroy\+Automata\+Manager Destructeur de l\textquotesingle{}instance unique Automate\+Manager \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Singleton Automate\+Manager gérant les automates. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_automata_manager_a6f81f7fb424bfadb7d2d3a1d96b037da}\label{class_automata_manager_a6f81f7fb424bfadb7d2d3a1d96b037da}} 
+\index{AutomataManager@{AutomataManager}!addAutomata@{addAutomata}}
+\index{addAutomata@{addAutomata}!AutomataManager@{AutomataManager}}
+\doxysubsubsection{\texorpdfstring{addAutomata()}{addAutomata()}}
+{\footnotesize\ttfamily void Automata\+Manager\+::add\+Automata (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$$\ast$}]{available\+States,  }\item[{\mbox{\hyperlink{class_transition_strategy}{Transition\+Strategy}} $\ast$}]{transition,  }\item[{\mbox{\hyperlink{class_neighborhood_strategy}{Neighborhood\+Strategy}} $\ast$}]{neighborhood,  }\item[{int}]{nb\+States = {\ttfamily 0},  }\item[{string}]{name = {\ttfamily \char`\"{}\char`\"{}},  }\item[{string}]{desc = {\ttfamily \char`\"{}\char`\"{}},  }\item[{string}]{author = {\ttfamily \char`\"{}\char`\"{}},  }\item[{int}]{year = {\ttfamily 2021} }\end{DoxyParamCaption})}
+
+
+
+add\+Automata ajoute un automate à la liste des automates 
+
+
+\begin{DoxyParams}{Parameters}
+{\em available\+States} & liste des états possibles de l\textquotesingle{}automate \\
+\hline
+{\em transition} & la stratégie de transition pour générer les nouvelles générations \\
+\hline
+{\em neighborhood} & la stratégie de retrouver les voisins \\
+\hline
+{\em nb\+States} & le nombre d\textquotesingle{}états possbiles \\
+\hline
+{\em name} & le nom de l\textquotesingle{}automate \\
+\hline
+{\em desc} & la description de l\textquotesingle{}automate \\
+\hline
+{\em author} & l\textquotesingle{}auteur \\
+\hline
+{\em year} & l\textquotesingle{}année de création \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_automata_manager_a3f4d9aa5271ecc5a93b26842b3570471}\label{class_automata_manager_a3f4d9aa5271ecc5a93b26842b3570471}} 
+\index{AutomataManager@{AutomataManager}!changeAutomata@{changeAutomata}}
+\index{changeAutomata@{changeAutomata}!AutomataManager@{AutomataManager}}
+\doxysubsubsection{\texorpdfstring{changeAutomata()}{changeAutomata()}}
+{\footnotesize\ttfamily void Automata\+Manager\+::change\+Automata (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$$\ast$}]{available\+States,  }\item[{\mbox{\hyperlink{class_transition_strategy}{Transition\+Strategy}} $\ast$}]{transition,  }\item[{\mbox{\hyperlink{class_neighborhood_strategy}{Neighborhood\+Strategy}} $\ast$}]{neighborhood,  }\item[{int}]{nb\+States = {\ttfamily 0},  }\item[{string}]{name = {\ttfamily \char`\"{}\char`\"{}},  }\item[{string}]{desc = {\ttfamily \char`\"{}\char`\"{}},  }\item[{string}]{author = {\ttfamily \char`\"{}\char`\"{}},  }\item[{int}]{year = {\ttfamily 2021} }\end{DoxyParamCaption})}
+
+
+
+change\+Automata modifier un automate dont le numéro est donné en entrée 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & le numéro de l\textquotesingle{}automate à modifier \\
+\hline
+{\em available\+States} & liste des états possibles de l\textquotesingle{}automate \\
+\hline
+{\em transition} & la stratégie de transition pour générer les nouvelles générations \\
+\hline
+{\em neighborhood} & la stratégie de retrouver les voisins \\
+\hline
+{\em nb\+States} & le nombre d\textquotesingle{}états possbiles \\
+\hline
+{\em name} & le nom de l\textquotesingle{}automate \\
+\hline
+{\em desc} & la description de l\textquotesingle{}automate \\
+\hline
+{\em author} & l\textquotesingle{}auteur \\
+\hline
+{\em year} & l\textquotesingle{}année de création \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_automata_manager_aa99d152e2a61ce1e126bb1e51b2a3cba}\label{class_automata_manager_aa99d152e2a61ce1e126bb1e51b2a3cba}} 
+\index{AutomataManager@{AutomataManager}!clear@{clear}}
+\index{clear@{clear}!AutomataManager@{AutomataManager}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Automata\+Manager\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Supprimer toutes les automates dans memoires. 
+
+\mbox{\Hypertarget{class_automata_manager_a7ede950dbc902bc0b56db4c6c6339d9b}\label{class_automata_manager_a7ede950dbc902bc0b56db4c6c6339d9b}} 
+\index{AutomataManager@{AutomataManager}!destroyAutomataManager@{destroyAutomataManager}}
+\index{destroyAutomataManager@{destroyAutomataManager}!AutomataManager@{AutomataManager}}
+\doxysubsubsection{\texorpdfstring{destroyAutomataManager()}{destroyAutomataManager()}}
+{\footnotesize\ttfamily void Automata\+Manager\+::destroy\+Automata\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+destroy\+Automata\+Manager Destructeur de l\textquotesingle{}instance unique Automate\+Manager 
+
+\mbox{\Hypertarget{class_automata_manager_a7036fd9f583470d14515463dfd975d58}\label{class_automata_manager_a7036fd9f583470d14515463dfd975d58}} 
+\index{AutomataManager@{AutomataManager}!getAutomata@{getAutomata}}
+\index{getAutomata@{getAutomata}!AutomataManager@{AutomataManager}}
+\doxysubsubsection{\texorpdfstring{getAutomata()}{getAutomata()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_automata}{Automata}} $\ast$ Automata\+Manager\+::get\+Automata (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) const}
+
+
+
+get\+Automata Acesseur en lecture d\textquotesingle{}un élément du tableau d\textquotesingle{}automate 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Numéro de l\textquotesingle{}automate à retourner \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Automata$\ast$ l\textquotesingle{}automate demandé 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_automata_manager_aeb96687ebb32b454f99509964725e27b}\label{class_automata_manager_aeb96687ebb32b454f99509964725e27b}} 
+\index{AutomataManager@{AutomataManager}!getAutomataManager@{getAutomataManager}}
+\index{getAutomataManager@{getAutomataManager}!AutomataManager@{AutomataManager}}
+\doxysubsubsection{\texorpdfstring{getAutomataManager()}{getAutomataManager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_automata_manager}{Automata\+Manager}} $\ast$ Automata\+Manager\+::get\+Automata\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+get\+Automata\+Manager Accesseur en lecture de l\textquotesingle{}instance unique 
+
+\begin{DoxyReturn}{Returns}
+l\textquotesingle{}instance unique Automate\+Manager 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_automata_manager_a851a7818e7b191bb9539f537aa390c02}\label{class_automata_manager_a851a7818e7b191bb9539f537aa390c02}} 
+\index{AutomataManager@{AutomataManager}!getNbAutomatas@{getNbAutomatas}}
+\index{getNbAutomatas@{getNbAutomatas}!AutomataManager@{AutomataManager}}
+\doxysubsubsection{\texorpdfstring{getNbAutomatas()}{getNbAutomatas()}}
+{\footnotesize\ttfamily int Automata\+Manager\+::get\+Nb\+Automatas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+Nb\+Automatas accesseur en lecture du nombre courant d\textquotesingle{}automates 
+
+\begin{DoxyReturn}{Returns}
+int nombre courant d\textquotesingle{}automates 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_automata_manager_a9274186368150872e8cbd58b73721fdd}\label{class_automata_manager_a9274186368150872e8cbd58b73721fdd}} 
+\index{AutomataManager@{AutomataManager}!removeAutomata@{removeAutomata}}
+\index{removeAutomata@{removeAutomata}!AutomataManager@{AutomataManager}}
+\doxysubsubsection{\texorpdfstring{removeAutomata()}{removeAutomata()}}
+{\footnotesize\ttfamily void Automata\+Manager\+::remove\+Automata (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+remove\+Automata supprime l\textquotesingle{}automate à l\textquotesingle{}indice donné 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & indice de l\textquotesingle{}automate à supprimer \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/utils/\mbox{\hyperlink{automata__manager_8h}{automata\+\_\+manager.\+h}}\item 
+src/utils/\mbox{\hyperlink{automata__manager_8cpp}{automata\+\_\+manager.\+cpp}}\end{DoxyCompactItemize}

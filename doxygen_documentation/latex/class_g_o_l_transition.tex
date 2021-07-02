@@ -1,0 +1,84 @@
+\hypertarget{class_g_o_l_transition}{}\doxysection{GOLTransition Class Reference}
+\label{class_g_o_l_transition}\index{GOLTransition@{GOLTransition}}
+
+
+Concrete strategies///.  
+
+
+
+
+{\ttfamily \#include $<$transition\+\_\+strategy.\+h$>$}
+
+Inheritance diagram for GOLTransition\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_g_o_l_transition}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_g_o_l_transition_ae36c13c1fe906db438f462720ca80e2b}{GOLTransition}} (std\+::string name=\char`\"{}Game of Life Transition Rule\char`\"{})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_g_o_l_transition}{GOLTransition}} constructeur de GOF. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cell}{Cell}} $\ast$ \mbox{\hyperlink{class_g_o_l_transition_a0b21f8eca27a4391dbc4293d77480820}{calc\+Next\+Cell}} (\mbox{\hyperlink{class_cell}{Cell}} $\ast$c, \mbox{\hyperlink{class_cell}{Cell}} $\ast$$\ast$neighbors, int neighbor\+Size, \mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$$\ast$available\+States, int nb\+States) const override
+\begin{DoxyCompactList}\small\item\em calc\+Next\+Cell méthode concrète qui définit la fonction virtuelle pure de la classe mère pour la \mbox{\hyperlink{class_g_o_l_transition}{GOLTransition}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Concrete strategies///. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_g_o_l_transition_ae36c13c1fe906db438f462720ca80e2b}\label{class_g_o_l_transition_ae36c13c1fe906db438f462720ca80e2b}} 
+\index{GOLTransition@{GOLTransition}!GOLTransition@{GOLTransition}}
+\index{GOLTransition@{GOLTransition}!GOLTransition@{GOLTransition}}
+\doxysubsubsection{\texorpdfstring{GOLTransition()}{GOLTransition()}}
+{\footnotesize\ttfamily GOLTransition\+::\+GOLTransition (\begin{DoxyParamCaption}\item[{std\+::string}]{name = {\ttfamily \char`\"{}Game~of~Life~Transition~Rule\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_g_o_l_transition}{GOLTransition}} constructeur de GOF. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & nom de la transition, si non spécifié égale à \char`\"{}\+Game Of Life Transition\char`\"{} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_g_o_l_transition_a0b21f8eca27a4391dbc4293d77480820}\label{class_g_o_l_transition_a0b21f8eca27a4391dbc4293d77480820}} 
+\index{GOLTransition@{GOLTransition}!calcNextCell@{calcNextCell}}
+\index{calcNextCell@{calcNextCell}!GOLTransition@{GOLTransition}}
+\doxysubsubsection{\texorpdfstring{calcNextCell()}{calcNextCell()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cell}{Cell}} $\ast$ GOLTransition\+::calc\+Next\+Cell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cell}{Cell}} $\ast$}]{c,  }\item[{\mbox{\hyperlink{class_cell}{Cell}} $\ast$$\ast$}]{neighbors,  }\item[{int}]{neighbor\+Size,  }\item[{\mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$$\ast$}]{available\+States,  }\item[{int}]{nb\+States }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+calc\+Next\+Cell méthode concrète qui définit la fonction virtuelle pure de la classe mère pour la \mbox{\hyperlink{class_g_o_l_transition}{GOLTransition}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & cellule étudiée que l\textquotesingle{}on modifiera ou non \\
+\hline
+{\em neighbors} & tableau de voisin de la cellule \\
+\hline
+{\em neighbor\+Size} & nombre de voisins de la cellule \\
+\hline
+{\em available\+States} & tableau d\textquotesingle{}états disponibles \\
+\hline
+{\em nb\+States} & nombre d\textquotesingle{}états possibles \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+une nouvelle cellule (identique à c ou différente) suivant les règles de transition 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_outer_totalistic_transition_a0d6132f55d5ecd1a57509fcc2cd998ce}{Outer\+Totalistic\+Transition}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/utils/\mbox{\hyperlink{transition__strategy_8h}{transition\+\_\+strategy.\+h}}\item 
+src/utils/\mbox{\hyperlink{transition__strategy_8cpp}{transition\+\_\+strategy.\+cpp}}\end{DoxyCompactItemize}

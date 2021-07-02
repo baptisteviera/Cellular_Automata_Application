@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="942px" preserveAspectRatio="none" style="width:1309px;height:942px;" version="1.1" viewBox="0 0 1309 942" width="1309px" zoomAndPan="magnify"><defs><filter height="300%" id="f4qwvrytrhygd" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[ce5b443ce294b0ba6086dd5a2db87a41]
+class SimulatorIterator--><rect codeLine="8" fill="#FEFECE" filter="url(#f4qwvrytrhygd)" height="101.875" id="SimulatorIterator" style="stroke:#A80036;stroke-width:1.5;" width="201" x="157.5" y="7"/><ellipse cx="204" cy="22" fill="#ADD1B2" rx="10" ry="10" style="stroke:#A80036;stroke-width:1.0;"/><path d="M205.8594,18.75 C205.2031,18.4375 204.7813,18.3438 204.1563,18.3438 C202.3125,18.3438 200.8906,19.7969 200.8906,21.7188 L200.8906,22.5156 C200.8906,24.3438 202.3906,25.6719 204.4219,25.6719 C205.2813,25.6719 206.1094,25.4531 206.625,25.0625 C207.0469,24.7813 207.2656,24.4688 207.2656,24.1875 C207.2656,23.875 206.9844,23.5938 206.6719,23.5938 C206.5156,23.5938 206.375,23.6563 206.2344,23.7813 C205.9063,24.125 205.9063,24.125 205.7813,24.1875 C205.4844,24.375 205,24.4688 204.4531,24.4688 C203.0156,24.4688 202.0938,23.6875 202.0938,22.4844 L202.0938,21.7188 C202.0938,20.4531 202.9844,19.5313 204.2031,19.5313 C204.6094,19.5313 205.0469,19.6406 205.375,19.8281 C205.7188,20.0156 205.8438,20.1719 205.9063,20.4531 C205.9531,20.75 205.9688,20.8281 206.0625,20.9219 C206.1563,21.0313 206.3281,21.0938 206.4844,21.0938 C206.6875,21.0938 206.8594,21 206.9844,20.8438 C207.0625,20.7344 207.0938,20.6094 207.0938,20.2969 L207.0938,19.2969 C207.0938,19 207.0781,18.9063 207,18.7969 C206.8906,18.6094 206.7031,18.5 206.4844,18.5 C206.2813,18.5 206.1406,18.5781 205.9844,18.7969 L205.8594,18.75 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="100" x="223" y="26.1543">SimulatorIterator</text><line style="stroke:#A80036;stroke-width:1.5;" x1="158.5" x2="357.5" y1="37" y2="37"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="165.5" y="45"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="58" x="176.5" y="52.1387">gridID: int</text><line style="stroke:#A80036;stroke-width:1.5;" x1="158.5" x2="357.5" y1="58.9688" y2="58.9688"/><ellipse cx="168.5" cy="69.9688" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="176" x="176.5" y="74.1074">getCurrentGrid() const: Grid*</text><ellipse cx="168.5" cy="83.9375" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="122" x="176.5" y="88.0762">previousGrid(): void</text><ellipse cx="168.5" cy="97.9063" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="95" x="176.5" y="102.0449">nextGrid(): void</text><path d="M6,46 L6,69.9688 A0,0 0 0 0 6,69.9688 L122,69.9688 A0,0 0 0 0 122,69.9688 L122,64 L157.323,58 L122,56 L122,56 L112,46 L6,46 A0,0 0 0 0 6,46 " fill="#FBFB77" filter="url(#f4qwvrytrhygd)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M112,46 L112,56 L122,56 L112,46 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="95" x="12" y="62.1387">inside simulator</text><!--MD5=[e78d3bd29d68b8fbdb4aae8710e3db25]
+class Simulator--><rect codeLine="16" fill="#FEFECE" filter="url(#f4qwvrytrhygd)" height="171.7188" id="Simulator" style="stroke:#A80036;stroke-width:1.5;" width="214" x="342" y="184"/><ellipse cx="417" cy="199" fill="#ADD1B2" rx="10" ry="10" style="stroke:#A80036;stroke-width:1.0;"/><path d="M418.8594,195.75 C418.2031,195.4375 417.7813,195.3438 417.1563,195.3438 C415.3125,195.3438 413.8906,196.7969 413.8906,198.7188 L413.8906,199.5156 C413.8906,201.3438 415.3906,202.6719 417.4219,202.6719 C418.2813,202.6719 419.1094,202.4531 419.625,202.0625 C420.0469,201.7813 420.2656,201.4688 420.2656,201.1875 C420.2656,200.875 419.9844,200.5938 419.6719,200.5938 C419.5156,200.5938 419.375,200.6563 419.2344,200.7813 C418.9063,201.125 418.9063,201.125 418.7813,201.1875 C418.4844,201.375 418,201.4688 417.4531,201.4688 C416.0156,201.4688 415.0938,200.6875 415.0938,199.4844 L415.0938,198.7188 C415.0938,197.4531 415.9844,196.5313 417.2031,196.5313 C417.6094,196.5313 418.0469,196.6406 418.375,196.8281 C418.7188,197.0156 418.8438,197.1719 418.9063,197.4531 C418.9531,197.75 418.9688,197.8281 419.0625,197.9219 C419.1563,198.0313 419.3281,198.0938 419.4844,198.0938 C419.6875,198.0938 419.8594,198 419.9844,197.8438 C420.0625,197.7344 420.0938,197.6094 420.0938,197.2969 L420.0938,196.2969 C420.0938,196 420.0781,195.9063 420,195.7969 C419.8906,195.6094 419.7031,195.5 419.4844,195.5 C419.2813,195.5 419.1406,195.5781 418.9844,195.7969 L418.8594,195.75 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="56" x="436" y="203.1543">Simulator</text><line style="stroke:#A80036;stroke-width:1.5;" x1="343" x2="555" y1="214" y2="214"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="350" y="222"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="119" x="361" y="229.1387">automata: Automata</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="350" y="235.9688"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="84" x="361" y="243.1074">bufferSize: int</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="350" y="249.9375"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="85" x="361" y="257.0762">startGrid: Grid</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="350" y="263.9063"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="81" x="361" y="271.0449">grids: Grid*[]</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="350" y="277.875"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="147" x="361" y="285.0137">gridFactory: GridFactory</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="350" y="291.8438"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="122" x="361" y="298.9824">it: SimulatorIterator*</text><line style="stroke:#A80036;stroke-width:1.5;" x1="343" x2="555" y1="305.8125" y2="305.8125"/><ellipse cx="353" cy="316.8125" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="142" x="361" y="320.9512">run(nbSteps := 1): void</text><ellipse cx="353" cy="330.7813" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="141" x="361" y="334.9199">setStartGrid(Grid): void</text><ellipse cx="353" cy="344.75" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="189" x="361" y="348.8887">getIterator(): SimulatorIterator*</text><path d="M394,46 L394,69.9688 A0,0 0 0 0 394,69.9688 L505.559,69.9688 L474.927,183.926 L513.559,69.9688 L632,69.9688 A0,0 0 0 0 632,69.9688 L632,56 L622,46 L394,46 A0,0 0 0 0 394,46 " fill="#FBFB77" filter="url(#f4qwvrytrhygd)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M622,46 L622,56 L632,56 L622,46 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="217" x="400" y="62.1387">Iterator pattern can be applied here</text><!--MD5=[c78f6b785a62d32b0ae7e3ad9fce2b60]
+class AutomataManager--><rect codeLine="29" fill="#FEFECE" filter="url(#f4qwvrytrhygd)" height="199.6563" id="AutomataManager" style="stroke:#A80036;stroke-width:1.5;" width="357" x="934.5" y="170"/><ellipse cx="1055" cy="185" fill="#ADD1B2" rx="10" ry="10" style="stroke:#A80036;stroke-width:1.0;"/><path d="M1056.8594,181.75 C1056.2031,181.4375 1055.7813,181.3438 1055.1563,181.3438 C1053.3125,181.3438 1051.8906,182.7969 1051.8906,184.7188 L1051.8906,185.5156 C1051.8906,187.3438 1053.3906,188.6719 1055.4219,188.6719 C1056.2813,188.6719 1057.1094,188.4531 1057.625,188.0625 C1058.0469,187.7813 1058.2656,187.4688 1058.2656,187.1875 C1058.2656,186.875 1057.9844,186.5938 1057.6719,186.5938 C1057.5156,186.5938 1057.375,186.6563 1057.2344,186.7813 C1056.9063,187.125 1056.9063,187.125 1056.7813,187.1875 C1056.4844,187.375 1056,187.4688 1055.4531,187.4688 C1054.0156,187.4688 1053.0938,186.6875 1053.0938,185.4844 L1053.0938,184.7188 C1053.0938,183.4531 1053.9844,182.5313 1055.2031,182.5313 C1055.6094,182.5313 1056.0469,182.6406 1056.375,182.8281 C1056.7188,183.0156 1056.8438,183.1719 1056.9063,183.4531 C1056.9531,183.75 1056.9688,183.8281 1057.0625,183.9219 C1057.1563,184.0313 1057.3281,184.0938 1057.4844,184.0938 C1057.6875,184.0938 1057.8594,184 1057.9844,183.8438 C1058.0625,183.7344 1058.0938,183.6094 1058.0938,183.2969 L1058.0938,182.2969 C1058.0938,182 1058.0781,181.9063 1058,181.7969 C1057.8906,181.6094 1057.7031,181.5 1057.4844,181.5 C1057.2813,181.5 1057.1406,181.5781 1056.9844,181.7969 L1056.8594,181.75 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="108" x="1074" y="189.1543">AutomataManager</text><line style="stroke:#A80036;stroke-width:1.5;" x1="935.5" x2="1290.5" y1="200" y2="200"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="942.5" y="208"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="172" x="953.5" y="215.1387">instace: AutomataManager &amp;</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="942.5" y="221.9688"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="100" x="953.5" y="229.1074">nbAutomatas: int</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="942.5" y="235.9375"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="140" x="953.5" y="243.0762">automatas: Automata**</text><line style="stroke:#A80036;stroke-width:1.5;" x1="935.5" x2="1290.5" y1="249.9063" y2="249.9063"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="942.5" y="257.9063"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="325" x="953.5" y="265.0449">AutomataManager(const AutomataManager &amp;)=delete</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="942.5" y="271.875"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="167" x="953.5" y="279.0137">AutomataManager()=delete</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="942.5" y="285.8438"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="128" x="953.5" y="292.9824">~AutomataManager()</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="942.5" y="299.8125"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="280" x="953.5" y="306.9512">operator=(const AutomataManager &amp;)=delete</text><ellipse cx="945.5" cy="316.7813" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="263" x="953.5" y="320.9199">getAutomataManager(): AutomataManager&amp;</text><ellipse cx="945.5" cy="330.75" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="199" x="953.5" y="334.8887">destroyAutomataManager(): void</text><ellipse cx="945.5" cy="344.7188" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="332" x="953.5" y="348.8574">getAutomata(idx: unsigned int) const: const Automata&amp;</text><ellipse cx="945.5" cy="358.6875" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="168" x="953.5" y="362.8262">getNbAutomatas() const: int</text><path d="M790.5,251 L790.5,288.9375 A0,0 0 0 0 790.5,288.9375 L899.5,288.9375 A0,0 0 0 0 899.5,288.9375 L899.5,274 L934.277,270 L899.5,266 L899.5,261 L889.5,251 L790.5,251 A0,0 0 0 0 790.5,251 " fill="#FBFB77" filter="url(#f4qwvrytrhygd)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M889.5,251 L889.5,261 L899.5,261 L889.5,251 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="56" x="796.5" y="267.1387">Singleton</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="88" x="796.5" y="281.1074">design pattern</text><!--MD5=[0255f33f27d7226b47675af5658bc3ef]
+class Automata--><rect codeLine="46" fill="#FEFECE" filter="url(#f4qwvrytrhygd)" height="199.6563" id="Automata" style="stroke:#A80036;stroke-width:1.5;" width="364" x="931" y="445"/><ellipse cx="1081" cy="460" fill="#ADD1B2" rx="10" ry="10" style="stroke:#A80036;stroke-width:1.0;"/><path d="M1082.8594,456.75 C1082.2031,456.4375 1081.7813,456.3438 1081.1563,456.3438 C1079.3125,456.3438 1077.8906,457.7969 1077.8906,459.7188 L1077.8906,460.5156 C1077.8906,462.3438 1079.3906,463.6719 1081.4219,463.6719 C1082.2813,463.6719 1083.1094,463.4531 1083.625,463.0625 C1084.0469,462.7813 1084.2656,462.4688 1084.2656,462.1875 C1084.2656,461.875 1083.9844,461.5938 1083.6719,461.5938 C1083.5156,461.5938 1083.375,461.6563 1083.2344,461.7813 C1082.9063,462.125 1082.9063,462.125 1082.7813,462.1875 C1082.4844,462.375 1082,462.4688 1081.4531,462.4688 C1080.0156,462.4688 1079.0938,461.6875 1079.0938,460.4844 L1079.0938,459.7188 C1079.0938,458.4531 1079.9844,457.5313 1081.2031,457.5313 C1081.6094,457.5313 1082.0469,457.6406 1082.375,457.8281 C1082.7188,458.0156 1082.8438,458.1719 1082.9063,458.4531 C1082.9531,458.75 1082.9688,458.8281 1083.0625,458.9219 C1083.1563,459.0313 1083.3281,459.0938 1083.4844,459.0938 C1083.6875,459.0938 1083.8594,459 1083.9844,458.8438 C1084.0625,458.7344 1084.0938,458.6094 1084.0938,458.2969 L1084.0938,457.2969 C1084.0938,457 1084.0781,456.9063 1084,456.7969 C1083.8906,456.6094 1083.7031,456.5 1083.4844,456.5 C1083.2813,456.5 1083.1406,456.5781 1082.9844,456.7969 L1082.8594,456.75 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="56" x="1100" y="464.1543">Automata</text><line style="stroke:#A80036;stroke-width:1.5;" x1="932" x2="1294" y1="475" y2="475"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="939" y="483"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="75" x="950" y="490.1387">name: string</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="939" y="496.9688"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="110" x="950" y="504.1074">description: string</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="939" y="510.9375"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="80" x="950" y="518.0762">author: string</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="939" y="524.9063"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="169" x="950" y="532.0449">availableStates: CellState*[]</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="939" y="538.875"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="226" x="950" y="546.0137">transitionStrategy: ITransitionStrategy</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="939" y="552.8438"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="222" x="950" y="559.9824">neighborStrategy: INeighborStrategy</text><line style="stroke:#A80036;stroke-width:1.5;" x1="932" x2="1294" y1="566.8125" y2="566.8125"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="939" y="574.8125"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="285" x="950" y="581.9512">operator=(const Automata&amp; automata)=default</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="939" y="588.7813"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="172" x="950" y="595.9199">Automata(const Automata &amp;)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="939" y="602.75"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="66" x="950" y="609.8887">Automata()</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="939" y="616.7188"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="76" x="950" y="623.8574">~Automata()</text><ellipse cx="942" cy="633.6875" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="339" x="950" y="637.8262">applyTransition(const Grid&amp; src, Grid&amp; dest) const: void</text><path d="M766,526 L766,563.9375 A0,0 0 0 0 766,563.9375 L896,563.9375 A0,0 0 0 0 896,563.9375 L896,549 L930.979,545 L896,541 L896,536 L886,526 L766,526 A0,0 0 0 0 766,526 " fill="#FBFB77" filter="url(#f4qwvrytrhygd)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M886,526 L886,536 L896,536 L886,526 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="70" x="772" y="542.1387">friend class</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="109" x="772" y="556.1074">AutomateManager</text><!--MD5=[1f24f7b92150e3316908f7910ce81742]
+class Grid--><rect codeLine="61" fill="#FEFECE" filter="url(#f4qwvrytrhygd)" height="101.875" id="Grid" style="stroke:#A80036;stroke-width:1.5;" width="135" x="70.5" y="494"/><ellipse cx="121.5" cy="509" fill="#ADD1B2" rx="10" ry="10" style="stroke:#A80036;stroke-width:1.0;"/><path d="M123.3594,505.75 C122.7031,505.4375 122.2813,505.3438 121.6563,505.3438 C119.8125,505.3438 118.3906,506.7969 118.3906,508.7188 L118.3906,509.5156 C118.3906,511.3438 119.8906,512.6719 121.9219,512.6719 C122.7813,512.6719 123.6094,512.4531 124.125,512.0625 C124.5469,511.7813 124.7656,511.4688 124.7656,511.1875 C124.7656,510.875 124.4844,510.5938 124.1719,510.5938 C124.0156,510.5938 123.875,510.6563 123.7344,510.7813 C123.4063,511.125 123.4063,511.125 123.2813,511.1875 C122.9844,511.375 122.5,511.4688 121.9531,511.4688 C120.5156,511.4688 119.5938,510.6875 119.5938,509.4844 L119.5938,508.7188 C119.5938,507.4531 120.4844,506.5313 121.7031,506.5313 C122.1094,506.5313 122.5469,506.6406 122.875,506.8281 C123.2188,507.0156 123.3438,507.1719 123.4063,507.4531 C123.4531,507.75 123.4688,507.8281 123.5625,507.9219 C123.6563,508.0313 123.8281,508.0938 123.9844,508.0938 C124.1875,508.0938 124.3594,508 124.4844,507.8438 C124.5625,507.7344 124.5938,507.6094 124.5938,507.2969 L124.5938,506.2969 C124.5938,506 124.5781,505.9063 124.5,505.7969 C124.3906,505.6094 124.2031,505.5 123.9844,505.5 C123.7813,505.5 123.6406,505.5781 123.4844,505.7969 L123.3594,505.75 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="25" x="140.5" y="513.1543">Grid</text><line style="stroke:#A80036;stroke-width:1.5;" x1="71.5" x2="204.5" y1="524" y2="524"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="78.5" y="532"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="79" x="89.5" y="539.1387">cells: Cell***</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="78.5" y="545.9688"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="54" x="89.5" y="553.1074">width: int</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="78.5" y="559.9375"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="59" x="89.5" y="567.0762">height: int</text><line style="stroke:#A80036;stroke-width:1.5;" x1="71.5" x2="204.5" y1="573.9063" y2="573.9063"/><ellipse cx="81.5" cy="584.9063" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="110" x="89.5" y="589.0449">getter() &amp; setter()</text><!--MD5=[89728e98875da11108e770170e8f928d]
+class CellState--><rect codeLine="68" fill="#FEFECE" filter="url(#f4qwvrytrhygd)" height="87.9063" id="CellState" style="stroke:#A80036;stroke-width:1.5;" width="85" x="648.5" y="841"/><ellipse cx="663.4" cy="856" fill="#ADD1B2" rx="10" ry="10" style="stroke:#A80036;stroke-width:1.0;"/><path d="M665.2594,852.75 C664.6031,852.4375 664.1813,852.3438 663.5563,852.3438 C661.7125,852.3438 660.2906,853.7969 660.2906,855.7188 L660.2906,856.5156 C660.2906,858.3438 661.7906,859.6719 663.8219,859.6719 C664.6813,859.6719 665.5094,859.4531 666.025,859.0625 C666.4469,858.7813 666.6656,858.4688 666.6656,858.1875 C666.6656,857.875 666.3844,857.5938 666.0719,857.5938 C665.9156,857.5938 665.775,857.6563 665.6344,857.7813 C665.3063,858.125 665.3063,858.125 665.1813,858.1875 C664.8844,858.375 664.4,858.4688 663.8531,858.4688 C662.4156,858.4688 661.4938,857.6875 661.4938,856.4844 L661.4938,855.7188 C661.4938,854.4531 662.3844,853.5313 663.6031,853.5313 C664.0094,853.5313 664.4469,853.6406 664.775,853.8281 C665.1188,854.0156 665.2438,854.1719 665.3063,854.4531 C665.3531,854.75 665.3688,854.8281 665.4625,854.9219 C665.5563,855.0313 665.7281,855.0938 665.8844,855.0938 C666.0875,855.0938 666.2594,855 666.3844,854.8438 C666.4625,854.7344 666.4938,854.6094 666.4938,854.2969 L666.4938,853.2969 C666.4938,853 666.4781,852.9063 666.4,852.7969 C666.2906,852.6094 666.1031,852.5 665.8844,852.5 C665.6813,852.5 665.5406,852.5781 665.3844,852.7969 L665.2594,852.75 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="53" x="676.6" y="860.1543">CellState</text><line style="stroke:#A80036;stroke-width:1.5;" x1="649.5" x2="732.5" y1="871" y2="871"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="33" x="654.5" y="886.1387">id: int</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="73" x="654.5" y="900.1074">color: ENUM</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="71" x="654.5" y="914.0762">label: string</text><line style="stroke:#A80036;stroke-width:1.5;" x1="649.5" x2="732.5" y1="920.9063" y2="920.9063"/><!--MD5=[fea3dc74c7473bae0133d22265a91e2f]
+class Cell--><rect codeLine="74" fill="#FEFECE" filter="url(#f4qwvrytrhygd)" height="73.9375" id="Cell" style="stroke:#A80036;stroke-width:1.5;" width="125" x="241.5" y="706"/><ellipse cx="289" cy="721" fill="#ADD1B2" rx="10" ry="10" style="stroke:#A80036;stroke-width:1.0;"/><path d="M290.8594,717.75 C290.2031,717.4375 289.7813,717.3438 289.1563,717.3438 C287.3125,717.3438 285.8906,718.7969 285.8906,720.7188 L285.8906,721.5156 C285.8906,723.3438 287.3906,724.6719 289.4219,724.6719 C290.2813,724.6719 291.1094,724.4531 291.625,724.0625 C292.0469,723.7813 292.2656,723.4688 292.2656,723.1875 C292.2656,722.875 291.9844,722.5938 291.6719,722.5938 C291.5156,722.5938 291.375,722.6563 291.2344,722.7813 C290.9063,723.125 290.9063,723.125 290.7813,723.1875 C290.4844,723.375 290,723.4688 289.4531,723.4688 C288.0156,723.4688 287.0938,722.6875 287.0938,721.4844 L287.0938,720.7188 C287.0938,719.4531 287.9844,718.5313 289.2031,718.5313 C289.6094,718.5313 290.0469,718.6406 290.375,718.8281 C290.7188,719.0156 290.8438,719.1719 290.9063,719.4531 C290.9531,719.75 290.9688,719.8281 291.0625,719.9219 C291.1563,720.0313 291.3281,720.0938 291.4844,720.0938 C291.6875,720.0938 291.8594,720 291.9844,719.8438 C292.0625,719.7344 292.0938,719.6094 292.0938,719.2969 L292.0938,718.2969 C292.0938,718 292.0781,717.9063 292,717.7969 C291.8906,717.6094 291.7031,717.5 291.4844,717.5 C291.2813,717.5 291.1406,717.5781 290.9844,717.7969 L290.8594,717.75 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="22" x="308" y="725.1543">Cell</text><line style="stroke:#A80036;stroke-width:1.5;" x1="242.5" x2="365.5" y1="736" y2="736"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="249.5" y="744"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="91" x="260.5" y="751.1387">state: CellState</text><line style="stroke:#A80036;stroke-width:1.5;" x1="242.5" x2="365.5" y1="757.9688" y2="757.9688"/><ellipse cx="252.5" cy="768.9688" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="100" x="260.5" y="773.1074">getter &amp; setter()</text><!--MD5=[016a354a92ee3bcc093b6de9f2723ace]
+class TransitionStrategy--><rect codeLine="79" fill="#FEFECE" filter="url(#f4qwvrytrhygd)" height="67.9063" id="TransitionStrategy" style="stroke:#A80036;stroke-width:1.5;" width="228" x="999" y="709"/><ellipse cx="1053.5" cy="727.9688" fill="#A9DCDF" rx="10" ry="10" style="stroke:#A80036;stroke-width:1.0;"/><path d="M1054.9844,729.0781 L1055.2656,729.7656 L1054.9844,729.7656 C1054.6875,729.7656 1054.5938,729.7813 1054.4844,729.8594 C1054.3125,729.9531 1054.2031,730.1719 1054.2031,730.375 C1054.2031,730.5625 1054.2969,730.7344 1054.4531,730.8438 C1054.5625,730.9375 1054.7031,730.9688 1054.9844,730.9688 L1056.6563,730.9688 C1056.9063,730.9688 1057.0625,730.9375 1057.1563,730.8906 C1057.3438,730.7813 1057.4531,730.5781 1057.4531,730.375 C1057.4531,730.1719 1057.3594,730 1057.2031,729.8906 C1057.0781,729.7969 1056.9688,729.7656 1056.6406,729.7656 L1054.25,723.9688 L1051.6563,723.9688 C1051.3281,723.9688 1051.25,723.9844 1051.1406,724.0625 C1050.9531,724.1719 1050.8594,724.375 1050.8594,724.5781 C1050.8594,724.7656 1050.9531,724.9375 1051.1094,725.0625 C1051.2188,725.1563 1051.3438,725.1719 1051.6563,725.1719 L1052.4063,725.1719 L1050.5469,729.7656 C1050.25,729.7656 1050.1406,729.7813 1050.0313,729.8594 C1049.8594,729.9531 1049.75,730.1719 1049.75,730.375 C1049.75,730.7656 1050.0156,730.9688 1050.5469,730.9688 L1052.1406,730.9688 C1052.3906,730.9688 1052.5469,730.9375 1052.6406,730.8906 C1052.8125,730.7813 1052.9219,730.5781 1052.9219,730.375 C1052.9219,730.1719 1052.8281,730 1052.6719,729.875 C1052.5625,729.7969 1052.4531,729.7656 1052.1406,729.7656 L1051.8594,729.7656 L1052.1406,729.0781 L1054.9844,729.0781 Z M1054.5,727.875 L1052.6094,727.875 L1053.5625,725.5625 L1054.5,727.875 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="64" x="1096" y="725.1387">«abstract»</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="111" x="1072.5" y="739.1074">TransitionStrategy</text><line style="stroke:#A80036;stroke-width:1.5;" x1="1000" x2="1226" y1="746.9375" y2="746.9375"/><line style="stroke:#A80036;stroke-width:1.5;" x1="1000" x2="1226" y1="754.9375" y2="754.9375"/><ellipse cx="1010" cy="765.9375" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="203" x="1018" y="770.0762">calcNextCell(cell, neighbors): Cell</text><!--MD5=[83ff202fac8d4943c3a58e1f78441667]
+class TotalisticsTransition--><rect codeLine="83" fill="#FEFECE" filter="url(#f4qwvrytrhygd)" height="46" id="TotalisticsTransition" style="stroke:#A80036;stroke-width:1.5;" width="148" x="898" y="862"/><ellipse cx="912" cy="877" fill="#ADD1B2" rx="10" ry="10" style="stroke:#A80036;stroke-width:1.0;"/><path d="M913.8594,873.75 C913.2031,873.4375 912.7813,873.3438 912.1563,873.3438 C910.3125,873.3438 908.8906,874.7969 908.8906,876.7188 L908.8906,877.5156 C908.8906,879.3438 910.3906,880.6719 912.4219,880.6719 C913.2813,880.6719 914.1094,880.4531 914.625,880.0625 C915.0469,879.7813 915.2656,879.4688 915.2656,879.1875 C915.2656,878.875 914.9844,878.5938 914.6719,878.5938 C914.5156,878.5938 914.375,878.6563 914.2344,878.7813 C913.9063,879.125 913.9063,879.125 913.7813,879.1875 C913.4844,879.375 913,879.4688 912.4531,879.4688 C911.0156,879.4688 910.0938,878.6875 910.0938,877.4844 L910.0938,876.7188 C910.0938,875.4531 910.9844,874.5313 912.2031,874.5313 C912.6094,874.5313 913.0469,874.6406 913.375,874.8281 C913.7188,875.0156 913.8438,875.1719 913.9063,875.4531 C913.9531,875.75 913.9688,875.8281 914.0625,875.9219 C914.1563,876.0313 914.3281,876.0938 914.4844,876.0938 C914.6875,876.0938 914.8594,876 914.9844,875.8438 C915.0625,875.7344 915.0938,875.6094 915.0938,875.2969 L915.0938,874.2969 C915.0938,874 915.0781,873.9063 915,873.7969 C914.8906,873.6094 914.7031,873.5 914.4844,873.5 C914.2813,873.5 914.1406,873.5781 913.9844,873.7969 L913.8594,873.75 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="118" x="925" y="881.1543">TotalisticsTransition</text><line style="stroke:#A80036;stroke-width:1.5;" x1="899" x2="1045" y1="892" y2="892"/><line style="stroke:#A80036;stroke-width:1.5;" x1="899" x2="1045" y1="900" y2="900"/><!--MD5=[3ef2667aa507087a522f144d12967f15]
+class StochasticsTransition--><rect codeLine="86" fill="#FEFECE" filter="url(#f4qwvrytrhygd)" height="46" id="StochasticsTransition" style="stroke:#A80036;stroke-width:1.5;" width="157" x="1081.5" y="862"/><ellipse cx="1095.5" cy="877" fill="#ADD1B2" rx="10" ry="10" style="stroke:#A80036;stroke-width:1.0;"/><path d="M1097.3594,873.75 C1096.7031,873.4375 1096.2813,873.3438 1095.6563,873.3438 C1093.8125,873.3438 1092.3906,874.7969 1092.3906,876.7188 L1092.3906,877.5156 C1092.3906,879.3438 1093.8906,880.6719 1095.9219,880.6719 C1096.7813,880.6719 1097.6094,880.4531 1098.125,880.0625 C1098.5469,879.7813 1098.7656,879.4688 1098.7656,879.1875 C1098.7656,878.875 1098.4844,878.5938 1098.1719,878.5938 C1098.0156,878.5938 1097.875,878.6563 1097.7344,878.7813 C1097.4063,879.125 1097.4063,879.125 1097.2813,879.1875 C1096.9844,879.375 1096.5,879.4688 1095.9531,879.4688 C1094.5156,879.4688 1093.5938,878.6875 1093.5938,877.4844 L1093.5938,876.7188 C1093.5938,875.4531 1094.4844,874.5313 1095.7031,874.5313 C1096.1094,874.5313 1096.5469,874.6406 1096.875,874.8281 C1097.2188,875.0156 1097.3438,875.1719 1097.4063,875.4531 C1097.4531,875.75 1097.4688,875.8281 1097.5625,875.9219 C1097.6563,876.0313 1097.8281,876.0938 1097.9844,876.0938 C1098.1875,876.0938 1098.3594,876 1098.4844,875.8438 C1098.5625,875.7344 1098.5938,875.6094 1098.5938,875.2969 L1098.5938,874.2969 C1098.5938,874 1098.5781,873.9063 1098.5,873.7969 C1098.3906,873.6094 1098.2031,873.5 1097.9844,873.5 C1097.7813,873.5 1097.6406,873.5781 1097.4844,873.7969 L1097.3594,873.75 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="127" x="1108.5" y="881.1543">StochasticsTransition</text><line style="stroke:#A80036;stroke-width:1.5;" x1="1082.5" x2="1237.5" y1="892" y2="892"/><line style="stroke:#A80036;stroke-width:1.5;" x1="1082.5" x2="1237.5" y1="900" y2="900"/><!--MD5=[ac0e2dea056d94d77f53522b71214e11]
+class NeighborStrategy--><rect codeLine="90" fill="#FEFECE" filter="url(#f4qwvrytrhygd)" height="67.9063" id="NeighborStrategy" style="stroke:#A80036;stroke-width:1.5;" width="154" x="503" y="709"/><ellipse cx="524.65" cy="727.9688" fill="#A9DCDF" rx="10" ry="10" style="stroke:#A80036;stroke-width:1.0;"/><path d="M526.1344,729.0781 L526.4156,729.7656 L526.1344,729.7656 C525.8375,729.7656 525.7438,729.7813 525.6344,729.8594 C525.4625,729.9531 525.3531,730.1719 525.3531,730.375 C525.3531,730.5625 525.4469,730.7344 525.6031,730.8438 C525.7125,730.9375 525.8531,730.9688 526.1344,730.9688 L527.8063,730.9688 C528.0563,730.9688 528.2125,730.9375 528.3063,730.8906 C528.4938,730.7813 528.6031,730.5781 528.6031,730.375 C528.6031,730.1719 528.5094,730 528.3531,729.8906 C528.2281,729.7969 528.1188,729.7656 527.7906,729.7656 L525.4,723.9688 L522.8063,723.9688 C522.4781,723.9688 522.4,723.9844 522.2906,724.0625 C522.1031,724.1719 522.0094,724.375 522.0094,724.5781 C522.0094,724.7656 522.1031,724.9375 522.2594,725.0625 C522.3688,725.1563 522.4938,725.1719 522.8063,725.1719 L523.5563,725.1719 L521.6969,729.7656 C521.4,729.7656 521.2906,729.7813 521.1813,729.8594 C521.0094,729.9531 520.9,730.1719 520.9,730.375 C520.9,730.7656 521.1656,730.9688 521.6969,730.9688 L523.2906,730.9688 C523.5406,730.9688 523.6969,730.9375 523.7906,730.8906 C523.9625,730.7813 524.0719,730.5781 524.0719,730.375 C524.0719,730.1719 523.9781,730 523.8219,729.875 C523.7125,729.7969 523.6031,729.7656 523.2906,729.7656 L523.0094,729.7656 L523.2906,729.0781 L526.1344,729.0781 Z M525.65,727.875 L523.7594,727.875 L524.7125,725.5625 L525.65,727.875 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="64" x="560.85" y="725.1387">«abstract»</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="107" x="539.35" y="739.1074">NeighborStrategy</text><line style="stroke:#A80036;stroke-width:1.5;" x1="504" x2="656" y1="746.9375" y2="746.9375"/><line style="stroke:#A80036;stroke-width:1.5;" x1="504" x2="656" y1="754.9375" y2="754.9375"/><ellipse cx="514" cy="765.9375" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="129" x="522" y="770.0762">getNeighbors(): Cell*</text><!--MD5=[8c0ada6143a68c492266868d1498549d]
+class ArbitraitNeighbor--><rect codeLine="94" fill="#FEFECE" filter="url(#f4qwvrytrhygd)" height="46" id="ArbitraitNeighbor" style="stroke:#A80036;stroke-width:1.5;" width="132" x="241" y="522"/><ellipse cx="255" cy="537" fill="#ADD1B2" rx="10" ry="10" style="stroke:#A80036;stroke-width:1.0;"/><path d="M256.8594,533.75 C256.2031,533.4375 255.7813,533.3438 255.1563,533.3438 C253.3125,533.3438 251.8906,534.7969 251.8906,536.7188 L251.8906,537.5156 C251.8906,539.3438 253.3906,540.6719 255.4219,540.6719 C256.2813,540.6719 257.1094,540.4531 257.625,540.0625 C258.0469,539.7813 258.2656,539.4688 258.2656,539.1875 C258.2656,538.875 257.9844,538.5938 257.6719,538.5938 C257.5156,538.5938 257.375,538.6563 257.2344,538.7813 C256.9063,539.125 256.9063,539.125 256.7813,539.1875 C256.4844,539.375 256,539.4688 255.4531,539.4688 C254.0156,539.4688 253.0938,538.6875 253.0938,537.4844 L253.0938,536.7188 C253.0938,535.4531 253.9844,534.5313 255.2031,534.5313 C255.6094,534.5313 256.0469,534.6406 256.375,534.8281 C256.7188,535.0156 256.8438,535.1719 256.9063,535.4531 C256.9531,535.75 256.9688,535.8281 257.0625,535.9219 C257.1563,536.0313 257.3281,536.0938 257.4844,536.0938 C257.6875,536.0938 257.8594,536 257.9844,535.8438 C258.0625,535.7344 258.0938,535.6094 258.0938,535.2969 L258.0938,534.2969 C258.0938,534 258.0781,533.9063 258,533.7969 C257.8906,533.6094 257.7031,533.5 257.4844,533.5 C257.2813,533.5 257.1406,533.5781 256.9844,533.7969 L256.8594,533.75 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="102" x="268" y="541.1543">ArbitraitNeighbor</text><line style="stroke:#A80036;stroke-width:1.5;" x1="242" x2="372" y1="552" y2="552"/><line style="stroke:#A80036;stroke-width:1.5;" x1="242" x2="372" y1="560" y2="560"/><!--MD5=[fba1c89266e17e50a5982cd784908153]
+class VonnNeumanNeighbor--><rect codeLine="96" fill="#FEFECE" filter="url(#f4qwvrytrhygd)" height="59.9688" id="VonnNeumanNeighbor" style="stroke:#A80036;stroke-width:1.5;" width="163" x="408.5" y="515"/><ellipse cx="422.5" cy="530" fill="#ADD1B2" rx="10" ry="10" style="stroke:#A80036;stroke-width:1.0;"/><path d="M424.3594,526.75 C423.7031,526.4375 423.2813,526.3438 422.6563,526.3438 C420.8125,526.3438 419.3906,527.7969 419.3906,529.7188 L419.3906,530.5156 C419.3906,532.3438 420.8906,533.6719 422.9219,533.6719 C423.7813,533.6719 424.6094,533.4531 425.125,533.0625 C425.5469,532.7813 425.7656,532.4688 425.7656,532.1875 C425.7656,531.875 425.4844,531.5938 425.1719,531.5938 C425.0156,531.5938 424.875,531.6563 424.7344,531.7813 C424.4063,532.125 424.4063,532.125 424.2813,532.1875 C423.9844,532.375 423.5,532.4688 422.9531,532.4688 C421.5156,532.4688 420.5938,531.6875 420.5938,530.4844 L420.5938,529.7188 C420.5938,528.4531 421.4844,527.5313 422.7031,527.5313 C423.1094,527.5313 423.5469,527.6406 423.875,527.8281 C424.2188,528.0156 424.3438,528.1719 424.4063,528.4531 C424.4531,528.75 424.4688,528.8281 424.5625,528.9219 C424.6563,529.0313 424.8281,529.0938 424.9844,529.0938 C425.1875,529.0938 425.3594,529 425.4844,528.8438 C425.5625,528.7344 425.5938,528.6094 425.5938,528.2969 L425.5938,527.2969 C425.5938,527 425.5781,526.9063 425.5,526.7969 C425.3906,526.6094 425.2031,526.5 424.9844,526.5 C424.7813,526.5 424.6406,526.5781 424.4844,526.7969 L424.3594,526.75 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="133" x="435.5" y="534.1543">VonnNeumanNeighbor</text><line style="stroke:#A80036;stroke-width:1.5;" x1="409.5" x2="570.5" y1="545" y2="545"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="416.5" y="553"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="63" x="427.5" y="560.1387">radius : int</text><line style="stroke:#A80036;stroke-width:1.5;" x1="409.5" x2="570.5" y1="566.9688" y2="566.9688"/><!--MD5=[e567bd10e648e1c102201a22601ad3e8]
+class MooreNeighbor--><rect codeLine="99" fill="#FEFECE" filter="url(#f4qwvrytrhygd)" height="59.9688" id="MooreNeighbor" style="stroke:#A80036;stroke-width:1.5;" width="124" x="607" y="515"/><ellipse cx="621" cy="530" fill="#ADD1B2" rx="10" ry="10" style="stroke:#A80036;stroke-width:1.0;"/><path d="M622.8594,526.75 C622.2031,526.4375 621.7813,526.3438 621.1563,526.3438 C619.3125,526.3438 617.8906,527.7969 617.8906,529.7188 L617.8906,530.5156 C617.8906,532.3438 619.3906,533.6719 621.4219,533.6719 C622.2813,533.6719 623.1094,533.4531 623.625,533.0625 C624.0469,532.7813 624.2656,532.4688 624.2656,532.1875 C624.2656,531.875 623.9844,531.5938 623.6719,531.5938 C623.5156,531.5938 623.375,531.6563 623.2344,531.7813 C622.9063,532.125 622.9063,532.125 622.7813,532.1875 C622.4844,532.375 622,532.4688 621.4531,532.4688 C620.0156,532.4688 619.0938,531.6875 619.0938,530.4844 L619.0938,529.7188 C619.0938,528.4531 619.9844,527.5313 621.2031,527.5313 C621.6094,527.5313 622.0469,527.6406 622.375,527.8281 C622.7188,528.0156 622.8438,528.1719 622.9063,528.4531 C622.9531,528.75 622.9688,528.8281 623.0625,528.9219 C623.1563,529.0313 623.3281,529.0938 623.4844,529.0938 C623.6875,529.0938 623.8594,529 623.9844,528.8438 C624.0625,528.7344 624.0938,528.6094 624.0938,528.2969 L624.0938,527.2969 C624.0938,527 624.0781,526.9063 624,526.7969 C623.8906,526.6094 623.7031,526.5 623.4844,526.5 C623.2813,526.5 623.1406,526.5781 622.9844,526.7969 L622.8594,526.75 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="94" x="634" y="534.1543">MooreNeighbor</text><line style="stroke:#A80036;stroke-width:1.5;" x1="608" x2="730" y1="545" y2="545"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="615" y="553"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="63" x="626" y="560.1387">radius : int</text><line style="stroke:#A80036;stroke-width:1.5;" x1="608" x2="730" y1="566.9688" y2="566.9688"/><!--MD5=[abfa4f4503c9526fad19fbfcc3ae29fc]
+reverse link TransitionStrategy to TotalisticsTransition--><path codeLine="104" d="M1065.24,791.424 C1041.19,815.303 1013.18,843.1084 994.191,861.9662 " fill="none" id="TransitionStrategy-backto-TotalisticsTransition" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="1060.46,786.302,1079.58,777.178,1070.32,796.237,1060.46,786.302" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[9fb013b8b298d9d8456982b5a989de1d]
+reverse link TransitionStrategy to StochasticsTransition--><path codeLine="105" d="M1130.53,796.203 C1138.16,818.937 1146.69,844.3537 1152.6,861.9662 " fill="none" id="TransitionStrategy-backto-StochasticsTransition" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="1123.87,798.366,1124.14,777.178,1137.14,793.91,1123.87,798.366" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[476db1d5ab18d375622519889e47bf6f]
+link VonnNeumanNeighbor to NeighborStrategy--><path codeLine="107" d="M503.474,575.343 C517.431,605.738 539.519,653.841 556.385,690.571 " fill="none" id="VonnNeumanNeighbor-to-NeighborStrategy" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="562.792,687.749,564.776,708.846,550.069,693.591,562.792,687.749" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6664ae4618455ce03615cc8074cd69f8]
+link MooreNeighbor to NeighborStrategy--><path codeLine="108" d="M655.676,575.343 C641.874,605.738 620.032,653.841 603.353,690.571 " fill="none" id="MooreNeighbor-to-NeighborStrategy" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="609.698,693.529,595.055,708.846,596.95,687.741,609.698,693.529" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[481956121c1a938e86dee0d0a4169243]
+link ArbitraitNeighbor to NeighborStrategy--><path codeLine="109" d="M321.948,568.275 C337.319,589.93 362.923,622.725 391,645 C419.138,667.324 453.219,686.7 484.65,702.141 " fill="none" id="ArbitraitNeighbor-to-NeighborStrategy" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="487.732,695.856,502.784,710.771,481.717,708.498,487.732,695.856" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b6643aac681690ef86b3f2fcc548d8ab]
+link Automata to NeighborStrategy--><path codeLine="112" d="M930.853,638.197 C925.198,640.551 919.572,642.825 914,645 C828.08,678.537 725.78,706.587 657.238,723.758 " fill="none" id="Automata-NeighborStrategy" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b41ef3e27a2293e3967f77a0437c84f9]
+link Automata to TransitionStrategy--><path codeLine="113" d="M1113,645.148 C1113,668.126 1113,691.02 1113,708.776 " fill="none" id="Automata-TransitionStrategy" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d6ad5106f5a33e6f70542dba8b6d40f3]
+link Cell to CellState--><path codeLine="116" d="M366.608,766.649 C445.76,795.283 579.921,843.8163 648.249,868.5347 " fill="none" id="Cell-CellState" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="7" x="633.5887" y="862.9577">1</text><!--MD5=[d31bdcbbaabb43506266532ce7787e4b]
+link Grid to Cell--><path codeLine="118" d="M180.534,596.22 C209.544,630.474 247.287,675.038 273.368,705.832 " fill="none" id="Grid-Cell" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6465150c6627a02b88bb6e07b8063cde]
+link Automata to CellState--><path codeLine="120" d="M989.237,645.127 C902.9,714.279 792.912,802.374 733.576,849.899 " fill="none" id="Automata-CellState" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[f54dc183b886e47cc06623e701b4c7ef]
+link Simulator to Grid--><path codeLine="122" d="M341.837,346.418 C302.978,375.569 259.654,410.25 223,445 C207.218,459.962 191.319,477.625 177.611,493.858 " fill="none" id="Simulator-Grid" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="7" x="176.1405" y="483.254">*</text><!--MD5=[03c50b0d16838c1b81e6fa7d1e9ddafa]
+link Simulator to Automata--><path codeLine="123" d="M556.442,307.642 C651.503,340.901 793.438,392.621 914,445 C919.574,447.422 925.216,449.92 930.895,452.477 " fill="none" id="Simulator-Automata" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[2fb1102ef2ac544052db8322aed3bc50]
+link SimulatorIterator to Simulator--><path codeLine="124" d="M303.507,109.033 C321.192,128.478 342.063,151.425 362.392,173.776 " fill="none" id="SimulatorIterator-to-Simulator" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="371.369,183.646,370.291,176.5159,363.2948,174.7687,364.3728,181.8988,371.369,183.646" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="7" x="302.1517" y="127.9762">1</text><!--MD5=[db1e0ea25e8d01e0bb21223fe8ce0c79]
+link AutomataManager to Automata--><path codeLine="126" d="M1113,370.332 C1113,394.572 1113,420.505 1113,444.742 " fill="none" id="AutomataManager-Automata" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="48" x="1114" y="412.1387">manage</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="7" x="1105.7648" y="388.6925">1</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="7" x="1105.7102" y="434.0941">*</text><!--MD5=[09d8cae85c11345fc42b15441bef5718]
+@startuml
+'!define DARKBLUE
+'!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+skinparam defaultFontSize 12
+skinparam noteFontSize 12
+'skinparam linetype polyline
+
+class SimulatorIterator {
+    - gridID: int
+    + getCurrentGrid() const: Grid*
+    + previousGrid(): void
+    + nextGrid(): void
+}
+note left: inside simulator
+
+class Simulator {
+    - automata: Automata
+    - bufferSize: int
+    - startGrid: Grid
+    - grids: Grid*[]
+    - gridFactory: GridFactory
+    - it: SimulatorIterator*
+    + run(nbSteps := 1): void
+    + setStartGrid(Grid): void
+    + getIterator(): SimulatorIterator*
+}
+note top: Iterator pattern can be applied here
+
+class AutomataManager {
+    - {static} instace: AutomataManager &
+    - {static} nbAutomatas: int
+    - automatas: Automata**
+    
+    - AutomataManager(const AutomataManager &)=delete
+    - AutomataManager()=delete
+    - ~AutomataManager()
+    - operator=(const AutomataManager &)=delete
+    + {static} getAutomataManager(): AutomataManager&
+    + {static} destroyAutomataManager(): void
+    + getAutomata(idx: unsigned int) const: const Automata&
+    + {static} getNbAutomatas() const: int
+}
+note left: Singleton\ndesign pattern
+
+
+class Automata {
+    - name: string
+    - description: string
+    - author: string
+    - availableStates: CellState*[]
+    - transitionStrategy: ITransitionStrategy
+    - neighborStrategy: INeighborStrategy
+    - operator=(const Automata& automata)=default
+    - Automata(const Automata &)
+    - Automata()
+    - ~Automata()
+    + applyTransition(const Grid& src, Grid& dest) const: void
+}
+note left: friend class\nAutomateManager
+
+class Grid {
+    - cells: Cell***
+    - width: int
+    - height: int
+    + getter() & setter()
+}
+
+class CellState {
+    id: int
+    color: ENUM
+    label: string
+}
+
+class Cell {
+    - state: CellState
+    + getter & setter()
+}
+
+abstract class TransitionStrategy <<abstract>> {
+    + calcNextCell(cell, neighbors): Cell
+}
+
+class TotalisticsTransition {
+    
+}
+class StochasticsTransition {
+
+}
+
+abstract class NeighborStrategy <<abstract>> {
+    + getNeighbors(): Cell*
+}
+
+class ArbitraitNeighbor {
+}
+class VonnNeumanNeighbor {
+    - radius : int
+}
+class MooreNeighbor {
+    - radius : int
+}
+
+
+TotalisticsTransition -up-|> TransitionStrategy
+StochasticsTransition -up-|> TransitionStrategy
+
+VonnNeumanNeighbor - -|> NeighborStrategy
+MooreNeighbor - -|> NeighborStrategy
+ArbitraitNeighbor - -|> NeighborStrategy
+
+
+NeighborStrategy -up- Automata
+TransitionStrategy -up- Automata
+
+
+Cell - - "1" CellState
+
+Grid - - Cell
+
+Automata - - CellState
+
+Simulator - - "*" Grid
+Simulator - - Automata
+SimulatorIterator "1" - -* Simulator
+
+AutomataManager "1" - - "*" Automata: manage
+@enduml
+
+@startuml
+
+skinparam defaultFontSize 12
+skinparam noteFontSize 12
+
+class SimulatorIterator {
+    - gridID: int
+    + getCurrentGrid() const: Grid*
+    + previousGrid(): void
+    + nextGrid(): void
+}
+note left: inside simulator
+
+class Simulator {
+    - automata: Automata
+    - bufferSize: int
+    - startGrid: Grid
+    - grids: Grid*[]
+    - gridFactory: GridFactory
+    - it: SimulatorIterator*
+    + run(nbSteps := 1): void
+    + setStartGrid(Grid): void
+    + getIterator(): SimulatorIterator*
+}
+note top: Iterator pattern can be applied here
+
+class AutomataManager {
+    - {static} instace: AutomataManager &
+    - {static} nbAutomatas: int
+    - automatas: Automata**
+    
+    - AutomataManager(const AutomataManager &)=delete
+    - AutomataManager()=delete
+    - ~AutomataManager()
+    - operator=(const AutomataManager &)=delete
+    + {static} getAutomataManager(): AutomataManager&
+    + {static} destroyAutomataManager(): void
+    + getAutomata(idx: unsigned int) const: const Automata&
+    + {static} getNbAutomatas() const: int
+}
+note left: Singleton\ndesign pattern
+
+
+class Automata {
+    - name: string
+    - description: string
+    - author: string
+    - availableStates: CellState*[]
+    - transitionStrategy: ITransitionStrategy
+    - neighborStrategy: INeighborStrategy
+    - operator=(const Automata& automata)=default
+    - Automata(const Automata &)
+    - Automata()
+    - ~Automata()
+    + applyTransition(const Grid& src, Grid& dest) const: void
+}
+note left: friend class\nAutomateManager
+
+class Grid {
+    - cells: Cell***
+    - width: int
+    - height: int
+    + getter() & setter()
+}
+
+class CellState {
+    id: int
+    color: ENUM
+    label: string
+}
+
+class Cell {
+    - state: CellState
+    + getter & setter()
+}
+
+abstract class TransitionStrategy <<abstract>> {
+    + calcNextCell(cell, neighbors): Cell
+}
+
+class TotalisticsTransition {
+    
+}
+class StochasticsTransition {
+
+}
+
+abstract class NeighborStrategy <<abstract>> {
+    + getNeighbors(): Cell*
+}
+
+class ArbitraitNeighbor {
+}
+class VonnNeumanNeighbor {
+    - radius : int
+}
+class MooreNeighbor {
+    - radius : int
+}
+
+
+TotalisticsTransition -up-|> TransitionStrategy
+StochasticsTransition -up-|> TransitionStrategy
+
+VonnNeumanNeighbor - -|> NeighborStrategy
+MooreNeighbor - -|> NeighborStrategy
+ArbitraitNeighbor - -|> NeighborStrategy
+
+
+NeighborStrategy -up- Automata
+TransitionStrategy -up- Automata
+
+
+Cell - - "1" CellState
+
+Grid - - Cell
+
+Automata - - CellState
+
+Simulator - - "*" Grid
+Simulator - - Automata
+SimulatorIterator "1" - -* Simulator
+
+AutomataManager "1" - - "*" Automata: manage
+@enduml
+
+PlantUML version 1.2021.5beta3(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

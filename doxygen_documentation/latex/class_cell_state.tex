@@ -1,0 +1,133 @@
+\hypertarget{class_cell_state}{}\doxysection{Cell\+State Class Reference}
+\label{class_cell_state}\index{CellState@{CellState}}
+
+
+Classe représentant un état de cellule.  
+
+
+
+
+{\ttfamily \#include $<$cell\+\_\+state.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_cell_state_a60b2262cd3f3f804c96ab7715e874ede}{set\+Id}} (int i)
+\begin{DoxyCompactList}\small\item\em set\+Id accesseur en écriture de l\textquotesingle{}identificateur \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_state_ab457f3313483fe4eae2569bdf8355251}{set\+Label}} (std\+::string s)
+\begin{DoxyCompactList}\small\item\em set\+Label accesseur en écriture du label de l\textquotesingle{}état \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_state_a6002241f23bd205b1d40282eae700e51}{set\+Color}} (QColor c)
+\begin{DoxyCompactList}\small\item\em set\+Color accesseur en écriture de la couleur de l\textquotesingle{}état \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_cell_state_a3fd5b8355f3275765f2f146a701a7b61}{get\+Id}} () const
+\begin{DoxyCompactList}\small\item\em get\+Id accesseur en lecture de l\textquotesingle{}identificateur de l\textquotesingle{}état \end{DoxyCompactList}\item 
+QColor \mbox{\hyperlink{class_cell_state_ad293dc5940b81ad9d81630dc80d153d0}{get\+Color}} () const
+\begin{DoxyCompactList}\small\item\em get\+Color accesseur en lecture de la couleur de l\textquotesingle{}état \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_cell_state_ab8b94581882af8241a0ea37c5ae1a416}{get\+Label}} () const
+\begin{DoxyCompactList}\small\item\em get\+Label accesseur en lecture du label de l\textquotesingle{}état \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cell_state_a52a70ff4c93aa452c6e31b7d1e40a466}{Cell\+State}} (int x, std\+::string l, QColor c)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe représentant un état de cellule. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cell_state_a52a70ff4c93aa452c6e31b7d1e40a466}\label{class_cell_state_a52a70ff4c93aa452c6e31b7d1e40a466}} 
+\index{CellState@{CellState}!CellState@{CellState}}
+\index{CellState@{CellState}!CellState@{CellState}}
+\doxysubsubsection{\texorpdfstring{CellState()}{CellState()}}
+{\footnotesize\ttfamily Cell\+State\+::\+Cell\+State (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{std\+::string}]{l,  }\item[{QColor}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cell_state_ad293dc5940b81ad9d81630dc80d153d0}\label{class_cell_state_ad293dc5940b81ad9d81630dc80d153d0}} 
+\index{CellState@{CellState}!getColor@{getColor}}
+\index{getColor@{getColor}!CellState@{CellState}}
+\doxysubsubsection{\texorpdfstring{getColor()}{getColor()}}
+{\footnotesize\ttfamily QColor Cell\+State\+::get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Color accesseur en lecture de la couleur de l\textquotesingle{}état 
+
+\begin{DoxyReturn}{Returns}
+QColor la couleur de l\textquotesingle{}état 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cell_state_a3fd5b8355f3275765f2f146a701a7b61}\label{class_cell_state_a3fd5b8355f3275765f2f146a701a7b61}} 
+\index{CellState@{CellState}!getId@{getId}}
+\index{getId@{getId}!CellState@{CellState}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily int Cell\+State\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Id accesseur en lecture de l\textquotesingle{}identificateur de l\textquotesingle{}état 
+
+\begin{DoxyReturn}{Returns}
+int l\textquotesingle{}identificateur de l\textquotesingle{}état 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cell_state_ab8b94581882af8241a0ea37c5ae1a416}\label{class_cell_state_ab8b94581882af8241a0ea37c5ae1a416}} 
+\index{CellState@{CellState}!getLabel@{getLabel}}
+\index{getLabel@{getLabel}!CellState@{CellState}}
+\doxysubsubsection{\texorpdfstring{getLabel()}{getLabel()}}
+{\footnotesize\ttfamily std\+::string Cell\+State\+::get\+Label (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Label accesseur en lecture du label de l\textquotesingle{}état 
+
+\begin{DoxyReturn}{Returns}
+string le label de l\textquotesingle{}état 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cell_state_a6002241f23bd205b1d40282eae700e51}\label{class_cell_state_a6002241f23bd205b1d40282eae700e51}} 
+\index{CellState@{CellState}!setColor@{setColor}}
+\index{setColor@{setColor}!CellState@{CellState}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily void Cell\+State\+::set\+Color (\begin{DoxyParamCaption}\item[{QColor}]{c }\end{DoxyParamCaption})}
+
+
+
+set\+Color accesseur en écriture de la couleur de l\textquotesingle{}état 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & nouvelle couleur \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cell_state_a60b2262cd3f3f804c96ab7715e874ede}\label{class_cell_state_a60b2262cd3f3f804c96ab7715e874ede}} 
+\index{CellState@{CellState}!setId@{setId}}
+\index{setId@{setId}!CellState@{CellState}}
+\doxysubsubsection{\texorpdfstring{setId()}{setId()}}
+{\footnotesize\ttfamily void Cell\+State\+::set\+Id (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+set\+Id accesseur en écriture de l\textquotesingle{}identificateur 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & nouvel identificateur \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cell_state_ab457f3313483fe4eae2569bdf8355251}\label{class_cell_state_ab457f3313483fe4eae2569bdf8355251}} 
+\index{CellState@{CellState}!setLabel@{setLabel}}
+\index{setLabel@{setLabel}!CellState@{CellState}}
+\doxysubsubsection{\texorpdfstring{setLabel()}{setLabel()}}
+{\footnotesize\ttfamily void Cell\+State\+::set\+Label (\begin{DoxyParamCaption}\item[{std\+::string}]{s }\end{DoxyParamCaption})}
+
+
+
+set\+Label accesseur en écriture du label de l\textquotesingle{}état 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & nouveau label \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/utils/\mbox{\hyperlink{cell__state_8h}{cell\+\_\+state.\+h}}\item 
+src/utils/\mbox{\hyperlink{cell__state_8cpp}{cell\+\_\+state.\+cpp}}\end{DoxyCompactItemize}

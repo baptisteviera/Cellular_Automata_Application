@@ -1,0 +1,266 @@
+\hypertarget{class_d_b_manager}{}\doxysection{DBManager Class Reference}
+\label{class_d_b_manager}\index{DBManager@{DBManager}}
+
+
+The \mbox{\hyperlink{class_d_b_manager}{DBManager}} class gestionnaire de la BDD (singleton)  
+
+
+
+
+{\ttfamily \#include $<$database.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_d_b_manager_ae6d8cb78041c8ff0c5e77609ca512df0}{$\sim$\+DBManager}} ()
+\item 
+void \mbox{\hyperlink{class_d_b_manager_af7c9d1d715f2da3448c65824e8097c50}{load\+Automatas\+From\+DB}} () const
+\begin{DoxyCompactList}\small\item\em load\+Automatas\+From\+DB permet de charger des automates à partir de la BDD \end{DoxyCompactList}\item 
+QColor \mbox{\hyperlink{class_d_b_manager_a74745a8f3e2a86921ecb5daa18b8be08}{to\+Color}} (const QString \&col) const
+\begin{DoxyCompactList}\small\item\em to\+Color transforme un Qstring en Qcolor pour l\textquotesingle{}appliquer à l\textquotesingle{}interface graphique \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_d_b_manager_a5cc699128c5f6b647d484e02eca54c76}{Dbadd\+State}} (const QString label, const int id, const QString color) const
+\item 
+void \mbox{\hyperlink{class_d_b_manager_af9918594b63b467885972dea347cc1f0}{insert\+Automata\+Into\+DB}} (QString name, int nb\+States, QString transition\+Name, QString neighborhood\+Name, \mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$$\ast$chosen\+States, QString description=\char`\"{}\char`\"{}, QString author=\char`\"{}\char`\"{}, int year=0)
+\begin{DoxyCompactList}\small\item\em insert\+Automata\+Into\+DB permet d\textquotesingle{}ajouter des automates dans la BDD \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_d_b_manager_a360310ad5aa1462f2c6ee3339a80d375}{insert\+Neighborhood\+Into\+DB}} (const QString name, const int radius) const
+\begin{DoxyCompactList}\small\item\em insert\+Neighborhood\+Into\+DB permet d\textquotesingle{}insérer un voisinage généralisé \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_d_b_manager_afd58a6a40c69c5c8b653c12c0a58cb9e}{insert\+Neighborhood\+Into\+DB}} (const QString name, int nb\+Neighbors, const int $\ast$dx, const int $\ast$dy) const
+\begin{DoxyCompactList}\small\item\em insert\+Neighborhood\+Into\+DB permet d\textquotesingle{}insérer un voisinage non généralisé \end{DoxyCompactList}\item 
+std\+::pair$<$ int, \mbox{\hyperlink{class_neighborhood_strategy}{Neighborhood\+Strategy}} $\ast$$\ast$ $>$ \mbox{\hyperlink{class_d_b_manager_a66f50c422bb32502ebef406152d86ac4}{load\+Neighborhoods\+From\+DB}} () const
+\begin{DoxyCompactList}\small\item\em load\+Neighborhoods\+From\+DB permet de charger un voisinage dans la BDD \end{DoxyCompactList}\item 
+std\+::pair$<$ int, \mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$$\ast$ $>$ \mbox{\hyperlink{class_d_b_manager_a688aa13ab6472760e816b6fe0bc5dbad}{load\+Statesfrom\+DB}} () const
+\begin{DoxyCompactList}\small\item\em load\+Statesfrom\+DB charge des états depuis la base de données \end{DoxyCompactList}\item 
+std\+::pair$<$ int, \mbox{\hyperlink{class_transition_strategy}{Transition\+Strategy}} $\ast$$\ast$ $>$ \mbox{\hyperlink{class_d_b_manager_a834d7a9acb487ec16168826124b887bb}{load\+Transitions\+From\+DB}} () const
+\begin{DoxyCompactList}\small\item\em load\+Transitions\+From\+DB charge les transitions depuis la base de données \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_d_b_manager_a8627dde67d2113d4dc594ca9c0434ef5}{insert\+Config\+Into\+DB}} (const QString \&name, \mbox{\hyperlink{class_grid}{Grid}} $\ast$config, \mbox{\hyperlink{class_automata}{Automata}} $\ast$automata) const
+\begin{DoxyCompactList}\small\item\em insert\+Config\+Into\+DB permet d\textquotesingle{}ajouter des configurations dans la BDD \end{DoxyCompactList}\item 
+std\+::pair$<$ int, \mbox{\hyperlink{class_grid}{Grid}} $\ast$$\ast$ $>$ \mbox{\hyperlink{class_d_b_manager_a53b49bd63b9f14014079753263c02663}{load\+Configs\+From\+DB}} (\mbox{\hyperlink{class_automata}{Automata}} $\ast$automata) const
+\begin{DoxyCompactList}\small\item\em load\+Configs\+From\+DB permet de charger une configuration après avoir sélectionné un automate \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_d_b_manager}{DBManager}} \& \mbox{\hyperlink{class_d_b_manager_ab7f81df2be15616a5a7f3837681b0cb8}{get\+DB}} ()
+\begin{DoxyCompactList}\small\item\em get\+DB récupérer la BDD \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_d_b_manager_a296c48aa44ec54c35cd907e74a177729}{close\+DB}} ()
+\begin{DoxyCompactList}\small\item\em close\+DB ferme la BDD \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_d_b_manager}{DBManager}} class gestionnaire de la BDD (singleton) 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_d_b_manager_ae6d8cb78041c8ff0c5e77609ca512df0}\label{class_d_b_manager_ae6d8cb78041c8ff0c5e77609ca512df0}} 
+\index{DBManager@{DBManager}!````~DBManager@{$\sim$DBManager}}
+\index{````~DBManager@{$\sim$DBManager}!DBManager@{DBManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$DBManager()}{~DBManager()}}
+{\footnotesize\ttfamily DBManager\+::$\sim$\+DBManager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_d_b_manager_a296c48aa44ec54c35cd907e74a177729}\label{class_d_b_manager_a296c48aa44ec54c35cd907e74a177729}} 
+\index{DBManager@{DBManager}!closeDB@{closeDB}}
+\index{closeDB@{closeDB}!DBManager@{DBManager}}
+\doxysubsubsection{\texorpdfstring{closeDB()}{closeDB()}}
+{\footnotesize\ttfamily static void DBManager\+::close\+DB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+close\+DB ferme la BDD 
+
+\mbox{\Hypertarget{class_d_b_manager_a5cc699128c5f6b647d484e02eca54c76}\label{class_d_b_manager_a5cc699128c5f6b647d484e02eca54c76}} 
+\index{DBManager@{DBManager}!DbaddState@{DbaddState}}
+\index{DbaddState@{DbaddState}!DBManager@{DBManager}}
+\doxysubsubsection{\texorpdfstring{DbaddState()}{DbaddState()}}
+{\footnotesize\ttfamily void DBManager\+::\+Dbadd\+State (\begin{DoxyParamCaption}\item[{const QString}]{label,  }\item[{const int}]{id,  }\item[{const QString}]{color }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_d_b_manager_ab7f81df2be15616a5a7f3837681b0cb8}\label{class_d_b_manager_ab7f81df2be15616a5a7f3837681b0cb8}} 
+\index{DBManager@{DBManager}!getDB@{getDB}}
+\index{getDB@{getDB}!DBManager@{DBManager}}
+\doxysubsubsection{\texorpdfstring{getDB()}{getDB()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_d_b_manager}{DBManager}} \& DBManager\+::get\+DB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+get\+DB récupérer la BDD 
+
+\begin{DoxyReturn}{Returns}
+la BDD 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_b_manager_af9918594b63b467885972dea347cc1f0}\label{class_d_b_manager_af9918594b63b467885972dea347cc1f0}} 
+\index{DBManager@{DBManager}!insertAutomataIntoDB@{insertAutomataIntoDB}}
+\index{insertAutomataIntoDB@{insertAutomataIntoDB}!DBManager@{DBManager}}
+\doxysubsubsection{\texorpdfstring{insertAutomataIntoDB()}{insertAutomataIntoDB()}}
+{\footnotesize\ttfamily void DBManager\+::insert\+Automata\+Into\+DB (\begin{DoxyParamCaption}\item[{QString}]{name,  }\item[{int}]{nb\+States,  }\item[{QString}]{transition\+Name,  }\item[{QString}]{neighborhood\+Name,  }\item[{\mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$$\ast$}]{chosen\+States,  }\item[{QString}]{description = {\ttfamily \char`\"{}\char`\"{}},  }\item[{QString}]{author = {\ttfamily \char`\"{}\char`\"{}},  }\item[{int}]{year = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+insert\+Automata\+Into\+DB permet d\textquotesingle{}ajouter des automates dans la BDD 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & nom de l\textquotesingle{}automate \\
+\hline
+{\em nb\+States} & nombre d\textquotesingle{}états disponibles \\
+\hline
+{\em transition\+Name} & nom de la transition souhaitée \\
+\hline
+{\em neighborhood\+Name} & nom du voisinage souhaitée \\
+\hline
+{\em chosen\+States} & types d\textquotesingle{}états sélectionnés \\
+\hline
+{\em description} & description de l\textquotesingle{}automate \\
+\hline
+{\em author} & l\textquotesingle{}auteur de l\textquotesingle{}automate \\
+\hline
+{\em year} & l\textquotesingle{}année de création \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_d_b_manager_a8627dde67d2113d4dc594ca9c0434ef5}\label{class_d_b_manager_a8627dde67d2113d4dc594ca9c0434ef5}} 
+\index{DBManager@{DBManager}!insertConfigIntoDB@{insertConfigIntoDB}}
+\index{insertConfigIntoDB@{insertConfigIntoDB}!DBManager@{DBManager}}
+\doxysubsubsection{\texorpdfstring{insertConfigIntoDB()}{insertConfigIntoDB()}}
+{\footnotesize\ttfamily void DBManager\+::insert\+Config\+Into\+DB (\begin{DoxyParamCaption}\item[{const QString \&}]{name,  }\item[{\mbox{\hyperlink{class_grid}{Grid}} $\ast$}]{config,  }\item[{\mbox{\hyperlink{class_automata}{Automata}} $\ast$}]{automata }\end{DoxyParamCaption}) const}
+
+
+
+insert\+Config\+Into\+DB permet d\textquotesingle{}ajouter des configurations dans la BDD 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & nom donné à la configuration \\
+\hline
+{\em config} & correspond à la configuration créée par l\textquotesingle{}utilisateur \\
+\hline
+{\em automata} & automate auquel la configuration est associée \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_d_b_manager_a360310ad5aa1462f2c6ee3339a80d375}\label{class_d_b_manager_a360310ad5aa1462f2c6ee3339a80d375}} 
+\index{DBManager@{DBManager}!insertNeighborhoodIntoDB@{insertNeighborhoodIntoDB}}
+\index{insertNeighborhoodIntoDB@{insertNeighborhoodIntoDB}!DBManager@{DBManager}}
+\doxysubsubsection{\texorpdfstring{insertNeighborhoodIntoDB()}{insertNeighborhoodIntoDB()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void DBManager\+::insert\+Neighborhood\+Into\+DB (\begin{DoxyParamCaption}\item[{const QString}]{name,  }\item[{const int}]{radius }\end{DoxyParamCaption}) const}
+
+
+
+insert\+Neighborhood\+Into\+DB permet d\textquotesingle{}insérer un voisinage généralisé 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & nom du voisinage \\
+\hline
+{\em radius} & rayon nécessaire au voisinage généralisée \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_d_b_manager_afd58a6a40c69c5c8b653c12c0a58cb9e}\label{class_d_b_manager_afd58a6a40c69c5c8b653c12c0a58cb9e}} 
+\index{DBManager@{DBManager}!insertNeighborhoodIntoDB@{insertNeighborhoodIntoDB}}
+\index{insertNeighborhoodIntoDB@{insertNeighborhoodIntoDB}!DBManager@{DBManager}}
+\doxysubsubsection{\texorpdfstring{insertNeighborhoodIntoDB()}{insertNeighborhoodIntoDB()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void DBManager\+::insert\+Neighborhood\+Into\+DB (\begin{DoxyParamCaption}\item[{const QString}]{name,  }\item[{int}]{nb\+Neighbors,  }\item[{const int $\ast$}]{dx,  }\item[{const int $\ast$}]{dy }\end{DoxyParamCaption}) const}
+
+
+
+insert\+Neighborhood\+Into\+DB permet d\textquotesingle{}insérer un voisinage non généralisé 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & nom du voisinage \\
+\hline
+{\em nb\+Neighbors} & nombre de voisins \\
+\hline
+{\em dx} & abscisse de la cellule \\
+\hline
+{\em dy} & ordonnée de la cellule \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_d_b_manager_af7c9d1d715f2da3448c65824e8097c50}\label{class_d_b_manager_af7c9d1d715f2da3448c65824e8097c50}} 
+\index{DBManager@{DBManager}!loadAutomatasFromDB@{loadAutomatasFromDB}}
+\index{loadAutomatasFromDB@{loadAutomatasFromDB}!DBManager@{DBManager}}
+\doxysubsubsection{\texorpdfstring{loadAutomatasFromDB()}{loadAutomatasFromDB()}}
+{\footnotesize\ttfamily void DBManager\+::load\+Automatas\+From\+DB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+load\+Automatas\+From\+DB permet de charger des automates à partir de la BDD 
+
+\mbox{\Hypertarget{class_d_b_manager_a53b49bd63b9f14014079753263c02663}\label{class_d_b_manager_a53b49bd63b9f14014079753263c02663}} 
+\index{DBManager@{DBManager}!loadConfigsFromDB@{loadConfigsFromDB}}
+\index{loadConfigsFromDB@{loadConfigsFromDB}!DBManager@{DBManager}}
+\doxysubsubsection{\texorpdfstring{loadConfigsFromDB()}{loadConfigsFromDB()}}
+{\footnotesize\ttfamily std\+::pair$<$ int, \mbox{\hyperlink{class_grid}{Grid}} $\ast$$\ast$ $>$ DBManager\+::load\+Configs\+From\+DB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_automata}{Automata}} $\ast$}]{automata }\end{DoxyParamCaption}) const}
+
+
+
+load\+Configs\+From\+DB permet de charger une configuration après avoir sélectionné un automate 
+
+
+\begin{DoxyParams}{Parameters}
+{\em automata} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un couple qui contient le nombre de configurations et la table qui contient l\textquotesingle{}ensemble des configurations 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_b_manager_a66f50c422bb32502ebef406152d86ac4}\label{class_d_b_manager_a66f50c422bb32502ebef406152d86ac4}} 
+\index{DBManager@{DBManager}!loadNeighborhoodsFromDB@{loadNeighborhoodsFromDB}}
+\index{loadNeighborhoodsFromDB@{loadNeighborhoodsFromDB}!DBManager@{DBManager}}
+\doxysubsubsection{\texorpdfstring{loadNeighborhoodsFromDB()}{loadNeighborhoodsFromDB()}}
+{\footnotesize\ttfamily std\+::pair$<$ int, \mbox{\hyperlink{class_neighborhood_strategy}{Neighborhood\+Strategy}} $\ast$$\ast$ $>$ DBManager\+::load\+Neighborhoods\+From\+DB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+load\+Neighborhoods\+From\+DB permet de charger un voisinage dans la BDD 
+
+\begin{DoxyReturn}{Returns}
+un couple avec la dimension du tableau et le tableau 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_b_manager_a688aa13ab6472760e816b6fe0bc5dbad}\label{class_d_b_manager_a688aa13ab6472760e816b6fe0bc5dbad}} 
+\index{DBManager@{DBManager}!loadStatesfromDB@{loadStatesfromDB}}
+\index{loadStatesfromDB@{loadStatesfromDB}!DBManager@{DBManager}}
+\doxysubsubsection{\texorpdfstring{loadStatesfromDB()}{loadStatesfromDB()}}
+{\footnotesize\ttfamily std\+::pair$<$ int, \mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$$\ast$ $>$ DBManager\+::load\+Statesfrom\+DB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+load\+Statesfrom\+DB charge des états depuis la base de données 
+
+\begin{DoxyReturn}{Returns}
+un couple avec la dimension du tableau et le tableau 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_b_manager_a834d7a9acb487ec16168826124b887bb}\label{class_d_b_manager_a834d7a9acb487ec16168826124b887bb}} 
+\index{DBManager@{DBManager}!loadTransitionsFromDB@{loadTransitionsFromDB}}
+\index{loadTransitionsFromDB@{loadTransitionsFromDB}!DBManager@{DBManager}}
+\doxysubsubsection{\texorpdfstring{loadTransitionsFromDB()}{loadTransitionsFromDB()}}
+{\footnotesize\ttfamily std\+::pair$<$ int, \mbox{\hyperlink{class_transition_strategy}{Transition\+Strategy}} $\ast$$\ast$ $>$ DBManager\+::load\+Transitions\+From\+DB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+load\+Transitions\+From\+DB charge les transitions depuis la base de données 
+
+\begin{DoxyReturn}{Returns}
+un couple avec la dimension du tableau et le tableau 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_b_manager_a74745a8f3e2a86921ecb5daa18b8be08}\label{class_d_b_manager_a74745a8f3e2a86921ecb5daa18b8be08}} 
+\index{DBManager@{DBManager}!toColor@{toColor}}
+\index{toColor@{toColor}!DBManager@{DBManager}}
+\doxysubsubsection{\texorpdfstring{toColor()}{toColor()}}
+{\footnotesize\ttfamily QColor DBManager\+::to\+Color (\begin{DoxyParamCaption}\item[{const QString \&}]{col }\end{DoxyParamCaption}) const}
+
+
+
+to\+Color transforme un Qstring en Qcolor pour l\textquotesingle{}appliquer à l\textquotesingle{}interface graphique 
+
+
+\begin{DoxyParams}{Parameters}
+{\em col} & couleur récupérée dans la BDD \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+une couleur de type QColor 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/utils/\mbox{\hyperlink{database_8h}{database.\+h}}\item 
+src/utils/\mbox{\hyperlink{database_8cpp}{database.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,63 @@
+\hypertarget{class_grid_factory}{}\doxysection{Grid\+Factory Class Reference}
+\label{class_grid_factory}\index{GridFactory@{GridFactory}}
+
+
+The \mbox{\hyperlink{class_grid_factory}{Grid\+Factory}} class implémentation du design pattern fabrique pour générer des pavages.  
+
+
+
+
+{\ttfamily \#include $<$grid\+\_\+factory.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_grid_factory_a45a92ce05da9222c92de9c66bd8631a9}{Grid\+Factory}} ()
+\item 
+\mbox{\hyperlink{class_grid}{Grid}} $\ast$ \mbox{\hyperlink{class_grid_factory_a344cf3bf3235de94443f38f56977d703}{generate\+Grid}} (\mbox{\hyperlink{grid__factory_8h_a2323f67766c1d3ce0bbfafaa00c21a78}{Grid\+Type}} type, int width, int height, \mbox{\hyperlink{class_automata}{Automata}} $\ast$automata) const
+\begin{DoxyCompactList}\small\item\em generate\+Grid génère un pavage à utiliser par un simulateur \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_grid_factory}{Grid\+Factory}} class implémentation du design pattern fabrique pour générer des pavages. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_grid_factory_a45a92ce05da9222c92de9c66bd8631a9}\label{class_grid_factory_a45a92ce05da9222c92de9c66bd8631a9}} 
+\index{GridFactory@{GridFactory}!GridFactory@{GridFactory}}
+\index{GridFactory@{GridFactory}!GridFactory@{GridFactory}}
+\doxysubsubsection{\texorpdfstring{GridFactory()}{GridFactory()}}
+{\footnotesize\ttfamily Grid\+Factory\+::\+Grid\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_grid_factory_a344cf3bf3235de94443f38f56977d703}\label{class_grid_factory_a344cf3bf3235de94443f38f56977d703}} 
+\index{GridFactory@{GridFactory}!generateGrid@{generateGrid}}
+\index{generateGrid@{generateGrid}!GridFactory@{GridFactory}}
+\doxysubsubsection{\texorpdfstring{generateGrid()}{generateGrid()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_grid}{Grid}} $\ast$ Grid\+Factory\+::generate\+Grid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{grid__factory_8h_a2323f67766c1d3ce0bbfafaa00c21a78}{Grid\+Type}}}]{type,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{\mbox{\hyperlink{class_automata}{Automata}} $\ast$}]{automata }\end{DoxyParamCaption}) const}
+
+
+
+generate\+Grid génère un pavage à utiliser par un simulateur 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & discrimine les grilles vides et les grilles déterminées aléatoirement \\
+\hline
+{\em width} & largeur de la grille \\
+\hline
+{\em height} & hauteur de la grille \\
+\hline
+{\em automata} & automate utilisant la grille générée \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retourne un pavage 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/utils/\mbox{\hyperlink{grid__factory_8h}{grid\+\_\+factory.\+h}}\item 
+src/utils/\mbox{\hyperlink{grid__factory_8cpp}{grid\+\_\+factory.\+cpp}}\end{DoxyCompactItemize}

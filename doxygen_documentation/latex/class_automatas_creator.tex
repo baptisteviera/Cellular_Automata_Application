@@ -1,0 +1,222 @@
+\hypertarget{class_automatas_creator}{}\doxysection{Automatas\+Creator Class Reference}
+\label{class_automatas_creator}\index{AutomatasCreator@{AutomatasCreator}}
+
+
+Classe \mbox{\hyperlink{class_automatas_creator}{Automatas\+Creator}} permet de créer une pop-\/up pour configurer un automate.  
+
+
+
+
+{\ttfamily \#include $<$automatas\+\_\+browser.\+h$>$}
+
+Inheritance diagram for Automatas\+Creator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_automatas_creator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_automatas_creator_aae9166fca5fd197521b64dededfc896f}{receive\+Transition}} (\mbox{\hyperlink{class_transition_strategy}{Transition\+Strategy}} $\ast$t)
+\begin{DoxyCompactList}\small\item\em receive\+Transition permet de modifier la valeur des paramètre de la transition \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_automatas_creator_acfc3494226664f71d943cf2b72952410}{receive\+Neighborhood}} (\mbox{\hyperlink{class_neighborhood_strategy}{Neighborhood\+Strategy}} $\ast$n)
+\begin{DoxyCompactList}\small\item\em receive\+Neighborhood permet de modifier la valeur des paramètre du voisinage \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_automatas_creator_a0c1c21bf20a97fc3752295edd44abce0}{start\+Creation}} ()
+\begin{DoxyCompactList}\small\item\em start\+Creation permet de lancer la méthode create\+Automaton \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_automatas_creator_a88cd7ccee587c4c2e11cee3ec9ee99f0}{set\+Chosen\+Name}} (const QString \&s)
+\begin{DoxyCompactList}\small\item\em set\+Chosen\+Name permet de définir le nom de l\textquotesingle{}automate \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_automatas_creator_a406a0bc0073d0fc81014c779dcd05cd8}{set\+Chosen\+State}} (int id, \mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$c)
+\begin{DoxyCompactList}\small\item\em set\+Chosen\+State permet de choisir l\textquotesingle{}état \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_automatas_creator_a68f2c482ebe4dd97dab32af74bb1b8c1}{set\+Chosen\+Author}} (const QString \&s)
+\begin{DoxyCompactList}\small\item\em set\+Chosen\+Author permet de choisir un auteur \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_automatas_creator_a765b6df68f8f0acf29e6e616560209f1}{set\+Chosen\+Year}} (int y)
+\begin{DoxyCompactList}\small\item\em set\+Chosen\+Year permet de choisir une année \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_automatas_creator_a269981b8bfe8ee2631b720adda170e84}{set\+Chosen\+Description}} (const QString \&d)
+\begin{DoxyCompactList}\small\item\em set\+Chosen\+Description permet de choisir une description \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_automatas_creator_a79c1f3c330c452e7bc98ef88701b9b1c}{change\+Nb\+States}} (int nb)
+\begin{DoxyCompactList}\small\item\em change\+Nb\+States permet de changer le nombre d\textquotesingle{}état \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_automatas_creator_a6db6277042e632b5d125a0cae1dab9ca}{allow\+Editing}} (int id)
+\begin{DoxyCompactList}\small\item\em allow\+Editing permet l\textquotesingle{}édition d\textquotesingle{}un champ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_automatas_creator_a709ce53d7efd9479cc05eff21d122e35}{Automatas\+Creator}} (QWidget $\ast$parent)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_automatas_creator}{Automatas\+Creator}} constructeur de la pop-\/up de création d\textquotesingle{}automates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe \mbox{\hyperlink{class_automatas_creator}{Automatas\+Creator}} permet de créer une pop-\/up pour configurer un automate. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_automatas_creator_a709ce53d7efd9479cc05eff21d122e35}\label{class_automatas_creator_a709ce53d7efd9479cc05eff21d122e35}} 
+\index{AutomatasCreator@{AutomatasCreator}!AutomatasCreator@{AutomatasCreator}}
+\index{AutomatasCreator@{AutomatasCreator}!AutomatasCreator@{AutomatasCreator}}
+\doxysubsubsection{\texorpdfstring{AutomatasCreator()}{AutomatasCreator()}}
+{\footnotesize\ttfamily Automatas\+Creator\+::\+Automatas\+Creator (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_automatas_creator}{Automatas\+Creator}} constructeur de la pop-\/up de création d\textquotesingle{}automates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & widget à part duquel est crée \mbox{\hyperlink{class_automatas_creator}{Automatas\+Creator}} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_automatas_creator_a6db6277042e632b5d125a0cae1dab9ca}\label{class_automatas_creator_a6db6277042e632b5d125a0cae1dab9ca}} 
+\index{AutomatasCreator@{AutomatasCreator}!allowEditing@{allowEditing}}
+\index{allowEditing@{allowEditing}!AutomatasCreator@{AutomatasCreator}}
+\doxysubsubsection{\texorpdfstring{allowEditing}{allowEditing}}
+{\footnotesize\ttfamily void Automatas\+Creator\+::allow\+Editing (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+allow\+Editing permet l\textquotesingle{}édition d\textquotesingle{}un champ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_automatas_creator_a79c1f3c330c452e7bc98ef88701b9b1c}\label{class_automatas_creator_a79c1f3c330c452e7bc98ef88701b9b1c}} 
+\index{AutomatasCreator@{AutomatasCreator}!changeNbStates@{changeNbStates}}
+\index{changeNbStates@{changeNbStates}!AutomatasCreator@{AutomatasCreator}}
+\doxysubsubsection{\texorpdfstring{changeNbStates}{changeNbStates}}
+{\footnotesize\ttfamily void Automatas\+Creator\+::change\+Nb\+States (\begin{DoxyParamCaption}\item[{int}]{nb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+change\+Nb\+States permet de changer le nombre d\textquotesingle{}état 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb} & nombre d\textquotesingle{}état \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_automatas_creator_acfc3494226664f71d943cf2b72952410}\label{class_automatas_creator_acfc3494226664f71d943cf2b72952410}} 
+\index{AutomatasCreator@{AutomatasCreator}!receiveNeighborhood@{receiveNeighborhood}}
+\index{receiveNeighborhood@{receiveNeighborhood}!AutomatasCreator@{AutomatasCreator}}
+\doxysubsubsection{\texorpdfstring{receiveNeighborhood}{receiveNeighborhood}}
+{\footnotesize\ttfamily void Automatas\+Creator\+::receive\+Neighborhood (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_neighborhood_strategy}{Neighborhood\+Strategy}} $\ast$}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+receive\+Neighborhood permet de modifier la valeur des paramètre du voisinage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & pointeur vers la voisinage \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_automatas_creator_aae9166fca5fd197521b64dededfc896f}\label{class_automatas_creator_aae9166fca5fd197521b64dededfc896f}} 
+\index{AutomatasCreator@{AutomatasCreator}!receiveTransition@{receiveTransition}}
+\index{receiveTransition@{receiveTransition}!AutomatasCreator@{AutomatasCreator}}
+\doxysubsubsection{\texorpdfstring{receiveTransition}{receiveTransition}}
+{\footnotesize\ttfamily void Automatas\+Creator\+::receive\+Transition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_transition_strategy}{Transition\+Strategy}} $\ast$}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+receive\+Transition permet de modifier la valeur des paramètre de la transition 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & pointeur vers la transition \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_automatas_creator_a68f2c482ebe4dd97dab32af74bb1b8c1}\label{class_automatas_creator_a68f2c482ebe4dd97dab32af74bb1b8c1}} 
+\index{AutomatasCreator@{AutomatasCreator}!setChosenAuthor@{setChosenAuthor}}
+\index{setChosenAuthor@{setChosenAuthor}!AutomatasCreator@{AutomatasCreator}}
+\doxysubsubsection{\texorpdfstring{setChosenAuthor}{setChosenAuthor}}
+{\footnotesize\ttfamily void Automatas\+Creator\+::set\+Chosen\+Author (\begin{DoxyParamCaption}\item[{const QString \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+set\+Chosen\+Author permet de choisir un auteur 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & nom de l\textquotesingle{}auteur \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_automatas_creator_a269981b8bfe8ee2631b720adda170e84}\label{class_automatas_creator_a269981b8bfe8ee2631b720adda170e84}} 
+\index{AutomatasCreator@{AutomatasCreator}!setChosenDescription@{setChosenDescription}}
+\index{setChosenDescription@{setChosenDescription}!AutomatasCreator@{AutomatasCreator}}
+\doxysubsubsection{\texorpdfstring{setChosenDescription}{setChosenDescription}}
+{\footnotesize\ttfamily void Automatas\+Creator\+::set\+Chosen\+Description (\begin{DoxyParamCaption}\item[{const QString \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+set\+Chosen\+Description permet de choisir une description 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_automatas_creator_a88cd7ccee587c4c2e11cee3ec9ee99f0}\label{class_automatas_creator_a88cd7ccee587c4c2e11cee3ec9ee99f0}} 
+\index{AutomatasCreator@{AutomatasCreator}!setChosenName@{setChosenName}}
+\index{setChosenName@{setChosenName}!AutomatasCreator@{AutomatasCreator}}
+\doxysubsubsection{\texorpdfstring{setChosenName}{setChosenName}}
+{\footnotesize\ttfamily void Automatas\+Creator\+::set\+Chosen\+Name (\begin{DoxyParamCaption}\item[{const QString \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+set\+Chosen\+Name permet de définir le nom de l\textquotesingle{}automate 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & nom de l\textquotesingle{}automate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_automatas_creator_a406a0bc0073d0fc81014c779dcd05cd8}\label{class_automatas_creator_a406a0bc0073d0fc81014c779dcd05cd8}} 
+\index{AutomatasCreator@{AutomatasCreator}!setChosenState@{setChosenState}}
+\index{setChosenState@{setChosenState}!AutomatasCreator@{AutomatasCreator}}
+\doxysubsubsection{\texorpdfstring{setChosenState}{setChosenState}}
+{\footnotesize\ttfamily void Automatas\+Creator\+::set\+Chosen\+State (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+set\+Chosen\+State permet de choisir l\textquotesingle{}état 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & numéro de l\textquotesingle{}état \\
+\hline
+{\em c} & état de cellule \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_automatas_creator_a765b6df68f8f0acf29e6e616560209f1}\label{class_automatas_creator_a765b6df68f8f0acf29e6e616560209f1}} 
+\index{AutomatasCreator@{AutomatasCreator}!setChosenYear@{setChosenYear}}
+\index{setChosenYear@{setChosenYear}!AutomatasCreator@{AutomatasCreator}}
+\doxysubsubsection{\texorpdfstring{setChosenYear}{setChosenYear}}
+{\footnotesize\ttfamily void Automatas\+Creator\+::set\+Chosen\+Year (\begin{DoxyParamCaption}\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+set\+Chosen\+Year permet de choisir une année 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & année \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_automatas_creator_a0c1c21bf20a97fc3752295edd44abce0}\label{class_automatas_creator_a0c1c21bf20a97fc3752295edd44abce0}} 
+\index{AutomatasCreator@{AutomatasCreator}!startCreation@{startCreation}}
+\index{startCreation@{startCreation}!AutomatasCreator@{AutomatasCreator}}
+\doxysubsubsection{\texorpdfstring{startCreation}{startCreation}}
+{\footnotesize\ttfamily void Automatas\+Creator\+::start\+Creation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+start\+Creation permet de lancer la méthode create\+Automaton 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/components/subwindows/\mbox{\hyperlink{automatas__browser_8h}{automatas\+\_\+browser.\+h}}\item 
+src/components/subwindows/\mbox{\hyperlink{automatas__browser_8cpp}{automatas\+\_\+browser.\+cpp}}\end{DoxyCompactItemize}

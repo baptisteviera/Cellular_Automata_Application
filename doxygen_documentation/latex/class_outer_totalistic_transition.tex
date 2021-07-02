@@ -1,0 +1,146 @@
+\hypertarget{class_outer_totalistic_transition}{}\doxysection{Outer\+Totalistic\+Transition Class Reference}
+\label{class_outer_totalistic_transition}\index{OuterTotalisticTransition@{OuterTotalisticTransition}}
+
+
+{\ttfamily \#include $<$transition\+\_\+strategy.\+h$>$}
+
+Inheritance diagram for Outer\+Totalistic\+Transition\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.871795cm]{class_outer_totalistic_transition}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_outer_totalistic_transition_acfe312c220a6789ab17f40a56610da25}{is\+Destination}} (\mbox{\hyperlink{class_cell}{Cell}} $\ast$a, \mbox{\hyperlink{class_cell}{Cell}} $\ast$b) const
+\begin{DoxyCompactList}\small\item\em is\+Destination Verifier si c est la destination de la fourmi dans neighbor \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_outer_totalistic_transition_af1bf09d1c919e7d687e0c83d6aeced7c}{is\+Under}} (\mbox{\hyperlink{class_cell}{Cell}} $\ast$a, \mbox{\hyperlink{class_cell}{Cell}} $\ast$b) const
+\begin{DoxyCompactList}\small\item\em is\+Under Verifier si a est au-\/dessus de b ou non \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_outer_totalistic_transition_ae45c49f8c0a2a33ab67237ce5f75bc03}{is\+Left}} (\mbox{\hyperlink{class_cell}{Cell}} $\ast$a, \mbox{\hyperlink{class_cell}{Cell}} $\ast$b) const
+\begin{DoxyCompactList}\small\item\em is\+Left Verifier si a est a gauche de b ou non \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_outer_totalistic_transition_a4ad3526899f75091d7619ca0ac4db55f}{Outer\+Totalistic\+Transition}} (std\+::string name=\char`\"{}Outer\+Totalistic Transition\char`\"{})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_outer_totalistic_transition}{Outer\+Totalistic\+Transition}} constructeur de \mbox{\hyperlink{class_outer_totalistic_transition}{Outer\+Totalistic\+Transition}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_cell}{Cell}} $\ast$ \mbox{\hyperlink{class_outer_totalistic_transition_a0d6132f55d5ecd1a57509fcc2cd998ce}{calc\+Next\+Cell}} (\mbox{\hyperlink{class_cell}{Cell}} $\ast$c, \mbox{\hyperlink{class_cell}{Cell}} $\ast$$\ast$neighbors, int neighbor\+Size, \mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$$\ast$available\+States, int nb\+States) const =0
+\begin{DoxyCompactList}\small\item\em calc\+Next\+Cell méthode virtuelle pure que l\textquotesingle{}on définit dans les classes filles qui correspondent aux différents types de transitions \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_outer_totalistic_transition_a4ad3526899f75091d7619ca0ac4db55f}\label{class_outer_totalistic_transition_a4ad3526899f75091d7619ca0ac4db55f}} 
+\index{OuterTotalisticTransition@{OuterTotalisticTransition}!OuterTotalisticTransition@{OuterTotalisticTransition}}
+\index{OuterTotalisticTransition@{OuterTotalisticTransition}!OuterTotalisticTransition@{OuterTotalisticTransition}}
+\doxysubsubsection{\texorpdfstring{OuterTotalisticTransition()}{OuterTotalisticTransition()}}
+{\footnotesize\ttfamily Outer\+Totalistic\+Transition\+::\+Outer\+Totalistic\+Transition (\begin{DoxyParamCaption}\item[{std\+::string}]{name = {\ttfamily \char`\"{}OuterTotalistic~Transition\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_outer_totalistic_transition}{Outer\+Totalistic\+Transition}} constructeur de \mbox{\hyperlink{class_outer_totalistic_transition}{Outer\+Totalistic\+Transition}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & nom spécifique de la \mbox{\hyperlink{class_outer_totalistic_transition}{Outer\+Totalistic\+Transition}} si non spécifié par défaut égale à \char`\"{}\+Outer\+Totalistic Transition\char`\"{} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_outer_totalistic_transition_a0d6132f55d5ecd1a57509fcc2cd998ce}\label{class_outer_totalistic_transition_a0d6132f55d5ecd1a57509fcc2cd998ce}} 
+\index{OuterTotalisticTransition@{OuterTotalisticTransition}!calcNextCell@{calcNextCell}}
+\index{calcNextCell@{calcNextCell}!OuterTotalisticTransition@{OuterTotalisticTransition}}
+\doxysubsubsection{\texorpdfstring{calcNextCell()}{calcNextCell()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_cell}{Cell}}$\ast$ Outer\+Totalistic\+Transition\+::calc\+Next\+Cell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cell}{Cell}} $\ast$}]{c,  }\item[{\mbox{\hyperlink{class_cell}{Cell}} $\ast$$\ast$}]{neighbors,  }\item[{int}]{neighbor\+Size,  }\item[{\mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$$\ast$}]{available\+States,  }\item[{int}]{nb\+States }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+calc\+Next\+Cell méthode virtuelle pure que l\textquotesingle{}on définit dans les classes filles qui correspondent aux différents types de transitions 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & cellule étudiée que l\textquotesingle{}on modifiera ou non \\
+\hline
+{\em neighbors} & tableau de voisin de la cellule \\
+\hline
+{\em neighbor\+Size} & nombre de voisins de la cellule \\
+\hline
+{\em available\+States} & tableau d\textquotesingle{}états disponibles \\
+\hline
+{\em nb\+States} & nombre d\textquotesingle{}états possibles \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+une nouvelle cellule (identique à c ou différente) suivant les règles de transition 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_totalistic_transition_a2abffda1e16ade5c9cf67d748669b478}{Totalistic\+Transition}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_l_a_transition_ab264a9fef2fe79f88ba5cfc4b19d1031}{LATransition}}, \mbox{\hyperlink{class_l_l_transition_a6360195a36a9803404f084108ba26d65}{LLTransition}}, \mbox{\hyperlink{class_d_g_transition_af04200dd83ec613199af24d910176d7c}{DGTransition}}, \mbox{\hyperlink{class_b_b_transition_a7e71e3fba8c15a42eb6e0cd46e885182}{BBTransition}}, and \mbox{\hyperlink{class_g_o_l_transition_a0b21f8eca27a4391dbc4293d77480820}{GOLTransition}}.
+
+\mbox{\Hypertarget{class_outer_totalistic_transition_acfe312c220a6789ab17f40a56610da25}\label{class_outer_totalistic_transition_acfe312c220a6789ab17f40a56610da25}} 
+\index{OuterTotalisticTransition@{OuterTotalisticTransition}!isDestination@{isDestination}}
+\index{isDestination@{isDestination}!OuterTotalisticTransition@{OuterTotalisticTransition}}
+\doxysubsubsection{\texorpdfstring{isDestination()}{isDestination()}}
+{\footnotesize\ttfamily bool Outer\+Totalistic\+Transition\+::is\+Destination (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cell}{Cell}} $\ast$}]{a,  }\item[{\mbox{\hyperlink{class_cell}{Cell}} $\ast$}]{b }\end{DoxyParamCaption}) const}
+
+
+
+is\+Destination Verifier si c est la destination de la fourmi dans neighbor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & une cellule quelconque \\
+\hline
+{\em b} & une cellule quelconque \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True si c est la destination de la fourmi dans neighbor et False si ce n\textquotesingle{}est pas le cas 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_outer_totalistic_transition_ae45c49f8c0a2a33ab67237ce5f75bc03}\label{class_outer_totalistic_transition_ae45c49f8c0a2a33ab67237ce5f75bc03}} 
+\index{OuterTotalisticTransition@{OuterTotalisticTransition}!isLeft@{isLeft}}
+\index{isLeft@{isLeft}!OuterTotalisticTransition@{OuterTotalisticTransition}}
+\doxysubsubsection{\texorpdfstring{isLeft()}{isLeft()}}
+{\footnotesize\ttfamily bool Outer\+Totalistic\+Transition\+::is\+Left (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cell}{Cell}} $\ast$}]{a,  }\item[{\mbox{\hyperlink{class_cell}{Cell}} $\ast$}]{b }\end{DoxyParamCaption}) const}
+
+
+
+is\+Left Verifier si a est a gauche de b ou non 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & une cellule quelconque \\
+\hline
+{\em b} & une cellule quelconque \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True si a est à gauche de b et False si a n\textquotesingle{}est pas à a gauche de b 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_outer_totalistic_transition_af1bf09d1c919e7d687e0c83d6aeced7c}\label{class_outer_totalistic_transition_af1bf09d1c919e7d687e0c83d6aeced7c}} 
+\index{OuterTotalisticTransition@{OuterTotalisticTransition}!isUnder@{isUnder}}
+\index{isUnder@{isUnder}!OuterTotalisticTransition@{OuterTotalisticTransition}}
+\doxysubsubsection{\texorpdfstring{isUnder()}{isUnder()}}
+{\footnotesize\ttfamily bool Outer\+Totalistic\+Transition\+::is\+Under (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cell}{Cell}} $\ast$}]{a,  }\item[{\mbox{\hyperlink{class_cell}{Cell}} $\ast$}]{b }\end{DoxyParamCaption}) const}
+
+
+
+is\+Under Verifier si a est au-\/dessus de b ou non 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & une cellule quelconque \\
+\hline
+{\em b} & une cellule quelconque \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True si a au-\/dessus de b et False si a non au-\/dessus de b 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/utils/\mbox{\hyperlink{transition__strategy_8h}{transition\+\_\+strategy.\+h}}\item 
+src/utils/\mbox{\hyperlink{transition__strategy_8cpp}{transition\+\_\+strategy.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,111 @@
+\hypertarget{class_neighborhood_strategy}{}\doxysection{Neighborhood\+Strategy Class Reference}
+\label{class_neighborhood_strategy}\index{NeighborhoodStrategy@{NeighborhoodStrategy}}
+
+
+\mbox{\hyperlink{class_neighborhood_strategy}{Neighborhood\+Strategy}} classe abstraite permettant de déléguer les différents types de voisinages.  
+
+
+
+
+{\ttfamily \#include $<$neighborhood\+\_\+strategy.\+h$>$}
+
+Inheritance diagram for Neighborhood\+Strategy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.918033cm]{class_neighborhood_strategy}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_neighborhood_strategy_a1c692fd3ff3850ab3be01c494c84ce29}{Neighborhood\+Strategy}} (std\+::string na)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_neighborhood_strategy}{Neighborhood\+Strategy}} Constructeur de la classe \mbox{\hyperlink{class_neighborhood_strategy}{Neighborhood\+Strategy}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_cell}{Cell}} $\ast$$\ast$ \mbox{\hyperlink{class_neighborhood_strategy_ae3464824c3fba8d21fbfa99121217067}{get\+Neighbors}} (\mbox{\hyperlink{class_cell}{Cell}} $\ast$c, \mbox{\hyperlink{class_grid}{Grid}} $\ast$g)=0
+\begin{DoxyCompactList}\small\item\em get\+Neighbors méthode virtuelle pure dont le comportement est définies dans les classes filles \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_neighborhood_strategy_ad000dc797f880edbc1082ebace8e0220}{get\+Nb\+Neighbors}} () const =0
+\begin{DoxyCompactList}\small\item\em get\+Nb\+Neighbors méthode virtuelle pure renvoyant le nombre de voisins \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_neighborhood_strategy_adaacdb3d3e108e66961e60776a7e0508}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em get\+Name méthode renvoyant le nom du voisinage \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_neighborhood_strategy}{Neighborhood\+Strategy}} classe abstraite permettant de déléguer les différents types de voisinages. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_neighborhood_strategy_a1c692fd3ff3850ab3be01c494c84ce29}\label{class_neighborhood_strategy_a1c692fd3ff3850ab3be01c494c84ce29}} 
+\index{NeighborhoodStrategy@{NeighborhoodStrategy}!NeighborhoodStrategy@{NeighborhoodStrategy}}
+\index{NeighborhoodStrategy@{NeighborhoodStrategy}!NeighborhoodStrategy@{NeighborhoodStrategy}}
+\doxysubsubsection{\texorpdfstring{NeighborhoodStrategy()}{NeighborhoodStrategy()}}
+{\footnotesize\ttfamily Neighborhood\+Strategy\+::\+Neighborhood\+Strategy (\begin{DoxyParamCaption}\item[{std\+::string}]{na }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_neighborhood_strategy}{Neighborhood\+Strategy}} Constructeur de la classe \mbox{\hyperlink{class_neighborhood_strategy}{Neighborhood\+Strategy}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em na} & nom donné au voisinage \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_neighborhood_strategy_adaacdb3d3e108e66961e60776a7e0508}\label{class_neighborhood_strategy_adaacdb3d3e108e66961e60776a7e0508}} 
+\index{NeighborhoodStrategy@{NeighborhoodStrategy}!getName@{getName}}
+\index{getName@{getName}!NeighborhoodStrategy@{NeighborhoodStrategy}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Neighborhood\+Strategy\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+Name méthode renvoyant le nom du voisinage 
+
+\begin{DoxyReturn}{Returns}
+string nom du voisinage 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_neighborhood_strategy_ad000dc797f880edbc1082ebace8e0220}\label{class_neighborhood_strategy_ad000dc797f880edbc1082ebace8e0220}} 
+\index{NeighborhoodStrategy@{NeighborhoodStrategy}!getNbNeighbors@{getNbNeighbors}}
+\index{getNbNeighbors@{getNbNeighbors}!NeighborhoodStrategy@{NeighborhoodStrategy}}
+\doxysubsubsection{\texorpdfstring{getNbNeighbors()}{getNbNeighbors()}}
+{\footnotesize\ttfamily virtual int Neighborhood\+Strategy\+::get\+Nb\+Neighbors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+get\+Nb\+Neighbors méthode virtuelle pure renvoyant le nombre de voisins 
+
+\begin{DoxyReturn}{Returns}
+int le nombre de voisins 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_arbitrary_neighborhood_ae45def3308dff3148be1d44562fd7d8d}{Arbitrary\+Neighborhood}}, \mbox{\hyperlink{class_moore_neighborhood_generalized_af46ec570d8a0ae8835d6457cfb4b3911}{Moore\+Neighborhood\+Generalized}}, \mbox{\hyperlink{class_moore_neighborhood_a9e0090bba4007aba6e54f08c1070b9fa}{Moore\+Neighborhood}}, \mbox{\hyperlink{class_von_neumann_neighborhood_generalized_af1c246c88066ab2d47495f0b4d5c30c0}{Von\+Neumann\+Neighborhood\+Generalized}}, and \mbox{\hyperlink{class_von_neumann_neighborhood_ad386fa665aafb1df269e79da2cf71668}{Von\+Neumann\+Neighborhood}}.
+
+\mbox{\Hypertarget{class_neighborhood_strategy_ae3464824c3fba8d21fbfa99121217067}\label{class_neighborhood_strategy_ae3464824c3fba8d21fbfa99121217067}} 
+\index{NeighborhoodStrategy@{NeighborhoodStrategy}!getNeighbors@{getNeighbors}}
+\index{getNeighbors@{getNeighbors}!NeighborhoodStrategy@{NeighborhoodStrategy}}
+\doxysubsubsection{\texorpdfstring{getNeighbors()}{getNeighbors()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_cell}{Cell}}$\ast$$\ast$ Neighborhood\+Strategy\+::get\+Neighbors (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cell}{Cell}} $\ast$}]{c,  }\item[{\mbox{\hyperlink{class_grid}{Grid}} $\ast$}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+get\+Neighbors méthode virtuelle pure dont le comportement est définies dans les classes filles 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & cellule dont on souhaite connaître les voisins \\
+\hline
+{\em g} & grille sur laquelle étudier les voisins \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Cell$\ast$$\ast$ tableau de pointeurs des cellules voisines 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_arbitrary_neighborhood_a2ccfc2b412ae669893acf82e31472dc5}{Arbitrary\+Neighborhood}}, \mbox{\hyperlink{class_moore_neighborhood_generalized_aa7ce4a4ba8b3a69b5cb3f4fd5f1fb43a}{Moore\+Neighborhood\+Generalized}}, \mbox{\hyperlink{class_moore_neighborhood_a85a3f4a32f347c28f0d7082c754a37cb}{Moore\+Neighborhood}}, \mbox{\hyperlink{class_von_neumann_neighborhood_generalized_afb435d4271b5d6a522edbca31448f38c}{Von\+Neumann\+Neighborhood\+Generalized}}, and \mbox{\hyperlink{class_von_neumann_neighborhood_a410df20fd9a4fa7e040d29f093b67185}{Von\+Neumann\+Neighborhood}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/utils/\mbox{\hyperlink{neighborhood__strategy_8h}{neighborhood\+\_\+strategy.\+h}}\end{DoxyCompactItemize}

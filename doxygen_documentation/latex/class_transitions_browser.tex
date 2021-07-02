@@ -1,0 +1,135 @@
+\hypertarget{class_transitions_browser}{}\doxysection{Transitions\+Browser Class Reference}
+\label{class_transitions_browser}\index{TransitionsBrowser@{TransitionsBrowser}}
+
+
+{\ttfamily \#include $<$transitions\+\_\+browser.\+h$>$}
+
+Inheritance diagram for Transitions\+Browser\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_transitions_browser}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_transitions_browser_a94df51f376f3e3648eba79782d99101b}{choose\+Transition}} ()
+\begin{DoxyCompactList}\small\item\em choose\+Transition fonction qui appelle transition\+Changed pour appliquer le changement \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_transitions_browser_a7443affea77e930d5e12d3db23247210}{transitions\+Cbb\+Changed}} (int id)
+\begin{DoxyCompactList}\small\item\em transitions\+Cbb\+Changed permet de fixer l\textquotesingle{}attribut selected\+Transition à partir d\textquotesingle{}un élément de la classe transitions \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_transitions_browser_adb006a2939fe4f8baba6ce5a50a39931}{transition\+Changed}} (\mbox{\hyperlink{class_transition_strategy}{Transition\+Strategy}} $\ast$transition)
+\begin{DoxyCompactList}\small\item\em transition\+Changed fonction qui est appelé dans choose\+Transition \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_transitions_browser_a014c2d063ad78948bb042cbdbab729c0}{Transitions\+Browser}} (QWidget $\ast$parent)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_transitions_browser}{Transitions\+Browser}} constructeur. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_transitions_browser_a8f5acdb3767181746590cb6b631fbcca}{$\sim$\+Transitions\+Browser}} ()
+\item 
+void \mbox{\hyperlink{class_transitions_browser_a8eb8642e956af67ebe701d11dacbc2d4}{set\+Transitions}} (int nb\+Transitions, \mbox{\hyperlink{class_transition_strategy}{Transition\+Strategy}} $\ast$$\ast$transitions)
+\begin{DoxyCompactList}\small\item\em set\+Transitions setteur qui permet de fixer le tableau de transition \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_transitions_browser_abe4677d74e11332367c4566c1243eec2}{open\+Transition\+Browser}} ()
+\begin{DoxyCompactList}\small\item\em open\+Transition\+Browser permet de charger les transitions de la BDD. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_transitions_browser_a014c2d063ad78948bb042cbdbab729c0}\label{class_transitions_browser_a014c2d063ad78948bb042cbdbab729c0}} 
+\index{TransitionsBrowser@{TransitionsBrowser}!TransitionsBrowser@{TransitionsBrowser}}
+\index{TransitionsBrowser@{TransitionsBrowser}!TransitionsBrowser@{TransitionsBrowser}}
+\doxysubsubsection{\texorpdfstring{TransitionsBrowser()}{TransitionsBrowser()}}
+{\footnotesize\ttfamily Transitions\+Browser\+::\+Transitions\+Browser (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_transitions_browser}{Transitions\+Browser}} constructeur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_transitions_browser_a8f5acdb3767181746590cb6b631fbcca}\label{class_transitions_browser_a8f5acdb3767181746590cb6b631fbcca}} 
+\index{TransitionsBrowser@{TransitionsBrowser}!````~TransitionsBrowser@{$\sim$TransitionsBrowser}}
+\index{````~TransitionsBrowser@{$\sim$TransitionsBrowser}!TransitionsBrowser@{TransitionsBrowser}}
+\doxysubsubsection{\texorpdfstring{$\sim$TransitionsBrowser()}{~TransitionsBrowser()}}
+{\footnotesize\ttfamily Transitions\+Browser\+::$\sim$\+Transitions\+Browser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_transitions_browser_a94df51f376f3e3648eba79782d99101b}\label{class_transitions_browser_a94df51f376f3e3648eba79782d99101b}} 
+\index{TransitionsBrowser@{TransitionsBrowser}!chooseTransition@{chooseTransition}}
+\index{chooseTransition@{chooseTransition}!TransitionsBrowser@{TransitionsBrowser}}
+\doxysubsubsection{\texorpdfstring{chooseTransition}{chooseTransition}}
+{\footnotesize\ttfamily void Transitions\+Browser\+::choose\+Transition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+choose\+Transition fonction qui appelle transition\+Changed pour appliquer le changement 
+
+\mbox{\Hypertarget{class_transitions_browser_abe4677d74e11332367c4566c1243eec2}\label{class_transitions_browser_abe4677d74e11332367c4566c1243eec2}} 
+\index{TransitionsBrowser@{TransitionsBrowser}!openTransitionBrowser@{openTransitionBrowser}}
+\index{openTransitionBrowser@{openTransitionBrowser}!TransitionsBrowser@{TransitionsBrowser}}
+\doxysubsubsection{\texorpdfstring{openTransitionBrowser()}{openTransitionBrowser()}}
+{\footnotesize\ttfamily void Transitions\+Browser\+::open\+Transition\+Browser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+open\+Transition\+Browser permet de charger les transitions de la BDD. 
+
+\mbox{\Hypertarget{class_transitions_browser_a8eb8642e956af67ebe701d11dacbc2d4}\label{class_transitions_browser_a8eb8642e956af67ebe701d11dacbc2d4}} 
+\index{TransitionsBrowser@{TransitionsBrowser}!setTransitions@{setTransitions}}
+\index{setTransitions@{setTransitions}!TransitionsBrowser@{TransitionsBrowser}}
+\doxysubsubsection{\texorpdfstring{setTransitions()}{setTransitions()}}
+{\footnotesize\ttfamily void Transitions\+Browser\+::set\+Transitions (\begin{DoxyParamCaption}\item[{int}]{nb\+Transitions,  }\item[{\mbox{\hyperlink{class_transition_strategy}{Transition\+Strategy}} $\ast$$\ast$}]{transitions }\end{DoxyParamCaption})}
+
+
+
+set\+Transitions setteur qui permet de fixer le tableau de transition 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb\+Transitions} & le nombre de transitions \\
+\hline
+{\em transitions} & tableau de transition \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_transitions_browser_adb006a2939fe4f8baba6ce5a50a39931}\label{class_transitions_browser_adb006a2939fe4f8baba6ce5a50a39931}} 
+\index{TransitionsBrowser@{TransitionsBrowser}!transitionChanged@{transitionChanged}}
+\index{transitionChanged@{transitionChanged}!TransitionsBrowser@{TransitionsBrowser}}
+\doxysubsubsection{\texorpdfstring{transitionChanged}{transitionChanged}}
+{\footnotesize\ttfamily void Transitions\+Browser\+::transition\+Changed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_transition_strategy}{Transition\+Strategy}} $\ast$}]{transition }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+transition\+Changed fonction qui est appelé dans choose\+Transition 
+
+
+\begin{DoxyParams}{Parameters}
+{\em transition} & la transition sélectionnée \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_transitions_browser_a7443affea77e930d5e12d3db23247210}\label{class_transitions_browser_a7443affea77e930d5e12d3db23247210}} 
+\index{TransitionsBrowser@{TransitionsBrowser}!transitionsCbbChanged@{transitionsCbbChanged}}
+\index{transitionsCbbChanged@{transitionsCbbChanged}!TransitionsBrowser@{TransitionsBrowser}}
+\doxysubsubsection{\texorpdfstring{transitionsCbbChanged}{transitionsCbbChanged}}
+{\footnotesize\ttfamily void Transitions\+Browser\+::transitions\+Cbb\+Changed (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+transitions\+Cbb\+Changed permet de fixer l\textquotesingle{}attribut selected\+Transition à partir d\textquotesingle{}un élément de la classe transitions 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & identifiant de d\textquotesingle{}un élément du tableau transition \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/components/subwindows/\mbox{\hyperlink{transitions__browser_8h}{transitions\+\_\+browser.\+h}}\item 
+src/components/subwindows/\mbox{\hyperlink{transitions__browser_8cpp}{transitions\+\_\+browser.\+cpp}}\end{DoxyCompactItemize}

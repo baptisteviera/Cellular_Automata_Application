@@ -1,0 +1,104 @@
+\hypertarget{class_moore_neighborhood}{}\doxysection{Moore\+Neighborhood Class Reference}
+\label{class_moore_neighborhood}\index{MooreNeighborhood@{MooreNeighborhood}}
+
+
+Voisinage de Moore héritant de la stratégie de voisinage.  
+
+
+
+
+{\ttfamily \#include $<$neighborhood\+\_\+strategy.\+h$>$}
+
+Inheritance diagram for Moore\+Neighborhood\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_moore_neighborhood}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_moore_neighborhood_aad18bdd038cea57c08997b24b7be9cc6}{Moore\+Neighborhood}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_moore_neighborhood}{Moore\+Neighborhood}} Constructeur du voisinage de Moore. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_moore_neighborhood_a19c1eb2e6a5e454b029150c2e5f8d65f}{$\sim$\+Moore\+Neighborhood}} ()
+\begin{DoxyCompactList}\small\item\em $\sim$\+Moore\+Neighborhood Destructeur du voisinage de Moore \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_moore_neighborhood_a9e0090bba4007aba6e54f08c1070b9fa}{get\+Nb\+Neighbors}} () const
+\begin{DoxyCompactList}\small\item\em get\+Nb\+Neighbors Méthode renvoyant le nombre de voisins \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_cell}{Cell}} $\ast$$\ast$ \mbox{\hyperlink{class_moore_neighborhood_a85a3f4a32f347c28f0d7082c754a37cb}{get\+Neighbors}} (\mbox{\hyperlink{class_cell}{Cell}} $\ast$c, \mbox{\hyperlink{class_grid}{Grid}} $\ast$g)
+\begin{DoxyCompactList}\small\item\em get\+Neighbors Méthode renvoyant les voisins d\textquotesingle{}une cellule \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Voisinage de Moore héritant de la stratégie de voisinage. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_moore_neighborhood_aad18bdd038cea57c08997b24b7be9cc6}\label{class_moore_neighborhood_aad18bdd038cea57c08997b24b7be9cc6}} 
+\index{MooreNeighborhood@{MooreNeighborhood}!MooreNeighborhood@{MooreNeighborhood}}
+\index{MooreNeighborhood@{MooreNeighborhood}!MooreNeighborhood@{MooreNeighborhood}}
+\doxysubsubsection{\texorpdfstring{MooreNeighborhood()}{MooreNeighborhood()}}
+{\footnotesize\ttfamily Moore\+Neighborhood\+::\+Moore\+Neighborhood (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_moore_neighborhood}{Moore\+Neighborhood}} Constructeur du voisinage de Moore. 
+
+\mbox{\Hypertarget{class_moore_neighborhood_a19c1eb2e6a5e454b029150c2e5f8d65f}\label{class_moore_neighborhood_a19c1eb2e6a5e454b029150c2e5f8d65f}} 
+\index{MooreNeighborhood@{MooreNeighborhood}!````~MooreNeighborhood@{$\sim$MooreNeighborhood}}
+\index{````~MooreNeighborhood@{$\sim$MooreNeighborhood}!MooreNeighborhood@{MooreNeighborhood}}
+\doxysubsubsection{\texorpdfstring{$\sim$MooreNeighborhood()}{~MooreNeighborhood()}}
+{\footnotesize\ttfamily Moore\+Neighborhood\+::$\sim$\+Moore\+Neighborhood (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+$\sim$\+Moore\+Neighborhood Destructeur du voisinage de Moore 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_moore_neighborhood_a9e0090bba4007aba6e54f08c1070b9fa}\label{class_moore_neighborhood_a9e0090bba4007aba6e54f08c1070b9fa}} 
+\index{MooreNeighborhood@{MooreNeighborhood}!getNbNeighbors@{getNbNeighbors}}
+\index{getNbNeighbors@{getNbNeighbors}!MooreNeighborhood@{MooreNeighborhood}}
+\doxysubsubsection{\texorpdfstring{getNbNeighbors()}{getNbNeighbors()}}
+{\footnotesize\ttfamily int Moore\+Neighborhood\+::get\+Nb\+Neighbors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+get\+Nb\+Neighbors Méthode renvoyant le nombre de voisins 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_neighborhood_strategy_ad000dc797f880edbc1082ebace8e0220}{Neighborhood\+Strategy}}.
+
+\mbox{\Hypertarget{class_moore_neighborhood_a85a3f4a32f347c28f0d7082c754a37cb}\label{class_moore_neighborhood_a85a3f4a32f347c28f0d7082c754a37cb}} 
+\index{MooreNeighborhood@{MooreNeighborhood}!getNeighbors@{getNeighbors}}
+\index{getNeighbors@{getNeighbors}!MooreNeighborhood@{MooreNeighborhood}}
+\doxysubsubsection{\texorpdfstring{getNeighbors()}{getNeighbors()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cell}{Cell}} $\ast$$\ast$ Moore\+Neighborhood\+::get\+Neighbors (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cell}{Cell}} $\ast$}]{c,  }\item[{\mbox{\hyperlink{class_grid}{Grid}} $\ast$}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+get\+Neighbors Méthode renvoyant les voisins d\textquotesingle{}une cellule 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Cellule dont on souhaite connaître ses voisins \\
+\hline
+{\em g} & Grille sur laquelle étudier le voisinage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Cell$\ast$$\ast$ Tableau de pointeur sur les cellules voisines 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_neighborhood_strategy_ae3464824c3fba8d21fbfa99121217067}{Neighborhood\+Strategy}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/utils/\mbox{\hyperlink{neighborhood__strategy_8h}{neighborhood\+\_\+strategy.\+h}}\item 
+src/utils/\mbox{\hyperlink{neighborhood__strategy_8cpp}{neighborhood\+\_\+strategy.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,269 @@
+\hypertarget{class_simulator}{}\doxysection{Simulator Class Reference}
+\label{class_simulator}\index{Simulator@{Simulator}}
+
+
+{\ttfamily \#include $<$simulator.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_simulator_1_1_iterator}{Iterator}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_simulator_1_1_iterator}{Iterator}} class permet de parcourir le buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_simulator_ac3f9074a8db2a409515cbc8fa4fabaa7}{Simulator}} (\mbox{\hyperlink{class_automata}{Automata}} $\ast$a, int buf=2)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_simulator}{Simulator}} constructeur du simulateur sans grille de départ avec un buf par défaut égal à 2. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_simulator_a7fe4d8ff1a3dc088f4db06887768b394}{Simulator}} (\mbox{\hyperlink{class_automata}{Automata}} $\ast$a, \mbox{\hyperlink{class_grid}{Grid}} \&startG, int buf=2)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_simulator}{Simulator}} constructeur du simulateur avec une grille de départ. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_simulator_a0f49aa04f42060a785adf77346b9de9f}{$\sim$\+Simulator}} ()
+\item 
+void \mbox{\hyperlink{class_simulator_a4012d73b658117d81c64a2e7ffd52876}{allocate\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em allocate\+Buffer permet de créer le buffer et d\textquotesingle{}initialiser chaque cellule du buffer à nullptr \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simulator_af2c86a4ba9cc9f6be9ad6cf46bcf83c7}{set\+Start\+Grid}} (\mbox{\hyperlink{class_grid}{Grid}} $\ast$g)
+\begin{DoxyCompactList}\small\item\em set\+Start\+Grid permet de définir une grille de départ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simulator_aad68e1807b14ca5bfd11cb7ebba25645}{reset}} ()
+\begin{DoxyCompactList}\small\item\em reset permet de revenir à la grille de départ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simulator_aff8f35d4989628f0c173fb8e47bdcfa9}{run}} (int nb\+Steps=1)
+\begin{DoxyCompactList}\small\item\em run fait appel à la méthode \mbox{\hyperlink{class_simulator_aa0ff160b09006e947f112d6c505f2530}{next()}} nb\+Steps fois \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simulator_aa0ff160b09006e947f112d6c505f2530}{next}} ()
+\begin{DoxyCompactList}\small\item\em next permet d\textquotesingle{}aller à la génration suivante \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simulator_a29eb867e877ecbbc771f1ecb8b145ed1}{set\+Automata}} (\mbox{\hyperlink{class_automata}{Automata}} $\ast$automata)
+\begin{DoxyCompactList}\small\item\em set\+Automata permet d\textquotesingle{}associer le simulateur à un automate \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simulator_ae65de88029266aed0241cea962db1d15}{set\+Buffer\+Size}} (int)
+\begin{DoxyCompactList}\small\item\em set\+Buffer\+Size setteur qui fixe la taille du voisinage \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_automata}{Automata}} $\ast$ \mbox{\hyperlink{class_simulator_af92f5a9d9cc500c2c2a77c30f689a358}{get\+Automata}} () const
+\begin{DoxyCompactList}\small\item\em get\+Automata permet de récupérer l\textquotesingle{}automate \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_simulator_a4afa98c792cdb7a3632f01130cd8911f}{get\+Buffer\+Size}} () const
+\begin{DoxyCompactList}\small\item\em get\+Buffer\+Size permet de récupérer la taille du buffer \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_simulator_aa59ca1fc231db99ad04ab9cc1da48c49}{get\+Current\+Grid\+ID}} () const
+\begin{DoxyCompactList}\small\item\em get\+Current\+Grid\+ID permet de récupérer la grille courante \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_simulator_1_1_iterator}{Iterator}} \mbox{\hyperlink{class_simulator_ac2d3afcbdc37ee21aae87a313ec85349}{get\+Iterator}} ()
+\begin{DoxyCompactList}\small\item\em get\+Iterator permet de récupérer l\textquotesingle{}itérateur \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_grid_factory}{Grid\+Factory}} \& \mbox{\hyperlink{class_simulator_ac8fd4f48ba48091df2adbecf6f34a27b}{get\+Grid\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em get\+Grid\+Factory le simulateur récupère les grilles crées par la classe \mbox{\hyperlink{class_grid_factory}{Grid\+Factory}} qui implémente le design pattern factory \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \mbox{\hyperlink{class_simulator_a804c3429a021e452e80a126248353123}{frequency}}
+\begin{DoxyCompactList}\small\item\em frequency vitesse de passage d\textquotesingle{}une génération à une autre \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_simulator_ac3f9074a8db2a409515cbc8fa4fabaa7}\label{class_simulator_ac3f9074a8db2a409515cbc8fa4fabaa7}} 
+\index{Simulator@{Simulator}!Simulator@{Simulator}}
+\index{Simulator@{Simulator}!Simulator@{Simulator}}
+\doxysubsubsection{\texorpdfstring{Simulator()}{Simulator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Simulator\+::\+Simulator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_automata}{Automata}} $\ast$}]{a,  }\item[{int}]{buf = {\ttfamily 2} }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_simulator}{Simulator}} constructeur du simulateur sans grille de départ avec un buf par défaut égal à 2. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & un automate quelconque \\
+\hline
+{\em buf} & taille du buffer, on peut revenir aux deux générations précédentes par défaut \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_simulator_a7fe4d8ff1a3dc088f4db06887768b394}\label{class_simulator_a7fe4d8ff1a3dc088f4db06887768b394}} 
+\index{Simulator@{Simulator}!Simulator@{Simulator}}
+\index{Simulator@{Simulator}!Simulator@{Simulator}}
+\doxysubsubsection{\texorpdfstring{Simulator()}{Simulator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Simulator\+::\+Simulator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_automata}{Automata}} $\ast$}]{a,  }\item[{\mbox{\hyperlink{class_grid}{Grid}} \&}]{startG,  }\item[{int}]{buf = {\ttfamily 2} }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_simulator}{Simulator}} constructeur du simulateur avec une grille de départ. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & un automate quelconque \\
+\hline
+{\em startG} & la grille de départ \\
+\hline
+{\em buf} & taille du buffer, on peut revenir aux deux générations précédentes par défaut \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_simulator_a0f49aa04f42060a785adf77346b9de9f}\label{class_simulator_a0f49aa04f42060a785adf77346b9de9f}} 
+\index{Simulator@{Simulator}!````~Simulator@{$\sim$Simulator}}
+\index{````~Simulator@{$\sim$Simulator}!Simulator@{Simulator}}
+\doxysubsubsection{\texorpdfstring{$\sim$Simulator()}{~Simulator()}}
+{\footnotesize\ttfamily Simulator\+::$\sim$\+Simulator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_simulator_a4012d73b658117d81c64a2e7ffd52876}\label{class_simulator_a4012d73b658117d81c64a2e7ffd52876}} 
+\index{Simulator@{Simulator}!allocateBuffer@{allocateBuffer}}
+\index{allocateBuffer@{allocateBuffer}!Simulator@{Simulator}}
+\doxysubsubsection{\texorpdfstring{allocateBuffer()}{allocateBuffer()}}
+{\footnotesize\ttfamily void Simulator\+::allocate\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+allocate\+Buffer permet de créer le buffer et d\textquotesingle{}initialiser chaque cellule du buffer à nullptr 
+
+\mbox{\Hypertarget{class_simulator_af92f5a9d9cc500c2c2a77c30f689a358}\label{class_simulator_af92f5a9d9cc500c2c2a77c30f689a358}} 
+\index{Simulator@{Simulator}!getAutomata@{getAutomata}}
+\index{getAutomata@{getAutomata}!Simulator@{Simulator}}
+\doxysubsubsection{\texorpdfstring{getAutomata()}{getAutomata()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_automata}{Automata}} $\ast$ Simulator\+::get\+Automata (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Automata permet de récupérer l\textquotesingle{}automate 
+
+\begin{DoxyReturn}{Returns}
+retourne l\textquotesingle{}automate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_simulator_a4afa98c792cdb7a3632f01130cd8911f}\label{class_simulator_a4afa98c792cdb7a3632f01130cd8911f}} 
+\index{Simulator@{Simulator}!getBufferSize@{getBufferSize}}
+\index{getBufferSize@{getBufferSize}!Simulator@{Simulator}}
+\doxysubsubsection{\texorpdfstring{getBufferSize()}{getBufferSize()}}
+{\footnotesize\ttfamily int Simulator\+::get\+Buffer\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Buffer\+Size permet de récupérer la taille du buffer 
+
+\begin{DoxyReturn}{Returns}
+la taille du buffer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_simulator_aa59ca1fc231db99ad04ab9cc1da48c49}\label{class_simulator_aa59ca1fc231db99ad04ab9cc1da48c49}} 
+\index{Simulator@{Simulator}!getCurrentGridID@{getCurrentGridID}}
+\index{getCurrentGridID@{getCurrentGridID}!Simulator@{Simulator}}
+\doxysubsubsection{\texorpdfstring{getCurrentGridID()}{getCurrentGridID()}}
+{\footnotesize\ttfamily int Simulator\+::get\+Current\+Grid\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Current\+Grid\+ID permet de récupérer la grille courante 
+
+\begin{DoxyReturn}{Returns}
+la grille courante 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_simulator_ac8fd4f48ba48091df2adbecf6f34a27b}\label{class_simulator_ac8fd4f48ba48091df2adbecf6f34a27b}} 
+\index{Simulator@{Simulator}!getGridFactory@{getGridFactory}}
+\index{getGridFactory@{getGridFactory}!Simulator@{Simulator}}
+\doxysubsubsection{\texorpdfstring{getGridFactory()}{getGridFactory()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_grid_factory}{Grid\+Factory}}\& Simulator\+::get\+Grid\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+get\+Grid\+Factory le simulateur récupère les grilles crées par la classe \mbox{\hyperlink{class_grid_factory}{Grid\+Factory}} qui implémente le design pattern factory 
+
+\begin{DoxyReturn}{Returns}
+la grille 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_simulator_ac2d3afcbdc37ee21aae87a313ec85349}\label{class_simulator_ac2d3afcbdc37ee21aae87a313ec85349}} 
+\index{Simulator@{Simulator}!getIterator@{getIterator}}
+\index{getIterator@{getIterator}!Simulator@{Simulator}}
+\doxysubsubsection{\texorpdfstring{getIterator()}{getIterator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_simulator_1_1_iterator}{Simulator\+::\+Iterator}} Simulator\+::get\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Iterator permet de récupérer l\textquotesingle{}itérateur 
+
+\begin{DoxyReturn}{Returns}
+l\textquotesingle{}itérateur 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_simulator_aa0ff160b09006e947f112d6c505f2530}\label{class_simulator_aa0ff160b09006e947f112d6c505f2530}} 
+\index{Simulator@{Simulator}!next@{next}}
+\index{next@{next}!Simulator@{Simulator}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily void Simulator\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+next permet d\textquotesingle{}aller à la génration suivante 
+
+\mbox{\Hypertarget{class_simulator_aad68e1807b14ca5bfd11cb7ebba25645}\label{class_simulator_aad68e1807b14ca5bfd11cb7ebba25645}} 
+\index{Simulator@{Simulator}!reset@{reset}}
+\index{reset@{reset}!Simulator@{Simulator}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Simulator\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+reset permet de revenir à la grille de départ 
+
+\mbox{\Hypertarget{class_simulator_aff8f35d4989628f0c173fb8e47bdcfa9}\label{class_simulator_aff8f35d4989628f0c173fb8e47bdcfa9}} 
+\index{Simulator@{Simulator}!run@{run}}
+\index{run@{run}!Simulator@{Simulator}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Simulator\+::run (\begin{DoxyParamCaption}\item[{int}]{nb\+Steps = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+run fait appel à la méthode \mbox{\hyperlink{class_simulator_aa0ff160b09006e947f112d6c505f2530}{next()}} nb\+Steps fois 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb\+Steps} & nombre de fois que l\textquotesingle{}on appelle la méthode \mbox{\hyperlink{class_simulator_aa0ff160b09006e947f112d6c505f2530}{next()}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_simulator_a29eb867e877ecbbc771f1ecb8b145ed1}\label{class_simulator_a29eb867e877ecbbc771f1ecb8b145ed1}} 
+\index{Simulator@{Simulator}!setAutomata@{setAutomata}}
+\index{setAutomata@{setAutomata}!Simulator@{Simulator}}
+\doxysubsubsection{\texorpdfstring{setAutomata()}{setAutomata()}}
+{\footnotesize\ttfamily void Simulator\+::set\+Automata (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_automata}{Automata}} $\ast$}]{automata }\end{DoxyParamCaption})}
+
+
+
+set\+Automata permet d\textquotesingle{}associer le simulateur à un automate 
+
+
+\begin{DoxyParams}{Parameters}
+{\em automata} & automate quelconque qui est utilisé pour notre simulateur \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_simulator_ae65de88029266aed0241cea962db1d15}\label{class_simulator_ae65de88029266aed0241cea962db1d15}} 
+\index{Simulator@{Simulator}!setBufferSize@{setBufferSize}}
+\index{setBufferSize@{setBufferSize}!Simulator@{Simulator}}
+\doxysubsubsection{\texorpdfstring{setBufferSize()}{setBufferSize()}}
+{\footnotesize\ttfamily void Simulator\+::set\+Buffer\+Size (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+set\+Buffer\+Size setteur qui fixe la taille du voisinage 
+
+\mbox{\Hypertarget{class_simulator_af2c86a4ba9cc9f6be9ad6cf46bcf83c7}\label{class_simulator_af2c86a4ba9cc9f6be9ad6cf46bcf83c7}} 
+\index{Simulator@{Simulator}!setStartGrid@{setStartGrid}}
+\index{setStartGrid@{setStartGrid}!Simulator@{Simulator}}
+\doxysubsubsection{\texorpdfstring{setStartGrid()}{setStartGrid()}}
+{\footnotesize\ttfamily void Simulator\+::set\+Start\+Grid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_grid}{Grid}} $\ast$}]{g }\end{DoxyParamCaption})}
+
+
+
+set\+Start\+Grid permet de définir une grille de départ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & grille de départ souhaitéé \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_simulator_a804c3429a021e452e80a126248353123}\label{class_simulator_a804c3429a021e452e80a126248353123}} 
+\index{Simulator@{Simulator}!frequency@{frequency}}
+\index{frequency@{frequency}!Simulator@{Simulator}}
+\doxysubsubsection{\texorpdfstring{frequency}{frequency}}
+{\footnotesize\ttfamily unsigned int Simulator\+::frequency}
+
+
+
+frequency vitesse de passage d\textquotesingle{}une génération à une autre 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/utils/\mbox{\hyperlink{simulator_8h}{simulator.\+h}}\item 
+src/utils/\mbox{\hyperlink{simulator_8cpp}{simulator.\+cpp}}\end{DoxyCompactItemize}

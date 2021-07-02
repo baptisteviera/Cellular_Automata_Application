@@ -1,0 +1,137 @@
+\hypertarget{class_arbitrary_neighborhood}{}\doxysection{Arbitrary\+Neighborhood Class Reference}
+\label{class_arbitrary_neighborhood}\index{ArbitraryNeighborhood@{ArbitraryNeighborhood}}
+
+
+{\ttfamily \#include $<$neighborhood\+\_\+strategy.\+h$>$}
+
+Inheritance diagram for Arbitrary\+Neighborhood\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_arbitrary_neighborhood}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_arbitrary_neighborhood_ae5920bde9fe037132c5478a2163be0a6}{Arbitrary\+Neighborhood}} (int nb\+Neighbors, int $\ast$dx, int $\ast$dy, std\+::string na)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_arbitrary_neighborhood}{Arbitrary\+Neighborhood}} Constructeur du voisinage arbitraire. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_arbitrary_neighborhood_ae3f24f98656c797f3bd2c870f9658389}{$\sim$\+Arbitrary\+Neighborhood}} ()
+\begin{DoxyCompactList}\small\item\em $\sim$\+Arbitraryneighborhood Destructeur de voisinage arbitraire \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_arbitrary_neighborhood_ae45def3308dff3148be1d44562fd7d8d}{get\+Nb\+Neighbors}} () const
+\begin{DoxyCompactList}\small\item\em get\+Nb\+Neighbors Méthode renvoyant le nombre de voisins \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{class_arbitrary_neighborhood_a68fa4bed0d9238c5f8876a17898b479e}{get\+Dx}} () const
+\begin{DoxyCompactList}\small\item\em get\+Dx Accesseur en lecture du tableau des coordonnées relative x \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{class_arbitrary_neighborhood_a7be883e90bfc7ababa82a913c8ee38e5}{get\+Dy}} () const
+\begin{DoxyCompactList}\small\item\em get\+Dx Accesseur en lecture du tableau des coordonnées relative y \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_cell}{Cell}} $\ast$$\ast$ \mbox{\hyperlink{class_arbitrary_neighborhood_a2ccfc2b412ae669893acf82e31472dc5}{get\+Neighbors}} (\mbox{\hyperlink{class_cell}{Cell}} $\ast$c, \mbox{\hyperlink{class_grid}{Grid}} $\ast$g)
+\begin{DoxyCompactList}\small\item\em get\+Neighbors Méthode renvoyant les voisins d\textquotesingle{}une cellule \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_arbitrary_neighborhood_ae5920bde9fe037132c5478a2163be0a6}\label{class_arbitrary_neighborhood_ae5920bde9fe037132c5478a2163be0a6}} 
+\index{ArbitraryNeighborhood@{ArbitraryNeighborhood}!ArbitraryNeighborhood@{ArbitraryNeighborhood}}
+\index{ArbitraryNeighborhood@{ArbitraryNeighborhood}!ArbitraryNeighborhood@{ArbitraryNeighborhood}}
+\doxysubsubsection{\texorpdfstring{ArbitraryNeighborhood()}{ArbitraryNeighborhood()}}
+{\footnotesize\ttfamily Arbitrary\+Neighborhood\+::\+Arbitrary\+Neighborhood (\begin{DoxyParamCaption}\item[{int}]{nb\+Neighbors,  }\item[{int $\ast$}]{dx,  }\item[{int $\ast$}]{dy,  }\item[{std\+::string}]{na }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_arbitrary_neighborhood}{Arbitrary\+Neighborhood}} Constructeur du voisinage arbitraire. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb\+Neighbors} & Nombre de voisins \\
+\hline
+{\em dx} & Tableau des coordonnées relatives (x) des voisins à partir de la cellule \\
+\hline
+{\em dy} & Tableau des coordonnées relatives (y) des voisins à partir de la cellule \\
+\hline
+{\em na} & Nom du voisinage arbitraire \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_arbitrary_neighborhood_ae3f24f98656c797f3bd2c870f9658389}\label{class_arbitrary_neighborhood_ae3f24f98656c797f3bd2c870f9658389}} 
+\index{ArbitraryNeighborhood@{ArbitraryNeighborhood}!````~ArbitraryNeighborhood@{$\sim$ArbitraryNeighborhood}}
+\index{````~ArbitraryNeighborhood@{$\sim$ArbitraryNeighborhood}!ArbitraryNeighborhood@{ArbitraryNeighborhood}}
+\doxysubsubsection{\texorpdfstring{$\sim$ArbitraryNeighborhood()}{~ArbitraryNeighborhood()}}
+{\footnotesize\ttfamily Arbitrary\+Neighborhood\+::$\sim$\+Arbitrary\+Neighborhood (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+$\sim$\+Arbitraryneighborhood Destructeur de voisinage arbitraire 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_arbitrary_neighborhood_a68fa4bed0d9238c5f8876a17898b479e}\label{class_arbitrary_neighborhood_a68fa4bed0d9238c5f8876a17898b479e}} 
+\index{ArbitraryNeighborhood@{ArbitraryNeighborhood}!getDx@{getDx}}
+\index{getDx@{getDx}!ArbitraryNeighborhood@{ArbitraryNeighborhood}}
+\doxysubsubsection{\texorpdfstring{getDx()}{getDx()}}
+{\footnotesize\ttfamily int$\ast$ Arbitrary\+Neighborhood\+::get\+Dx (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+Dx Accesseur en lecture du tableau des coordonnées relative x 
+
+\begin{DoxyReturn}{Returns}
+int$\ast$ Tableau des coordonnées relatives (x) des voisins à partir de la cellule 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_arbitrary_neighborhood_a7be883e90bfc7ababa82a913c8ee38e5}\label{class_arbitrary_neighborhood_a7be883e90bfc7ababa82a913c8ee38e5}} 
+\index{ArbitraryNeighborhood@{ArbitraryNeighborhood}!getDy@{getDy}}
+\index{getDy@{getDy}!ArbitraryNeighborhood@{ArbitraryNeighborhood}}
+\doxysubsubsection{\texorpdfstring{getDy()}{getDy()}}
+{\footnotesize\ttfamily int$\ast$ Arbitrary\+Neighborhood\+::get\+Dy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+Dx Accesseur en lecture du tableau des coordonnées relative y 
+
+\begin{DoxyReturn}{Returns}
+int$\ast$ Tableau des coordonnées relatives (y) des voisins à partir de la cellule 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_arbitrary_neighborhood_ae45def3308dff3148be1d44562fd7d8d}\label{class_arbitrary_neighborhood_ae45def3308dff3148be1d44562fd7d8d}} 
+\index{ArbitraryNeighborhood@{ArbitraryNeighborhood}!getNbNeighbors@{getNbNeighbors}}
+\index{getNbNeighbors@{getNbNeighbors}!ArbitraryNeighborhood@{ArbitraryNeighborhood}}
+\doxysubsubsection{\texorpdfstring{getNbNeighbors()}{getNbNeighbors()}}
+{\footnotesize\ttfamily int Arbitrary\+Neighborhood\+::get\+Nb\+Neighbors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+get\+Nb\+Neighbors Méthode renvoyant le nombre de voisins 
+
+\begin{DoxyReturn}{Returns}
+int Nombre de voisins 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_neighborhood_strategy_ad000dc797f880edbc1082ebace8e0220}{Neighborhood\+Strategy}}.
+
+\mbox{\Hypertarget{class_arbitrary_neighborhood_a2ccfc2b412ae669893acf82e31472dc5}\label{class_arbitrary_neighborhood_a2ccfc2b412ae669893acf82e31472dc5}} 
+\index{ArbitraryNeighborhood@{ArbitraryNeighborhood}!getNeighbors@{getNeighbors}}
+\index{getNeighbors@{getNeighbors}!ArbitraryNeighborhood@{ArbitraryNeighborhood}}
+\doxysubsubsection{\texorpdfstring{getNeighbors()}{getNeighbors()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cell}{Cell}} $\ast$$\ast$ Arbitrary\+Neighborhood\+::get\+Neighbors (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cell}{Cell}} $\ast$}]{c,  }\item[{\mbox{\hyperlink{class_grid}{Grid}} $\ast$}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+get\+Neighbors Méthode renvoyant les voisins d\textquotesingle{}une cellule 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Cellule dont on souhaite connaître ses voisins \\
+\hline
+{\em g} & Grille sur laquelle étudier le voisinage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Cell$\ast$$\ast$ Tableau de pointeur sur les cellules voisines 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_neighborhood_strategy_ae3464824c3fba8d21fbfa99121217067}{Neighborhood\+Strategy}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/utils/\mbox{\hyperlink{neighborhood__strategy_8h}{neighborhood\+\_\+strategy.\+h}}\item 
+src/utils/\mbox{\hyperlink{neighborhood__strategy_8cpp}{neighborhood\+\_\+strategy.\+cpp}}\end{DoxyCompactItemize}

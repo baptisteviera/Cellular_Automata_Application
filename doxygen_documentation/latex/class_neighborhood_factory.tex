@@ -1,0 +1,94 @@
+\hypertarget{class_neighborhood_factory}{}\doxysection{Neighborhood\+Factory Class Reference}
+\label{class_neighborhood_factory}\index{NeighborhoodFactory@{NeighborhoodFactory}}
+
+
+Fabrique de voisinnage.  
+
+
+
+
+{\ttfamily \#include $<$neighborhood\+\_\+factory.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_neighborhood_strategy}{Neighborhood\+Strategy}} $\ast$ \mbox{\hyperlink{class_neighborhood_factory_a0d61831fd05c0f4c4fe37e00ccb435b0}{production}} (const string name) const
+\begin{DoxyCompactList}\small\item\em production Méthode de fabrication d\textquotesingle{}un voisinage \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_neighborhood_strategy}{Neighborhood\+Strategy}} $\ast$ \mbox{\hyperlink{class_neighborhood_factory_acb13f6349e75bdad834c46ddfb39b18c}{production}} (const string name, const int radius) const
+\begin{DoxyCompactList}\small\item\em production Méthode de fabrication d\textquotesingle{}un voisinage \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_neighborhood_strategy}{Neighborhood\+Strategy}} $\ast$ \mbox{\hyperlink{class_neighborhood_factory_a1fef10856b08b92e6e8261c4883227ec}{production}} (const string name, const int nb\+Voisins, int $\ast$dx, int $\ast$dy) const
+\begin{DoxyCompactList}\small\item\em production Méthode de fabrication d\textquotesingle{}un voisinage \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Fabrique de voisinnage. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_neighborhood_factory_a0d61831fd05c0f4c4fe37e00ccb435b0}\label{class_neighborhood_factory_a0d61831fd05c0f4c4fe37e00ccb435b0}} 
+\index{NeighborhoodFactory@{NeighborhoodFactory}!production@{production}}
+\index{production@{production}!NeighborhoodFactory@{NeighborhoodFactory}}
+\doxysubsubsection{\texorpdfstring{production()}{production()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_neighborhood_strategy}{Neighborhood\+Strategy}} $\ast$ Neighborhood\+Factory\+::production (\begin{DoxyParamCaption}\item[{const string}]{name }\end{DoxyParamCaption}) const}
+
+
+
+production Méthode de fabrication d\textquotesingle{}un voisinage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & nom du voisinage à fabriquer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Neighborhood\+Strategy$\ast$ un pointeur sur une classe de voisinage 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_neighborhood_factory_a1fef10856b08b92e6e8261c4883227ec}\label{class_neighborhood_factory_a1fef10856b08b92e6e8261c4883227ec}} 
+\index{NeighborhoodFactory@{NeighborhoodFactory}!production@{production}}
+\index{production@{production}!NeighborhoodFactory@{NeighborhoodFactory}}
+\doxysubsubsection{\texorpdfstring{production()}{production()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_neighborhood_strategy}{Neighborhood\+Strategy}} $\ast$ Neighborhood\+Factory\+::production (\begin{DoxyParamCaption}\item[{const string}]{name,  }\item[{const int}]{nb\+Voisins,  }\item[{int $\ast$}]{dx,  }\item[{int $\ast$}]{dy }\end{DoxyParamCaption}) const}
+
+
+
+production Méthode de fabrication d\textquotesingle{}un voisinage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & nom du voisinage à fabriquer \\
+\hline
+{\em nb\+Voisins} & nombre de voisins \\
+\hline
+{\em dx} & tableau des coordonnées relatives (x) des voisins à partir de la cellule \\
+\hline
+{\em dy} & tableau des coordonnées relatives (y) des voisins à partir de la cellule \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Neighborhood\+Strategy$\ast$ un pointeur sur une classe de voisinage 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_neighborhood_factory_acb13f6349e75bdad834c46ddfb39b18c}\label{class_neighborhood_factory_acb13f6349e75bdad834c46ddfb39b18c}} 
+\index{NeighborhoodFactory@{NeighborhoodFactory}!production@{production}}
+\index{production@{production}!NeighborhoodFactory@{NeighborhoodFactory}}
+\doxysubsubsection{\texorpdfstring{production()}{production()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_neighborhood_strategy}{Neighborhood\+Strategy}} $\ast$ Neighborhood\+Factory\+::production (\begin{DoxyParamCaption}\item[{const string}]{name,  }\item[{const int}]{radius }\end{DoxyParamCaption}) const}
+
+
+
+production Méthode de fabrication d\textquotesingle{}un voisinage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & nom du voisinage à fabriquer \\
+\hline
+{\em radius} & rayon du voisinage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Neighborhood\+Strategy$\ast$ un pointeur sur une classe de voisinage 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/utils/\mbox{\hyperlink{neighborhood__factory_8h}{neighborhood\+\_\+factory.\+h}}\item 
+src/utils/\mbox{\hyperlink{neighborhood__factory_8cpp}{neighborhood\+\_\+factory.\+cpp}}\end{DoxyCompactItemize}

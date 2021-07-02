@@ -1,0 +1,107 @@
+\hypertarget{class_simulator_1_1_iterator}{}\doxysection{Simulator\+::Iterator Class Reference}
+\label{class_simulator_1_1_iterator}\index{Simulator::Iterator@{Simulator::Iterator}}
+
+
+The \mbox{\hyperlink{class_simulator_1_1_iterator}{Iterator}} class permet de parcourir le buffer.  
+
+
+
+
+{\ttfamily \#include $<$simulator.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_simulator_1_1_iterator_ae8afcf2bb9b4703efface19090b9139e}{Iterator}} ()
+\item 
+bool \mbox{\hyperlink{class_simulator_1_1_iterator_a4ffdd51af7310221a39ba61f9d50342f}{is\+Done}} () const
+\begin{DoxyCompactList}\small\item\em is\+Done permet de vérifier si on a atteint la fin du buffer \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simulator_1_1_iterator_af86ee75c7545271bb4702b1617ec1b6a}{previous\+Grid}} ()
+\begin{DoxyCompactList}\small\item\em previous\+Grid permet de revenir à la génération précédente \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simulator_1_1_iterator_a346ad9accb65bca42881ad482d518247}{next\+Grid}} ()
+\begin{DoxyCompactList}\small\item\em next\+Grid permet d\textquotesingle{}aller à la génration suivante \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_grid}{Grid}} $\ast$ \mbox{\hyperlink{class_simulator_1_1_iterator_a4f761c8a8928f2b875f2f02c0b701aa1}{current}} () const
+\begin{DoxyCompactList}\small\item\em current permet retourner la grille actuelle \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_simulator_1_1_iterator_a4ba4278eee9a6776d60f4aa6b42c3a76}{Simulator}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_simulator_1_1_iterator}{Iterator}} class permet de parcourir le buffer. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_simulator_1_1_iterator_ae8afcf2bb9b4703efface19090b9139e}\label{class_simulator_1_1_iterator_ae8afcf2bb9b4703efface19090b9139e}} 
+\index{Simulator::Iterator@{Simulator::Iterator}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!Simulator::Iterator@{Simulator::Iterator}}
+\doxysubsubsection{\texorpdfstring{Iterator()}{Iterator()}}
+{\footnotesize\ttfamily Simulator\+::\+Iterator\+::\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ \hypertarget{class_simulator_1_1_iterator_autotoc_md0}{}\doxysubsubsection{Classe Simulator\+::\+Iterator}\label{class_simulator_1_1_iterator_autotoc_md0}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_simulator_1_1_iterator_a4f761c8a8928f2b875f2f02c0b701aa1}\label{class_simulator_1_1_iterator_a4f761c8a8928f2b875f2f02c0b701aa1}} 
+\index{Simulator::Iterator@{Simulator::Iterator}!current@{current}}
+\index{current@{current}!Simulator::Iterator@{Simulator::Iterator}}
+\doxysubsubsection{\texorpdfstring{current()}{current()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_grid}{Grid}} $\ast$ Simulator\+::\+Iterator\+::current (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+current permet retourner la grille actuelle 
+
+\begin{DoxyReturn}{Returns}
+retourne la grille actuelle 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_simulator_1_1_iterator_a4ffdd51af7310221a39ba61f9d50342f}\label{class_simulator_1_1_iterator_a4ffdd51af7310221a39ba61f9d50342f}} 
+\index{Simulator::Iterator@{Simulator::Iterator}!isDone@{isDone}}
+\index{isDone@{isDone}!Simulator::Iterator@{Simulator::Iterator}}
+\doxysubsubsection{\texorpdfstring{isDone()}{isDone()}}
+{\footnotesize\ttfamily bool Simulator\+::\+Iterator\+::is\+Done (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+is\+Done permet de vérifier si on a atteint la fin du buffer 
+
+\begin{DoxyReturn}{Returns}
+True si on a atteint la fin du buffer sinon False 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_simulator_1_1_iterator_a346ad9accb65bca42881ad482d518247}\label{class_simulator_1_1_iterator_a346ad9accb65bca42881ad482d518247}} 
+\index{Simulator::Iterator@{Simulator::Iterator}!nextGrid@{nextGrid}}
+\index{nextGrid@{nextGrid}!Simulator::Iterator@{Simulator::Iterator}}
+\doxysubsubsection{\texorpdfstring{nextGrid()}{nextGrid()}}
+{\footnotesize\ttfamily void Simulator\+::\+Iterator\+::next\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+next\+Grid permet d\textquotesingle{}aller à la génration suivante 
+
+\mbox{\Hypertarget{class_simulator_1_1_iterator_af86ee75c7545271bb4702b1617ec1b6a}\label{class_simulator_1_1_iterator_af86ee75c7545271bb4702b1617ec1b6a}} 
+\index{Simulator::Iterator@{Simulator::Iterator}!previousGrid@{previousGrid}}
+\index{previousGrid@{previousGrid}!Simulator::Iterator@{Simulator::Iterator}}
+\doxysubsubsection{\texorpdfstring{previousGrid()}{previousGrid()}}
+{\footnotesize\ttfamily void Simulator\+::\+Iterator\+::previous\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+previous\+Grid permet de revenir à la génération précédente 
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_simulator_1_1_iterator_a4ba4278eee9a6776d60f4aa6b42c3a76}\label{class_simulator_1_1_iterator_a4ba4278eee9a6776d60f4aa6b42c3a76}} 
+\index{Simulator::Iterator@{Simulator::Iterator}!Simulator@{Simulator}}
+\index{Simulator@{Simulator}!Simulator::Iterator@{Simulator::Iterator}}
+\doxysubsubsection{\texorpdfstring{Simulator}{Simulator}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_simulator}{Simulator}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/utils/\mbox{\hyperlink{simulator_8h}{simulator.\+h}}\item 
+src/utils/\mbox{\hyperlink{simulator_8cpp}{simulator.\+cpp}}\end{DoxyCompactItemize}

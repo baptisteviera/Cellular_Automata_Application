@@ -1,0 +1,125 @@
+\hypertarget{class_transition_strategy}{}\doxysection{Transition\+Strategy Class Reference}
+\label{class_transition_strategy}\index{TransitionStrategy@{TransitionStrategy}}
+
+
+Basic interface///.  
+
+
+
+
+{\ttfamily \#include $<$transition\+\_\+strategy.\+h$>$}
+
+Inheritance diagram for Transition\+Strategy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.871795cm]{class_transition_strategy}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_transition_strategy_a93ffb809183014210835c9a58273b932}{Transition\+Strategy}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_transition_strategy}{Transition\+Strategy}} constructeur de la classe \mbox{\hyperlink{class_transition_strategy}{Transition\+Strategy}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_transition_strategy_a99e55204944012a16cb6082357f1980a}{get\+State\+Pos\+From\+Id}} (int nb\+States, \mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$$\ast$available\+States, int id) const
+\begin{DoxyCompactList}\small\item\em get\+State\+Pos\+From\+Id permet de retourner la position d\textquotesingle{}un état dans un tableau d\textquotesingle{}état à partir de l\textquotesingle{}id de l\textquotesingle{}état \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_cell}{Cell}} $\ast$ \mbox{\hyperlink{class_transition_strategy_ad8fb09a8638a2fec709d090377d92772}{calc\+Next\+Cell}} (\mbox{\hyperlink{class_cell}{Cell}} $\ast$c, \mbox{\hyperlink{class_cell}{Cell}} $\ast$$\ast$neighbors, int neighbor\+Size, \mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$$\ast$available\+States, int nb\+States) const =0
+\begin{DoxyCompactList}\small\item\em calc\+Next\+Cell méthode virtuelle pure que l\textquotesingle{}on définit dans les classes filles qui correspondent aux différents types de transitions \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_transition_strategy_a2325d07d304cbea8667f3c130fa5925d}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em get\+Name accesseur de type getter \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Basic interface///. 
+
+The \mbox{\hyperlink{class_transition_strategy}{Transition\+Strategy}} class Implementation of the Strategy design pattern 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_transition_strategy_a93ffb809183014210835c9a58273b932}\label{class_transition_strategy_a93ffb809183014210835c9a58273b932}} 
+\index{TransitionStrategy@{TransitionStrategy}!TransitionStrategy@{TransitionStrategy}}
+\index{TransitionStrategy@{TransitionStrategy}!TransitionStrategy@{TransitionStrategy}}
+\doxysubsubsection{\texorpdfstring{TransitionStrategy()}{TransitionStrategy()}}
+{\footnotesize\ttfamily Transition\+Strategy\+::\+Transition\+Strategy (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_transition_strategy}{Transition\+Strategy}} constructeur de la classe \mbox{\hyperlink{class_transition_strategy}{Transition\+Strategy}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & nom de la transition \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_transition_strategy_ad8fb09a8638a2fec709d090377d92772}\label{class_transition_strategy_ad8fb09a8638a2fec709d090377d92772}} 
+\index{TransitionStrategy@{TransitionStrategy}!calcNextCell@{calcNextCell}}
+\index{calcNextCell@{calcNextCell}!TransitionStrategy@{TransitionStrategy}}
+\doxysubsubsection{\texorpdfstring{calcNextCell()}{calcNextCell()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_cell}{Cell}}$\ast$ Transition\+Strategy\+::calc\+Next\+Cell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cell}{Cell}} $\ast$}]{c,  }\item[{\mbox{\hyperlink{class_cell}{Cell}} $\ast$$\ast$}]{neighbors,  }\item[{int}]{neighbor\+Size,  }\item[{\mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$$\ast$}]{available\+States,  }\item[{int}]{nb\+States }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+calc\+Next\+Cell méthode virtuelle pure que l\textquotesingle{}on définit dans les classes filles qui correspondent aux différents types de transitions 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & cellule étudiée que l\textquotesingle{}on modifiera ou non \\
+\hline
+{\em neighbors} & tableau de voisin de la cellule \\
+\hline
+{\em neighbor\+Size} & nombre de voisins de la cellule \\
+\hline
+{\em available\+States} & tableau d\textquotesingle{}états disponibles \\
+\hline
+{\em nb\+States} & nombre d\textquotesingle{}états possibles \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+une nouvelle cellule (identique à c ou différente) suivant les règles de transition 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_l_a_transition_ab264a9fef2fe79f88ba5cfc4b19d1031}{LATransition}}, \mbox{\hyperlink{class_l_l_transition_a6360195a36a9803404f084108ba26d65}{LLTransition}}, \mbox{\hyperlink{class_d_g_transition_af04200dd83ec613199af24d910176d7c}{DGTransition}}, \mbox{\hyperlink{class_b_b_transition_a7e71e3fba8c15a42eb6e0cd46e885182}{BBTransition}}, \mbox{\hyperlink{class_g_o_l_transition_a0b21f8eca27a4391dbc4293d77480820}{GOLTransition}}, \mbox{\hyperlink{class_outer_totalistic_transition_a0d6132f55d5ecd1a57509fcc2cd998ce}{Outer\+Totalistic\+Transition}}, \mbox{\hyperlink{class_stochastic_transition_a233d1702ce7229f6b76d51de2ee24b3c}{Stochastic\+Transition}}, and \mbox{\hyperlink{class_totalistic_transition_a2abffda1e16ade5c9cf67d748669b478}{Totalistic\+Transition}}.
+
+\mbox{\Hypertarget{class_transition_strategy_a2325d07d304cbea8667f3c130fa5925d}\label{class_transition_strategy_a2325d07d304cbea8667f3c130fa5925d}} 
+\index{TransitionStrategy@{TransitionStrategy}!getName@{getName}}
+\index{getName@{getName}!TransitionStrategy@{TransitionStrategy}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Transition\+Strategy\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+Name accesseur de type getter 
+
+\begin{DoxyReturn}{Returns}
+le nom de la transition 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_transition_strategy_a99e55204944012a16cb6082357f1980a}\label{class_transition_strategy_a99e55204944012a16cb6082357f1980a}} 
+\index{TransitionStrategy@{TransitionStrategy}!getStatePosFromId@{getStatePosFromId}}
+\index{getStatePosFromId@{getStatePosFromId}!TransitionStrategy@{TransitionStrategy}}
+\doxysubsubsection{\texorpdfstring{getStatePosFromId()}{getStatePosFromId()}}
+{\footnotesize\ttfamily int Transition\+Strategy\+::get\+State\+Pos\+From\+Id (\begin{DoxyParamCaption}\item[{int}]{nb\+States,  }\item[{\mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$$\ast$}]{available\+States,  }\item[{int}]{id }\end{DoxyParamCaption}) const}
+
+
+
+get\+State\+Pos\+From\+Id permet de retourner la position d\textquotesingle{}un état dans un tableau d\textquotesingle{}état à partir de l\textquotesingle{}id de l\textquotesingle{}état 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb\+States} & nombre d\textquotesingle{}états dans le tableau d\textquotesingle{}états \\
+\hline
+{\em available\+States} & tableau d\textquotesingle{}états \\
+\hline
+{\em id} & identificateur de l\textquotesingle{}état \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la position de l\textquotesingle{}état dans le tableau d\textquotesingle{}états 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/utils/\mbox{\hyperlink{transition__strategy_8h}{transition\+\_\+strategy.\+h}}\item 
+src/utils/\mbox{\hyperlink{transition__strategy_8cpp}{transition\+\_\+strategy.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,67 @@
+\hypertarget{class_l_l_transition}{}\doxysection{LLTransition Class Reference}
+\label{class_l_l_transition}\index{LLTransition@{LLTransition}}
+
+
+{\ttfamily \#include $<$transition\+\_\+strategy.\+h$>$}
+
+Inheritance diagram for LLTransition\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_l_l_transition}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_l_l_transition_ab34d701e5543e69bfc451457ca86e315}{LLTransition}} (std\+::string name=\char`\"{}Langton Loop Transition\char`\"{})
+\item 
+\mbox{\hyperlink{class_cell}{Cell}} $\ast$ \mbox{\hyperlink{class_l_l_transition_a6360195a36a9803404f084108ba26d65}{calc\+Next\+Cell}} (\mbox{\hyperlink{class_cell}{Cell}} $\ast$c, \mbox{\hyperlink{class_cell}{Cell}} $\ast$$\ast$neighbors, int neighbor\+Size, \mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$$\ast$available\+States, int nb\+States) const override
+\begin{DoxyCompactList}\small\item\em calc\+Next\+Cell méthode concrète qui définit la fonction virtuelle pure de la classe mère pour la \mbox{\hyperlink{class_l_l_transition}{LLTransition}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_l_l_transition_ab34d701e5543e69bfc451457ca86e315}\label{class_l_l_transition_ab34d701e5543e69bfc451457ca86e315}} 
+\index{LLTransition@{LLTransition}!LLTransition@{LLTransition}}
+\index{LLTransition@{LLTransition}!LLTransition@{LLTransition}}
+\doxysubsubsection{\texorpdfstring{LLTransition()}{LLTransition()}}
+{\footnotesize\ttfamily LLTransition\+::\+LLTransition (\begin{DoxyParamCaption}\item[{std\+::string}]{name = {\ttfamily \char`\"{}Langton~Loop~Transition\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_l_l_transition_a6360195a36a9803404f084108ba26d65}\label{class_l_l_transition_a6360195a36a9803404f084108ba26d65}} 
+\index{LLTransition@{LLTransition}!calcNextCell@{calcNextCell}}
+\index{calcNextCell@{calcNextCell}!LLTransition@{LLTransition}}
+\doxysubsubsection{\texorpdfstring{calcNextCell()}{calcNextCell()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cell}{Cell}} $\ast$ LLTransition\+::calc\+Next\+Cell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cell}{Cell}} $\ast$}]{c,  }\item[{\mbox{\hyperlink{class_cell}{Cell}} $\ast$$\ast$}]{neighbors,  }\item[{int}]{neighbor\+Size,  }\item[{\mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$$\ast$}]{available\+States,  }\item[{int}]{nb\+States }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+calc\+Next\+Cell méthode concrète qui définit la fonction virtuelle pure de la classe mère pour la \mbox{\hyperlink{class_l_l_transition}{LLTransition}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & cellule étudiée que l\textquotesingle{}on modifiera ou non \\
+\hline
+{\em neighbors} & tableau de voisin de la cellule \\
+\hline
+{\em neighbor\+Size} & nombre de voisins de la cellule \\
+\hline
+{\em available\+States} & tableau d\textquotesingle{}états disponibles \\
+\hline
+{\em nb\+States} & nombre d\textquotesingle{}états possibles \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+une nouvelle cellule (identique à c ou différente) suivant les règles de transition 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_outer_totalistic_transition_a0d6132f55d5ecd1a57509fcc2cd998ce}{Outer\+Totalistic\+Transition}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/utils/\mbox{\hyperlink{transition__strategy_8h}{transition\+\_\+strategy.\+h}}\item 
+src/utils/\mbox{\hyperlink{transition__strategy_8cpp}{transition\+\_\+strategy.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,67 @@
+\hypertarget{class_b_b_transition}{}\doxysection{BBTransition Class Reference}
+\label{class_b_b_transition}\index{BBTransition@{BBTransition}}
+
+
+{\ttfamily \#include $<$transition\+\_\+strategy.\+h$>$}
+
+Inheritance diagram for BBTransition\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_b_b_transition}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_b_b_transition_ab482488dd07a63236d2659aefa35613b}{BBTransition}} (std\+::string name=\char`\"{}Brian Brain Transition Rule\char`\"{})
+\item 
+\mbox{\hyperlink{class_cell}{Cell}} $\ast$ \mbox{\hyperlink{class_b_b_transition_a7e71e3fba8c15a42eb6e0cd46e885182}{calc\+Next\+Cell}} (\mbox{\hyperlink{class_cell}{Cell}} $\ast$c, \mbox{\hyperlink{class_cell}{Cell}} $\ast$$\ast$neighbors, int neighbor\+Size, \mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$$\ast$available\+States, int nb\+States) const override
+\begin{DoxyCompactList}\small\item\em calc\+Next\+Cell méthode concrète qui définit la fonction virtuelle pure de la classe mère pour la \mbox{\hyperlink{class_b_b_transition}{BBTransition}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_b_b_transition_ab482488dd07a63236d2659aefa35613b}\label{class_b_b_transition_ab482488dd07a63236d2659aefa35613b}} 
+\index{BBTransition@{BBTransition}!BBTransition@{BBTransition}}
+\index{BBTransition@{BBTransition}!BBTransition@{BBTransition}}
+\doxysubsubsection{\texorpdfstring{BBTransition()}{BBTransition()}}
+{\footnotesize\ttfamily BBTransition\+::\+BBTransition (\begin{DoxyParamCaption}\item[{std\+::string}]{name = {\ttfamily \char`\"{}Brian~Brain~Transition~Rule\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_b_b_transition_a7e71e3fba8c15a42eb6e0cd46e885182}\label{class_b_b_transition_a7e71e3fba8c15a42eb6e0cd46e885182}} 
+\index{BBTransition@{BBTransition}!calcNextCell@{calcNextCell}}
+\index{calcNextCell@{calcNextCell}!BBTransition@{BBTransition}}
+\doxysubsubsection{\texorpdfstring{calcNextCell()}{calcNextCell()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cell}{Cell}} $\ast$ BBTransition\+::calc\+Next\+Cell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cell}{Cell}} $\ast$}]{c,  }\item[{\mbox{\hyperlink{class_cell}{Cell}} $\ast$$\ast$}]{neighbors,  }\item[{int}]{neighbor\+Size,  }\item[{\mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$$\ast$}]{available\+States,  }\item[{int}]{nb\+States }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+calc\+Next\+Cell méthode concrète qui définit la fonction virtuelle pure de la classe mère pour la \mbox{\hyperlink{class_b_b_transition}{BBTransition}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & cellule étudiée que l\textquotesingle{}on modifiera ou non \\
+\hline
+{\em neighbors} & tableau de voisin de la cellule \\
+\hline
+{\em neighbor\+Size} & nombre de voisins de la cellule \\
+\hline
+{\em available\+States} & tableau d\textquotesingle{}états disponibles \\
+\hline
+{\em nb\+States} & nombre d\textquotesingle{}états possibles \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+une nouvelle cellule (identique à c ou différente) suivant les règles de transition 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_outer_totalistic_transition_a0d6132f55d5ecd1a57509fcc2cd998ce}{Outer\+Totalistic\+Transition}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/utils/\mbox{\hyperlink{transition__strategy_8h}{transition\+\_\+strategy.\+h}}\item 
+src/utils/\mbox{\hyperlink{transition__strategy_8cpp}{transition\+\_\+strategy.\+cpp}}\end{DoxyCompactItemize}

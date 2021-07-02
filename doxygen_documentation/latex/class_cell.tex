@@ -1,0 +1,182 @@
+\hypertarget{class_cell}{}\doxysection{Cell Class Reference}
+\label{class_cell}\index{Cell@{Cell}}
+
+
+Classe représentant une cellule identifiée par son état, ses coordonnées et éventuellement sa direction.  
+
+
+
+
+{\ttfamily \#include $<$cell.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_cell_abb6018901b93b2a8ec27ff3c0422d4bd}{set\+State}} (\mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em set\+State accesseur en écriture de l\textquotesingle{}état de la cellule \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$ \mbox{\hyperlink{class_cell_adbd74311eeaae1b637afcdd21730b168}{get\+State}} () const
+\begin{DoxyCompactList}\small\item\em get\+State accesseur en lecture de l\textquotesingle{}état de la cellule \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cell_a0a6c965b2917a1a9dc5b17304b5dc809}{Cell}} (\mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$s, int i, int j, \mbox{\hyperlink{cell_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} d=\mbox{\hyperlink{cell_8h_a224b9163917ac32fc95a60d8c1eec3aaac157bdf0b85a40d2619cbc8bc1ae5fe2}{NONE}})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_cell}{Cell}} Constructeur d\textquotesingle{}une cellule. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cell_a8ca000885181236a713963c5c8bdb46f}{Cell}} (const \mbox{\hyperlink{class_cell}{Cell}} \&)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_cell}{Cell}} Construteur de recopie d\textquotesingle{}une cellule. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_cell_a40caf41e5ab28c67e0e8c547eb5281ee}{getX}} () const
+\begin{DoxyCompactList}\small\item\em getX accesseur en lecture de la coordonnée x d\textquotesingle{}une cellule \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_cell_a0dc1e0edf77cb2c49840928025ef7360}{getY}} () const
+\begin{DoxyCompactList}\small\item\em getY accesseur en lecture de la coordonnée y d\textquotesingle{}une cellule \end{DoxyCompactList}\item 
+\mbox{\hyperlink{cell_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} \mbox{\hyperlink{class_cell_a0d9dd3315cc9b2d616b0b4d1face33ff}{get\+Direction}} () const
+\begin{DoxyCompactList}\small\item\em get\+Direction accesseur en lecture de la direction de la cellule \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_a00886060b0aaf98db561f962b5e9ef18}{set\+Direction}} (\mbox{\hyperlink{cell_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} d)
+\begin{DoxyCompactList}\small\item\em set\+Direction accesseur en écriture de la direction de la cellule \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_aa9e1e0aa5b6ae219355cf544162b9ff4}{turn\+Right}} ()
+\begin{DoxyCompactList}\small\item\em turn\+Right permet de modifier la direction de la cellule (rotation de 90° à droite) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_ac766ebd71c1ca055d7d677fd5d17ed56}{turn\+Left}} ()
+\begin{DoxyCompactList}\small\item\em turn\+Left turn\+Right permet de modifier la direction de la cellule (rotation de 90° à gauche) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe représentant une cellule identifiée par son état, ses coordonnées et éventuellement sa direction. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cell_a0a6c965b2917a1a9dc5b17304b5dc809}\label{class_cell_a0a6c965b2917a1a9dc5b17304b5dc809}} 
+\index{Cell@{Cell}!Cell@{Cell}}
+\index{Cell@{Cell}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{Cell()}{Cell()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Cell\+::\+Cell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$}]{s,  }\item[{int}]{i,  }\item[{int}]{j,  }\item[{\mbox{\hyperlink{cell_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}}}]{d = {\ttfamily \mbox{\hyperlink{cell_8h_a224b9163917ac32fc95a60d8c1eec3aaac157bdf0b85a40d2619cbc8bc1ae5fe2}{NONE}}} }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_cell}{Cell}} Constructeur d\textquotesingle{}une cellule. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & pointeur sur l\textquotesingle{}état de la cellule \\
+\hline
+{\em i} & coordonnée x \\
+\hline
+{\em j} & coordonnée y \\
+\hline
+{\em d} & direction de la cellule (NONE par défaut) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cell_a8ca000885181236a713963c5c8bdb46f}\label{class_cell_a8ca000885181236a713963c5c8bdb46f}} 
+\index{Cell@{Cell}!Cell@{Cell}}
+\index{Cell@{Cell}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{Cell()}{Cell()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Cell\+::\+Cell (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cell}{Cell}} \&}]{c }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_cell}{Cell}} Construteur de recopie d\textquotesingle{}une cellule. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cell_a0d9dd3315cc9b2d616b0b4d1face33ff}\label{class_cell_a0d9dd3315cc9b2d616b0b4d1face33ff}} 
+\index{Cell@{Cell}!getDirection@{getDirection}}
+\index{getDirection@{getDirection}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{getDirection()}{getDirection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cell_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} Cell\+::get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Direction accesseur en lecture de la direction de la cellule 
+
+\begin{DoxyReturn}{Returns}
+Direction la direction de la cellule 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cell_adbd74311eeaae1b637afcdd21730b168}\label{class_cell_adbd74311eeaae1b637afcdd21730b168}} 
+\index{Cell@{Cell}!getState@{getState}}
+\index{getState@{getState}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$ Cell\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+State accesseur en lecture de l\textquotesingle{}état de la cellule 
+
+\begin{DoxyReturn}{Returns}
+Cell\+State$\ast$ un pointeur sur l\textquotesingle{}état de la cellule 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cell_a40caf41e5ab28c67e0e8c547eb5281ee}\label{class_cell_a40caf41e5ab28c67e0e8c547eb5281ee}} 
+\index{Cell@{Cell}!getX@{getX}}
+\index{getX@{getX}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily int Cell\+::getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+getX accesseur en lecture de la coordonnée x d\textquotesingle{}une cellule 
+
+\begin{DoxyReturn}{Returns}
+int la coordonnée x de la cellule 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cell_a0dc1e0edf77cb2c49840928025ef7360}\label{class_cell_a0dc1e0edf77cb2c49840928025ef7360}} 
+\index{Cell@{Cell}!getY@{getY}}
+\index{getY@{getY}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily int Cell\+::getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+getY accesseur en lecture de la coordonnée y d\textquotesingle{}une cellule 
+
+\begin{DoxyReturn}{Returns}
+int la coordonnée y de la cellule 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cell_a00886060b0aaf98db561f962b5e9ef18}\label{class_cell_a00886060b0aaf98db561f962b5e9ef18}} 
+\index{Cell@{Cell}!setDirection@{setDirection}}
+\index{setDirection@{setDirection}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setDirection()}{setDirection()}}
+{\footnotesize\ttfamily void Cell\+::set\+Direction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{cell_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}}}]{d }\end{DoxyParamCaption})}
+
+
+
+set\+Direction accesseur en écriture de la direction de la cellule 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & la nouvelle direction de la cellule \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cell_abb6018901b93b2a8ec27ff3c0422d4bd}\label{class_cell_abb6018901b93b2a8ec27ff3c0422d4bd}} 
+\index{Cell@{Cell}!setState@{setState}}
+\index{setState@{setState}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily void Cell\+::set\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+set\+State accesseur en écriture de l\textquotesingle{}état de la cellule 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & nouvel état de la cellule \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cell_ac766ebd71c1ca055d7d677fd5d17ed56}\label{class_cell_ac766ebd71c1ca055d7d677fd5d17ed56}} 
+\index{Cell@{Cell}!turnLeft@{turnLeft}}
+\index{turnLeft@{turnLeft}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{turnLeft()}{turnLeft()}}
+{\footnotesize\ttfamily void Cell\+::turn\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+turn\+Left turn\+Right permet de modifier la direction de la cellule (rotation de 90° à gauche) 
+
+\mbox{\Hypertarget{class_cell_aa9e1e0aa5b6ae219355cf544162b9ff4}\label{class_cell_aa9e1e0aa5b6ae219355cf544162b9ff4}} 
+\index{Cell@{Cell}!turnRight@{turnRight}}
+\index{turnRight@{turnRight}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{turnRight()}{turnRight()}}
+{\footnotesize\ttfamily void Cell\+::turn\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+turn\+Right permet de modifier la direction de la cellule (rotation de 90° à droite) 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/utils/\mbox{\hyperlink{cell_8h}{cell.\+h}}\item 
+src/utils/\mbox{\hyperlink{cell_8cpp}{cell.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,357 @@
+\hypertarget{class_automata}{}\doxysection{Automata Class Reference}
+\label{class_automata}\index{Automata@{Automata}}
+
+
+La classe qui représente une automate.  
+
+
+
+
+{\ttfamily \#include $<$automata.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_grid}{Grid}} $\ast$ \mbox{\hyperlink{class_automata_a0ad8098c62dc9cc49a179c834d50ef74}{apply\+Transition}} (\mbox{\hyperlink{class_grid}{Grid}} $\ast$src) const
+\begin{DoxyCompactList}\small\item\em Calculer et renvoyer la génération suivante d\textquotesingle{}une grille. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_automata_a8243ab2935b38f13319f2e1de3e6d439}{set\+Name}} (const string name)
+\begin{DoxyCompactList}\small\item\em Changer le nom d\textquotesingle{}automate. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_automata_af55806ae83210034e0511291feb60237}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Renvoyer le nom d\textquotesingle{}automate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_automata_ab349acc59189cdda859cb69bb31aee0e}{set\+Description}} (const string description)
+\begin{DoxyCompactList}\small\item\em Changer la description d\textquotesingle{}automate. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_automata_aeb0c6e95e77b2df0c76d57f62db68105}{get\+Description}} () const
+\begin{DoxyCompactList}\small\item\em Renvoyer la description d\textquotesingle{}automate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_automata_a726724f255f58dd8e42177c67d9adbb5}{set\+Author}} (const string author)
+\begin{DoxyCompactList}\small\item\em Changer l\textquotesingle{}auteur d\textquotesingle{}automate. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_automata_ae6e69c0ea6c30308f40c4c928e70011c}{get\+Author}} () const
+\begin{DoxyCompactList}\small\item\em Renvoyer le nom d\textquotesingle{}auteur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_automata_a229618d37165eae4e5dbc274aba41055}{set\+Creation\+Year}} (const int year)
+\begin{DoxyCompactList}\small\item\em Changer l\textquotesingle{}année de création. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_automata_a37b8faeebf4754bdf633dcfcfd0ee0ee}{get\+Creation\+Year}} () const
+\begin{DoxyCompactList}\small\item\em Renvoyer l\textquotesingle{}année de création. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_automata_a158fa7b372cb0e5a4ffb48f64ba5d215}{set\+Available\+States}} (\mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$$\ast$available\+States, int nb\+States)
+\begin{DoxyCompactList}\small\item\em Affecter la liste des états possibles. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$$\ast$ \mbox{\hyperlink{class_automata_aae7d2ffd1b23bd46f58af088f00987f8}{get\+Available\+States}} () const
+\begin{DoxyCompactList}\small\item\em Renvoyer la liste des états possibles. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_automata_a56d1bf1f5e524dc4f1434af9e24eb67b}{set\+Available\+State}} (\mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$state, const int id)
+\begin{DoxyCompactList}\small\item\em Modifier/\+Changer un état dans la liste actuelle des états. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$ \mbox{\hyperlink{class_automata_a9060840757610ac72cbd442dbc87dde7}{get\+Available\+State}} (const int id) const
+\begin{DoxyCompactList}\small\item\em Renvoyer un état particulier. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_automata_aa1d0a09e0d3712058dcda4a18ebdd6f3}{set\+Nb\+States}} (const int nb\+States)
+\begin{DoxyCompactList}\small\item\em Changer le nombre d\textquotesingle{}états possibles. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_automata_a8b5839f0e706c6d62fb9aeb06b2b3594}{get\+Nb\+States}} () const
+\begin{DoxyCompactList}\small\item\em Renvoyer le nombre d\textquotesingle{}états possibles. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_automata_ae552f26d7619d3cde926b2fe4007bd51}{set\+Transition\+Strategy}} (\mbox{\hyperlink{class_transition_strategy}{Transition\+Strategy}} $\ast$transition)
+\begin{DoxyCompactList}\small\item\em Changer la stratégie de transition. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_transition_strategy}{Transition\+Strategy}} $\ast$ \mbox{\hyperlink{class_automata_ab23848c14c6611534f2e7ec6e077f6ce}{get\+Transition\+Strategy}} () const
+\begin{DoxyCompactList}\small\item\em Renvoyer la stratégie de transition. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_automata_a2567e4f0f9809e8c0063a4a340fc7c7f}{set\+Neighborhood\+Strategy}} (\mbox{\hyperlink{class_neighborhood_strategy}{Neighborhood\+Strategy}} $\ast$neighborhood)
+\begin{DoxyCompactList}\small\item\em Changer la stratégie de voisinage. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_neighborhood_strategy}{Neighborhood\+Strategy}} $\ast$ \mbox{\hyperlink{class_automata_a0edfd8ec347f3f620e9ee6c13c5e1624}{get\+Neighborhood\+Strategy}} () const
+\begin{DoxyCompactList}\small\item\em Renvoyer la stratégie de voisinage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_automata_ad80550276c15c91a1a386d2067ce7934}{Automata\+Manager}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+La classe qui représente une automate. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_automata_a0ad8098c62dc9cc49a179c834d50ef74}\label{class_automata_a0ad8098c62dc9cc49a179c834d50ef74}} 
+\index{Automata@{Automata}!applyTransition@{applyTransition}}
+\index{applyTransition@{applyTransition}!Automata@{Automata}}
+\doxysubsubsection{\texorpdfstring{applyTransition()}{applyTransition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_grid}{Grid}} $\ast$ Automata\+::apply\+Transition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_grid}{Grid}} $\ast$}]{src }\end{DoxyParamCaption}) const}
+
+
+
+Calculer et renvoyer la génération suivante d\textquotesingle{}une grille. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & la grille source \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Grid$\ast$ la génération suivante 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_automata_ae6e69c0ea6c30308f40c4c928e70011c}\label{class_automata_ae6e69c0ea6c30308f40c4c928e70011c}} 
+\index{Automata@{Automata}!getAuthor@{getAuthor}}
+\index{getAuthor@{getAuthor}!Automata@{Automata}}
+\doxysubsubsection{\texorpdfstring{getAuthor()}{getAuthor()}}
+{\footnotesize\ttfamily string Automata\+::get\+Author (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Renvoyer le nom d\textquotesingle{}auteur. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_automata_a9060840757610ac72cbd442dbc87dde7}\label{class_automata_a9060840757610ac72cbd442dbc87dde7}} 
+\index{Automata@{Automata}!getAvailableState@{getAvailableState}}
+\index{getAvailableState@{getAvailableState}!Automata@{Automata}}
+\doxysubsubsection{\texorpdfstring{getAvailableState()}{getAvailableState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$ Automata\+::get\+Available\+State (\begin{DoxyParamCaption}\item[{const int}]{id }\end{DoxyParamCaption}) const}
+
+
+
+Renvoyer un état particulier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & l\textquotesingle{}indice de l\textquotesingle{}état \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Cell\+State$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_automata_aae7d2ffd1b23bd46f58af088f00987f8}\label{class_automata_aae7d2ffd1b23bd46f58af088f00987f8}} 
+\index{Automata@{Automata}!getAvailableStates@{getAvailableStates}}
+\index{getAvailableStates@{getAvailableStates}!Automata@{Automata}}
+\doxysubsubsection{\texorpdfstring{getAvailableStates()}{getAvailableStates()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cell_state}{Cell\+State}}$\ast$$\ast$ Automata\+::get\+Available\+States (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Renvoyer la liste des états possibles. 
+
+\begin{DoxyReturn}{Returns}
+Cell\+State$\ast$$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_automata_a37b8faeebf4754bdf633dcfcfd0ee0ee}\label{class_automata_a37b8faeebf4754bdf633dcfcfd0ee0ee}} 
+\index{Automata@{Automata}!getCreationYear@{getCreationYear}}
+\index{getCreationYear@{getCreationYear}!Automata@{Automata}}
+\doxysubsubsection{\texorpdfstring{getCreationYear()}{getCreationYear()}}
+{\footnotesize\ttfamily int Automata\+::get\+Creation\+Year (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Renvoyer l\textquotesingle{}année de création. 
+
+\begin{DoxyReturn}{Returns}
+int l\textquotesingle{}année de création 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_automata_aeb0c6e95e77b2df0c76d57f62db68105}\label{class_automata_aeb0c6e95e77b2df0c76d57f62db68105}} 
+\index{Automata@{Automata}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!Automata@{Automata}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily string Automata\+::get\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Renvoyer la description d\textquotesingle{}automate. 
+
+\begin{DoxyReturn}{Returns}
+string la description d\textquotesingle{}automate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_automata_af55806ae83210034e0511291feb60237}\label{class_automata_af55806ae83210034e0511291feb60237}} 
+\index{Automata@{Automata}!getName@{getName}}
+\index{getName@{getName}!Automata@{Automata}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Automata\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Renvoyer le nom d\textquotesingle{}automate. 
+
+\begin{DoxyReturn}{Returns}
+string le nom d\textquotesingle{}automate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_automata_a8b5839f0e706c6d62fb9aeb06b2b3594}\label{class_automata_a8b5839f0e706c6d62fb9aeb06b2b3594}} 
+\index{Automata@{Automata}!getNbStates@{getNbStates}}
+\index{getNbStates@{getNbStates}!Automata@{Automata}}
+\doxysubsubsection{\texorpdfstring{getNbStates()}{getNbStates()}}
+{\footnotesize\ttfamily int Automata\+::get\+Nb\+States (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Renvoyer le nombre d\textquotesingle{}états possibles. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_automata_a0edfd8ec347f3f620e9ee6c13c5e1624}\label{class_automata_a0edfd8ec347f3f620e9ee6c13c5e1624}} 
+\index{Automata@{Automata}!getNeighborhoodStrategy@{getNeighborhoodStrategy}}
+\index{getNeighborhoodStrategy@{getNeighborhoodStrategy}!Automata@{Automata}}
+\doxysubsubsection{\texorpdfstring{getNeighborhoodStrategy()}{getNeighborhoodStrategy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_neighborhood_strategy}{Neighborhood\+Strategy}}$\ast$ Automata\+::get\+Neighborhood\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Renvoyer la stratégie de voisinage. 
+
+\begin{DoxyReturn}{Returns}
+Neighborhood\+Strategy$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_automata_ab23848c14c6611534f2e7ec6e077f6ce}\label{class_automata_ab23848c14c6611534f2e7ec6e077f6ce}} 
+\index{Automata@{Automata}!getTransitionStrategy@{getTransitionStrategy}}
+\index{getTransitionStrategy@{getTransitionStrategy}!Automata@{Automata}}
+\doxysubsubsection{\texorpdfstring{getTransitionStrategy()}{getTransitionStrategy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_transition_strategy}{Transition\+Strategy}}$\ast$ Automata\+::get\+Transition\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Renvoyer la stratégie de transition. 
+
+\begin{DoxyReturn}{Returns}
+Transition\+Strategy$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_automata_a726724f255f58dd8e42177c67d9adbb5}\label{class_automata_a726724f255f58dd8e42177c67d9adbb5}} 
+\index{Automata@{Automata}!setAuthor@{setAuthor}}
+\index{setAuthor@{setAuthor}!Automata@{Automata}}
+\doxysubsubsection{\texorpdfstring{setAuthor()}{setAuthor()}}
+{\footnotesize\ttfamily void Automata\+::set\+Author (\begin{DoxyParamCaption}\item[{const string}]{author }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Changer l\textquotesingle{}auteur d\textquotesingle{}automate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em author} & le nouveau nom de l\textquotesingle{}auteur \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_automata_a56d1bf1f5e524dc4f1434af9e24eb67b}\label{class_automata_a56d1bf1f5e524dc4f1434af9e24eb67b}} 
+\index{Automata@{Automata}!setAvailableState@{setAvailableState}}
+\index{setAvailableState@{setAvailableState}!Automata@{Automata}}
+\doxysubsubsection{\texorpdfstring{setAvailableState()}{setAvailableState()}}
+{\footnotesize\ttfamily void Automata\+::set\+Available\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$}]{state,  }\item[{const int}]{id }\end{DoxyParamCaption})}
+
+
+
+Modifier/\+Changer un état dans la liste actuelle des états. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & l\textquotesingle{}état nouvel \\
+\hline
+{\em id} & l\textquotesingle{}indice à changer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_automata_a158fa7b372cb0e5a4ffb48f64ba5d215}\label{class_automata_a158fa7b372cb0e5a4ffb48f64ba5d215}} 
+\index{Automata@{Automata}!setAvailableStates@{setAvailableStates}}
+\index{setAvailableStates@{setAvailableStates}!Automata@{Automata}}
+\doxysubsubsection{\texorpdfstring{setAvailableStates()}{setAvailableStates()}}
+{\footnotesize\ttfamily void Automata\+::set\+Available\+States (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$$\ast$}]{available\+States,  }\item[{int}]{nb\+States }\end{DoxyParamCaption})}
+
+
+
+Affecter la liste des états possibles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em available\+States} & un tableau des pointeurs vers des états possibles \\
+\hline
+{\em nb\+States} & le nombre d\textquotesingle{}états dans la liste \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_automata_a229618d37165eae4e5dbc274aba41055}\label{class_automata_a229618d37165eae4e5dbc274aba41055}} 
+\index{Automata@{Automata}!setCreationYear@{setCreationYear}}
+\index{setCreationYear@{setCreationYear}!Automata@{Automata}}
+\doxysubsubsection{\texorpdfstring{setCreationYear()}{setCreationYear()}}
+{\footnotesize\ttfamily void Automata\+::set\+Creation\+Year (\begin{DoxyParamCaption}\item[{const int}]{year }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Changer l\textquotesingle{}année de création. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & l\textquotesingle{}année de création \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_automata_ab349acc59189cdda859cb69bb31aee0e}\label{class_automata_ab349acc59189cdda859cb69bb31aee0e}} 
+\index{Automata@{Automata}!setDescription@{setDescription}}
+\index{setDescription@{setDescription}!Automata@{Automata}}
+\doxysubsubsection{\texorpdfstring{setDescription()}{setDescription()}}
+{\footnotesize\ttfamily void Automata\+::set\+Description (\begin{DoxyParamCaption}\item[{const string}]{description }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Changer la description d\textquotesingle{}automate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em description} & la nouvelle description d\textquotesingle{}automate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_automata_a8243ab2935b38f13319f2e1de3e6d439}\label{class_automata_a8243ab2935b38f13319f2e1de3e6d439}} 
+\index{Automata@{Automata}!setName@{setName}}
+\index{setName@{setName}!Automata@{Automata}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Automata\+::set\+Name (\begin{DoxyParamCaption}\item[{const string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Changer le nom d\textquotesingle{}automate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & le nouveau nom d\textquotesingle{}automate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_automata_aa1d0a09e0d3712058dcda4a18ebdd6f3}\label{class_automata_aa1d0a09e0d3712058dcda4a18ebdd6f3}} 
+\index{Automata@{Automata}!setNbStates@{setNbStates}}
+\index{setNbStates@{setNbStates}!Automata@{Automata}}
+\doxysubsubsection{\texorpdfstring{setNbStates()}{setNbStates()}}
+{\footnotesize\ttfamily void Automata\+::set\+Nb\+States (\begin{DoxyParamCaption}\item[{const int}]{nb\+States }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Changer le nombre d\textquotesingle{}états possibles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb\+States} & le nombre d\textquotesingle{}états possibles \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_automata_a2567e4f0f9809e8c0063a4a340fc7c7f}\label{class_automata_a2567e4f0f9809e8c0063a4a340fc7c7f}} 
+\index{Automata@{Automata}!setNeighborhoodStrategy@{setNeighborhoodStrategy}}
+\index{setNeighborhoodStrategy@{setNeighborhoodStrategy}!Automata@{Automata}}
+\doxysubsubsection{\texorpdfstring{setNeighborhoodStrategy()}{setNeighborhoodStrategy()}}
+{\footnotesize\ttfamily void Automata\+::set\+Neighborhood\+Strategy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_neighborhood_strategy}{Neighborhood\+Strategy}} $\ast$}]{neighborhood }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Changer la stratégie de voisinage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em neighborhood} & la nouvelle stratégie de voisinage \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_automata_ae552f26d7619d3cde926b2fe4007bd51}\label{class_automata_ae552f26d7619d3cde926b2fe4007bd51}} 
+\index{Automata@{Automata}!setTransitionStrategy@{setTransitionStrategy}}
+\index{setTransitionStrategy@{setTransitionStrategy}!Automata@{Automata}}
+\doxysubsubsection{\texorpdfstring{setTransitionStrategy()}{setTransitionStrategy()}}
+{\footnotesize\ttfamily void Automata\+::set\+Transition\+Strategy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_transition_strategy}{Transition\+Strategy}} $\ast$}]{transition }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Changer la stratégie de transition. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em transition} & la nouvelle stratégie de transition \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_automata_ad80550276c15c91a1a386d2067ce7934}\label{class_automata_ad80550276c15c91a1a386d2067ce7934}} 
+\index{Automata@{Automata}!AutomataManager@{AutomataManager}}
+\index{AutomataManager@{AutomataManager}!Automata@{Automata}}
+\doxysubsubsection{\texorpdfstring{AutomataManager}{AutomataManager}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_automata_manager}{Automata\+Manager}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/utils/\mbox{\hyperlink{automata_8h}{automata.\+h}}\item 
+src/utils/\mbox{\hyperlink{automata_8cpp}{automata.\+cpp}}\end{DoxyCompactItemize}

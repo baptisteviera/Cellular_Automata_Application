@@ -1,0 +1,126 @@
+\hypertarget{class_von_neumann_neighborhood_generalized}{}\doxysection{Von\+Neumann\+Neighborhood\+Generalized Class Reference}
+\label{class_von_neumann_neighborhood_generalized}\index{VonNeumannNeighborhoodGeneralized@{VonNeumannNeighborhoodGeneralized}}
+
+
+Voisinage de Von\+Neumann généralisé héritant de la stratégie de voisinage.  
+
+
+
+
+{\ttfamily \#include $<$neighborhood\+\_\+strategy.\+h$>$}
+
+Inheritance diagram for Von\+Neumann\+Neighborhood\+Generalized\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_von_neumann_neighborhood_generalized}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_von_neumann_neighborhood_generalized_a341eafa40a5fe9203ca129b3db65e16e}{Von\+Neumann\+Neighborhood\+Generalized}} (std\+::string name=\char`\"{}Von Neumann Neighborhood Generalized\char`\"{}, int radius=1)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_von_neumann_neighborhood_generalized}{Von\+Neumann\+Neighborhood\+Generalized}} Constructeur de voisinage de Von\+Neumann généralisé \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_von_neumann_neighborhood_generalized_af139f931f71d0baa7e4bba63de2f041d}{$\sim$\+Von\+Neumann\+Neighborhood\+Generalized}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur du voisinage de Von\+Neumann généralisé \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_von_neumann_neighborhood_generalized_af1c246c88066ab2d47495f0b4d5c30c0}{get\+Nb\+Neighbors}} () const
+\begin{DoxyCompactList}\small\item\em get\+Nb\+Neighbors Méthode renvoyant le nombre de voisins \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_von_neumann_neighborhood_generalized_a221c6d9bc4e94cff8bc184bc5a847aad}{get\+Radius}} () const
+\begin{DoxyCompactList}\small\item\em get\+Radius Accesseur en lecture du rayon \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_cell}{Cell}} $\ast$$\ast$ \mbox{\hyperlink{class_von_neumann_neighborhood_generalized_afb435d4271b5d6a522edbca31448f38c}{get\+Neighbors}} (\mbox{\hyperlink{class_cell}{Cell}} $\ast$c, \mbox{\hyperlink{class_grid}{Grid}} $\ast$g)
+\begin{DoxyCompactList}\small\item\em get\+Neighbors Méthode renvoyant les voisins d\textquotesingle{}une cellule \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Voisinage de Von\+Neumann généralisé héritant de la stratégie de voisinage. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_von_neumann_neighborhood_generalized_a341eafa40a5fe9203ca129b3db65e16e}\label{class_von_neumann_neighborhood_generalized_a341eafa40a5fe9203ca129b3db65e16e}} 
+\index{VonNeumannNeighborhoodGeneralized@{VonNeumannNeighborhoodGeneralized}!VonNeumannNeighborhoodGeneralized@{VonNeumannNeighborhoodGeneralized}}
+\index{VonNeumannNeighborhoodGeneralized@{VonNeumannNeighborhoodGeneralized}!VonNeumannNeighborhoodGeneralized@{VonNeumannNeighborhoodGeneralized}}
+\doxysubsubsection{\texorpdfstring{VonNeumannNeighborhoodGeneralized()}{VonNeumannNeighborhoodGeneralized()}}
+{\footnotesize\ttfamily Von\+Neumann\+Neighborhood\+Generalized\+::\+Von\+Neumann\+Neighborhood\+Generalized (\begin{DoxyParamCaption}\item[{std\+::string}]{name = {\ttfamily \char`\"{}Von~Neumann~Neighborhood~Generalized\char`\"{}},  }\item[{int}]{radius = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_von_neumann_neighborhood_generalized}{Von\+Neumann\+Neighborhood\+Generalized}} Constructeur de voisinage de Von\+Neumann généralisé 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & nom du voisinage \\
+\hline
+{\em radius} & raton du voisinage (1 par défaut) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_von_neumann_neighborhood_generalized_af139f931f71d0baa7e4bba63de2f041d}\label{class_von_neumann_neighborhood_generalized_af139f931f71d0baa7e4bba63de2f041d}} 
+\index{VonNeumannNeighborhoodGeneralized@{VonNeumannNeighborhoodGeneralized}!````~VonNeumannNeighborhoodGeneralized@{$\sim$VonNeumannNeighborhoodGeneralized}}
+\index{````~VonNeumannNeighborhoodGeneralized@{$\sim$VonNeumannNeighborhoodGeneralized}!VonNeumannNeighborhoodGeneralized@{VonNeumannNeighborhoodGeneralized}}
+\doxysubsubsection{\texorpdfstring{$\sim$VonNeumannNeighborhoodGeneralized()}{~VonNeumannNeighborhoodGeneralized()}}
+{\footnotesize\ttfamily Von\+Neumann\+Neighborhood\+Generalized\+::$\sim$\+Von\+Neumann\+Neighborhood\+Generalized (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destructeur du voisinage de Von\+Neumann généralisé 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_von_neumann_neighborhood_generalized_af1c246c88066ab2d47495f0b4d5c30c0}\label{class_von_neumann_neighborhood_generalized_af1c246c88066ab2d47495f0b4d5c30c0}} 
+\index{VonNeumannNeighborhoodGeneralized@{VonNeumannNeighborhoodGeneralized}!getNbNeighbors@{getNbNeighbors}}
+\index{getNbNeighbors@{getNbNeighbors}!VonNeumannNeighborhoodGeneralized@{VonNeumannNeighborhoodGeneralized}}
+\doxysubsubsection{\texorpdfstring{getNbNeighbors()}{getNbNeighbors()}}
+{\footnotesize\ttfamily int Von\+Neumann\+Neighborhood\+Generalized\+::get\+Nb\+Neighbors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+get\+Nb\+Neighbors Méthode renvoyant le nombre de voisins 
+
+\begin{DoxyReturn}{Returns}
+int Nombre de voisins 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_neighborhood_strategy_ad000dc797f880edbc1082ebace8e0220}{Neighborhood\+Strategy}}.
+
+\mbox{\Hypertarget{class_von_neumann_neighborhood_generalized_afb435d4271b5d6a522edbca31448f38c}\label{class_von_neumann_neighborhood_generalized_afb435d4271b5d6a522edbca31448f38c}} 
+\index{VonNeumannNeighborhoodGeneralized@{VonNeumannNeighborhoodGeneralized}!getNeighbors@{getNeighbors}}
+\index{getNeighbors@{getNeighbors}!VonNeumannNeighborhoodGeneralized@{VonNeumannNeighborhoodGeneralized}}
+\doxysubsubsection{\texorpdfstring{getNeighbors()}{getNeighbors()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cell}{Cell}} $\ast$$\ast$ Von\+Neumann\+Neighborhood\+Generalized\+::get\+Neighbors (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cell}{Cell}} $\ast$}]{c,  }\item[{\mbox{\hyperlink{class_grid}{Grid}} $\ast$}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+get\+Neighbors Méthode renvoyant les voisins d\textquotesingle{}une cellule 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Cellule dont on souhaite connaître ses voisins \\
+\hline
+{\em g} & Grille sur laquelle étudier le voisinage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Cell$\ast$$\ast$ Tableau de pointeur sur les cellules voisines 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_neighborhood_strategy_ae3464824c3fba8d21fbfa99121217067}{Neighborhood\+Strategy}}.
+
+\mbox{\Hypertarget{class_von_neumann_neighborhood_generalized_a221c6d9bc4e94cff8bc184bc5a847aad}\label{class_von_neumann_neighborhood_generalized_a221c6d9bc4e94cff8bc184bc5a847aad}} 
+\index{VonNeumannNeighborhoodGeneralized@{VonNeumannNeighborhoodGeneralized}!getRadius@{getRadius}}
+\index{getRadius@{getRadius}!VonNeumannNeighborhoodGeneralized@{VonNeumannNeighborhoodGeneralized}}
+\doxysubsubsection{\texorpdfstring{getRadius()}{getRadius()}}
+{\footnotesize\ttfamily int Von\+Neumann\+Neighborhood\+Generalized\+::get\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+Radius Accesseur en lecture du rayon 
+
+\begin{DoxyReturn}{Returns}
+int Rayon 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/utils/\mbox{\hyperlink{neighborhood__strategy_8h}{neighborhood\+\_\+strategy.\+h}}\item 
+src/utils/\mbox{\hyperlink{neighborhood__strategy_8cpp}{neighborhood\+\_\+strategy.\+cpp}}\end{DoxyCompactItemize}

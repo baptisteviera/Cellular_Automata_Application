@@ -1,0 +1,229 @@
+\hypertarget{class_cell_widget}{}\doxysection{Cell\+Widget Class Reference}
+\label{class_cell_widget}\index{CellWidget@{CellWidget}}
+
+
+Classe \mbox{\hyperlink{class_cell_widget}{Cell\+Widget}} hérite de QWidget.  
+
+
+
+
+{\ttfamily \#include $<$cell\+\_\+widget.\+h$>$}
+
+Inheritance diagram for Cell\+Widget\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_cell_widget}
+\end{center}
+\end{figure}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_cell_widget_ae6faf963dfb87011930812ced4584d7d}{left\+Clicked}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em left\+Clicked modifie l\textquotesingle{}état du clic gauche \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_widget_a555d0db7bb745894b96000d420097484}{right\+Clicked}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em right\+Clicked modifie l\textquotesingle{}état du clic droit \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cell_widget_a04ce8e6848bd3c23c72ed956cb50c704}{Cell\+Widget}} ()=default
+\item 
+\mbox{\hyperlink{class_cell_widget_a8f2d3fb559caa2ccc93d19be3940b23d}{Cell\+Widget}} (QWidget $\ast$parent, int cell\+Size, \mbox{\hyperlink{class_cell}{Cell}} $\ast$cell)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_cell_widget}{Cell\+Widget}} modifie les paramètre d\textquotesingle{}une cellule. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_widget_a6a465223681773bffa2a63b0ce9bf343}{set\+Color}} (const QColor \&color)
+\begin{DoxyCompactList}\small\item\em set\+Color modifie la couleur de la cellule \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_widget_a9b3541578782a601389cde51a33b9f09}{set\+Size}} (int size)
+\begin{DoxyCompactList}\small\item\em set\+Size modifie taille de la cellule \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_widget_af3c814a594efbab4c944999040cee10c}{set\+Cell}} (\mbox{\hyperlink{class_cell}{Cell}} $\ast$cell)
+\begin{DoxyCompactList}\small\item\em set\+Cell modifie la cellule \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cell}{Cell}} $\ast$ \mbox{\hyperlink{class_cell_widget_a283bca37ef73b7d45d0a8b0eef1d4084}{get\+Cell}} () const
+\begin{DoxyCompactList}\small\item\em get\+Cell renvoie une cellule \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_widget_ac782d4e86acd3a16678ea80fbf5ec9a4}{update\+Display}} ()
+\begin{DoxyCompactList}\small\item\em update\+Display modifie l\textquotesingle{}affichage avec les nouveaux paramètre de la cellule \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_cell_widget_a68a566c1f7c441ca83b576751ba84211}{paint\+Event}} (QPaint\+Event $\ast$)
+\begin{DoxyCompactList}\small\item\em paint\+Event modifie le sens de la flèche pour Langton\textquotesingle{}s ant \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_cell_widget_a61e89dd5db3cdbe231d2567e06023070}{mouse\+Press\+Event}} (QMouse\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em mouse\+Press\+Event changement de l\textquotesingle{}état du clic gauche \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_widget_a5a54ca6bd09f3aa0cc594db949b77ec7}{mouse\+Release\+Event}} (QMouse\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em mouse\+Release\+Event changement de l\textquotesingle{}état du clic gauche \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe \mbox{\hyperlink{class_cell_widget}{Cell\+Widget}} hérite de QWidget. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cell_widget_a04ce8e6848bd3c23c72ed956cb50c704}\label{class_cell_widget_a04ce8e6848bd3c23c72ed956cb50c704}} 
+\index{CellWidget@{CellWidget}!CellWidget@{CellWidget}}
+\index{CellWidget@{CellWidget}!CellWidget@{CellWidget}}
+\doxysubsubsection{\texorpdfstring{CellWidget()}{CellWidget()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Cell\+Widget\+::\+Cell\+Widget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [default]}}
+
+\mbox{\Hypertarget{class_cell_widget_a8f2d3fb559caa2ccc93d19be3940b23d}\label{class_cell_widget_a8f2d3fb559caa2ccc93d19be3940b23d}} 
+\index{CellWidget@{CellWidget}!CellWidget@{CellWidget}}
+\index{CellWidget@{CellWidget}!CellWidget@{CellWidget}}
+\doxysubsubsection{\texorpdfstring{CellWidget()}{CellWidget()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Cell\+Widget\+::\+Cell\+Widget (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent,  }\item[{int}]{cell\+Size,  }\item[{\mbox{\hyperlink{class_cell}{Cell}} $\ast$}]{cell }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\mbox{\hyperlink{class_cell_widget}{Cell\+Widget}} modifie les paramètre d\textquotesingle{}une cellule. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & widget à partir duquel est crée \mbox{\hyperlink{class_cell_widget}{Cell\+Widget}} \\
+\hline
+{\em cell\+Size} & taille de la cellule \\
+\hline
+{\em cell} & cellule à modifier \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cell_widget_a283bca37ef73b7d45d0a8b0eef1d4084}\label{class_cell_widget_a283bca37ef73b7d45d0a8b0eef1d4084}} 
+\index{CellWidget@{CellWidget}!getCell@{getCell}}
+\index{getCell@{getCell}!CellWidget@{CellWidget}}
+\doxysubsubsection{\texorpdfstring{getCell()}{getCell()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cell}{Cell}} $\ast$ Cell\+Widget\+::get\+Cell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Cell renvoie une cellule 
+
+\mbox{\Hypertarget{class_cell_widget_ae6faf963dfb87011930812ced4584d7d}\label{class_cell_widget_ae6faf963dfb87011930812ced4584d7d}} 
+\index{CellWidget@{CellWidget}!leftClicked@{leftClicked}}
+\index{leftClicked@{leftClicked}!CellWidget@{CellWidget}}
+\doxysubsubsection{\texorpdfstring{leftClicked}{leftClicked}}
+{\footnotesize\ttfamily void Cell\+Widget\+::left\+Clicked (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+left\+Clicked modifie l\textquotesingle{}état du clic gauche 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & position x de la cellule \\
+\hline
+{\em y} & position y de la cellule \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cell_widget_a61e89dd5db3cdbe231d2567e06023070}\label{class_cell_widget_a61e89dd5db3cdbe231d2567e06023070}} 
+\index{CellWidget@{CellWidget}!mousePressEvent@{mousePressEvent}}
+\index{mousePressEvent@{mousePressEvent}!CellWidget@{CellWidget}}
+\doxysubsubsection{\texorpdfstring{mousePressEvent()}{mousePressEvent()}}
+{\footnotesize\ttfamily void Cell\+Widget\+::mouse\+Press\+Event (\begin{DoxyParamCaption}\item[{QMouse\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+mouse\+Press\+Event changement de l\textquotesingle{}état du clic gauche 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & évènement du clic gauche \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cell_widget_a5a54ca6bd09f3aa0cc594db949b77ec7}\label{class_cell_widget_a5a54ca6bd09f3aa0cc594db949b77ec7}} 
+\index{CellWidget@{CellWidget}!mouseReleaseEvent@{mouseReleaseEvent}}
+\index{mouseReleaseEvent@{mouseReleaseEvent}!CellWidget@{CellWidget}}
+\doxysubsubsection{\texorpdfstring{mouseReleaseEvent()}{mouseReleaseEvent()}}
+{\footnotesize\ttfamily void Cell\+Widget\+::mouse\+Release\+Event (\begin{DoxyParamCaption}\item[{QMouse\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+mouse\+Release\+Event changement de l\textquotesingle{}état du clic gauche 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & évènement du clic droit \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cell_widget_a68a566c1f7c441ca83b576751ba84211}\label{class_cell_widget_a68a566c1f7c441ca83b576751ba84211}} 
+\index{CellWidget@{CellWidget}!paintEvent@{paintEvent}}
+\index{paintEvent@{paintEvent}!CellWidget@{CellWidget}}
+\doxysubsubsection{\texorpdfstring{paintEvent()}{paintEvent()}}
+{\footnotesize\ttfamily void Cell\+Widget\+::paint\+Event (\begin{DoxyParamCaption}\item[{QPaint\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+paint\+Event modifie le sens de la flèche pour Langton\textquotesingle{}s ant 
+
+\mbox{\Hypertarget{class_cell_widget_a555d0db7bb745894b96000d420097484}\label{class_cell_widget_a555d0db7bb745894b96000d420097484}} 
+\index{CellWidget@{CellWidget}!rightClicked@{rightClicked}}
+\index{rightClicked@{rightClicked}!CellWidget@{CellWidget}}
+\doxysubsubsection{\texorpdfstring{rightClicked}{rightClicked}}
+{\footnotesize\ttfamily void Cell\+Widget\+::right\+Clicked (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+right\+Clicked modifie l\textquotesingle{}état du clic droit 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & position x de la cellule \\
+\hline
+{\em y} & position y de la cellule \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cell_widget_af3c814a594efbab4c944999040cee10c}\label{class_cell_widget_af3c814a594efbab4c944999040cee10c}} 
+\index{CellWidget@{CellWidget}!setCell@{setCell}}
+\index{setCell@{setCell}!CellWidget@{CellWidget}}
+\doxysubsubsection{\texorpdfstring{setCell()}{setCell()}}
+{\footnotesize\ttfamily void Cell\+Widget\+::set\+Cell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cell}{Cell}} $\ast$}]{cell }\end{DoxyParamCaption})}
+
+
+
+set\+Cell modifie la cellule 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell} & cellule à modifier \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cell_widget_a6a465223681773bffa2a63b0ce9bf343}\label{class_cell_widget_a6a465223681773bffa2a63b0ce9bf343}} 
+\index{CellWidget@{CellWidget}!setColor@{setColor}}
+\index{setColor@{setColor}!CellWidget@{CellWidget}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily void Cell\+Widget\+::set\+Color (\begin{DoxyParamCaption}\item[{const QColor \&}]{color }\end{DoxyParamCaption})}
+
+
+
+set\+Color modifie la couleur de la cellule 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & couleur à modifier dans la cellule \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cell_widget_a9b3541578782a601389cde51a33b9f09}\label{class_cell_widget_a9b3541578782a601389cde51a33b9f09}} 
+\index{CellWidget@{CellWidget}!setSize@{setSize}}
+\index{setSize@{setSize}!CellWidget@{CellWidget}}
+\doxysubsubsection{\texorpdfstring{setSize()}{setSize()}}
+{\footnotesize\ttfamily void Cell\+Widget\+::set\+Size (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+set\+Size modifie taille de la cellule 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & taille en question \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cell_widget_ac782d4e86acd3a16678ea80fbf5ec9a4}\label{class_cell_widget_ac782d4e86acd3a16678ea80fbf5ec9a4}} 
+\index{CellWidget@{CellWidget}!updateDisplay@{updateDisplay}}
+\index{updateDisplay@{updateDisplay}!CellWidget@{CellWidget}}
+\doxysubsubsection{\texorpdfstring{updateDisplay()}{updateDisplay()}}
+{\footnotesize\ttfamily void Cell\+Widget\+::update\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+update\+Display modifie l\textquotesingle{}affichage avec les nouveaux paramètre de la cellule 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/components/\mbox{\hyperlink{cell__widget_8h}{cell\+\_\+widget.\+h}}\item 
+src/components/\mbox{\hyperlink{cell__widget_8cpp}{cell\+\_\+widget.\+cpp}}\end{DoxyCompactItemize}

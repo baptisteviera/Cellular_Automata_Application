@@ -1,0 +1,97 @@
+\hypertarget{class_states_browser}{}\doxysection{States\+Browser Class Reference}
+\label{class_states_browser}\index{StatesBrowser@{StatesBrowser}}
+
+
+{\ttfamily \#include $<$states\+\_\+browser.\+h$>$}
+
+Inheritance diagram for States\+Browser\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_states_browser}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_states_browser_a05f5934ed1d051b9cc1ef3ef88c2e4ac}{load\+States}} ()
+\item 
+void \mbox{\hyperlink{class_states_browser_aec10dca6e5531dca3ca4fbcfa7594aa3}{receive\+State\+ID}} (int id)
+\begin{DoxyCompactList}\small\item\em receive\+State\+ID affecte l\textquotesingle{}id en paramètre à l\textquotesingle{}attribut state\+ID \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_states_browser_a6ca8a472341ce1be12f37f99e7f91177}{state\+Changed}} (int, \mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$)
+\begin{DoxyCompactList}\small\item\em state\+Changed signals qui est utilisé dans choose\+State pour appliquer le changement \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_states_browser_a29a9697ae7a6764f2e12d04934b7014f}{States\+Browser}} (QWidget $\ast$parent, std\+::pair$<$ int, \mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$$\ast$ $>$ statetab)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_states_browser}{States\+Browser}} constructeur qui prend en argument le tableau d\textquotesingle{}état avec sa dimension. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_states_browser_a0293820392b4b4bfe35c262d152de20d}{$\sim$\+States\+Browser}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_states_browser_a29a9697ae7a6764f2e12d04934b7014f}\label{class_states_browser_a29a9697ae7a6764f2e12d04934b7014f}} 
+\index{StatesBrowser@{StatesBrowser}!StatesBrowser@{StatesBrowser}}
+\index{StatesBrowser@{StatesBrowser}!StatesBrowser@{StatesBrowser}}
+\doxysubsubsection{\texorpdfstring{StatesBrowser()}{StatesBrowser()}}
+{\footnotesize\ttfamily States\+Browser\+::\+States\+Browser (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent,  }\item[{std\+::pair$<$ int, \mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$$\ast$ $>$}]{statetab }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_states_browser}{States\+Browser}} constructeur qui prend en argument le tableau d\textquotesingle{}état avec sa dimension. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+{\em statetab} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_states_browser_a0293820392b4b4bfe35c262d152de20d}\label{class_states_browser_a0293820392b4b4bfe35c262d152de20d}} 
+\index{StatesBrowser@{StatesBrowser}!````~StatesBrowser@{$\sim$StatesBrowser}}
+\index{````~StatesBrowser@{$\sim$StatesBrowser}!StatesBrowser@{StatesBrowser}}
+\doxysubsubsection{\texorpdfstring{$\sim$StatesBrowser()}{~StatesBrowser()}}
+{\footnotesize\ttfamily States\+Browser\+::$\sim$\+States\+Browser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_states_browser_a05f5934ed1d051b9cc1ef3ef88c2e4ac}\label{class_states_browser_a05f5934ed1d051b9cc1ef3ef88c2e4ac}} 
+\index{StatesBrowser@{StatesBrowser}!loadStates@{loadStates}}
+\index{loadStates@{loadStates}!StatesBrowser@{StatesBrowser}}
+\doxysubsubsection{\texorpdfstring{loadStates}{loadStates}}
+{\footnotesize\ttfamily void States\+Browser\+::load\+States (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_states_browser_aec10dca6e5531dca3ca4fbcfa7594aa3}\label{class_states_browser_aec10dca6e5531dca3ca4fbcfa7594aa3}} 
+\index{StatesBrowser@{StatesBrowser}!receiveStateID@{receiveStateID}}
+\index{receiveStateID@{receiveStateID}!StatesBrowser@{StatesBrowser}}
+\doxysubsubsection{\texorpdfstring{receiveStateID}{receiveStateID}}
+{\footnotesize\ttfamily void States\+Browser\+::receive\+State\+ID (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+receive\+State\+ID affecte l\textquotesingle{}id en paramètre à l\textquotesingle{}attribut state\+ID 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & numéro que l\textquotesingle{}on affecte à state\+ID \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_states_browser_a6ca8a472341ce1be12f37f99e7f91177}\label{class_states_browser_a6ca8a472341ce1be12f37f99e7f91177}} 
+\index{StatesBrowser@{StatesBrowser}!stateChanged@{stateChanged}}
+\index{stateChanged@{stateChanged}!StatesBrowser@{StatesBrowser}}
+\doxysubsubsection{\texorpdfstring{stateChanged}{stateChanged}}
+{\footnotesize\ttfamily void States\+Browser\+::state\+Changed (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{\mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+state\+Changed signals qui est utilisé dans choose\+State pour appliquer le changement 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/components/subwindows/\mbox{\hyperlink{states__browser_8h}{states\+\_\+browser.\+h}}\item 
+src/components/subwindows/\mbox{\hyperlink{states__browser_8cpp}{states\+\_\+browser.\+cpp}}\end{DoxyCompactItemize}

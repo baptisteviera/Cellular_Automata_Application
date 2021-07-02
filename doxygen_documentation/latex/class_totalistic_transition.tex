@@ -1,0 +1,87 @@
+\hypertarget{class_totalistic_transition}{}\doxysection{Totalistic\+Transition Class Reference}
+\label{class_totalistic_transition}\index{TotalisticTransition@{TotalisticTransition}}
+
+
+The \mbox{\hyperlink{class_totalistic_transition}{Totalistic\+Transition}} class classe fille qui hérite de \mbox{\hyperlink{class_transition_strategy}{Transition\+Strategy}}.  
+
+
+
+
+{\ttfamily \#include $<$transition\+\_\+strategy.\+h$>$}
+
+Inheritance diagram for Totalistic\+Transition\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.871795cm]{class_totalistic_transition}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_totalistic_transition_aa22c7641c3350af292fde4fd778adbda}{Totalistic\+Transition}} (std\+::string name=\char`\"{}Totalistic Transition\char`\"{})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_totalistic_transition}{Totalistic\+Transition}} constructeur de \mbox{\hyperlink{class_totalistic_transition}{Totalistic\+Transition}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_cell}{Cell}} $\ast$ \mbox{\hyperlink{class_totalistic_transition_a2abffda1e16ade5c9cf67d748669b478}{calc\+Next\+Cell}} (\mbox{\hyperlink{class_cell}{Cell}} $\ast$c, \mbox{\hyperlink{class_cell}{Cell}} $\ast$$\ast$neighbors, int neighbor\+Size, \mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$$\ast$available\+States, int nb\+States) const =0
+\begin{DoxyCompactList}\small\item\em calc\+Next\+Cell méthode virtuelle pure que l\textquotesingle{}on définit dans les classes filles qui correspondent aux différents types de transitions \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_totalistic_transition}{Totalistic\+Transition}} class classe fille qui hérite de \mbox{\hyperlink{class_transition_strategy}{Transition\+Strategy}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_totalistic_transition_aa22c7641c3350af292fde4fd778adbda}\label{class_totalistic_transition_aa22c7641c3350af292fde4fd778adbda}} 
+\index{TotalisticTransition@{TotalisticTransition}!TotalisticTransition@{TotalisticTransition}}
+\index{TotalisticTransition@{TotalisticTransition}!TotalisticTransition@{TotalisticTransition}}
+\doxysubsubsection{\texorpdfstring{TotalisticTransition()}{TotalisticTransition()}}
+{\footnotesize\ttfamily Totalistic\+Transition\+::\+Totalistic\+Transition (\begin{DoxyParamCaption}\item[{std\+::string}]{name = {\ttfamily \char`\"{}Totalistic~Transition\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_totalistic_transition}{Totalistic\+Transition}} constructeur de \mbox{\hyperlink{class_totalistic_transition}{Totalistic\+Transition}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & nom spécifique de la Totalistic Transition si non spécifié par défaut égale à \char`\"{}\+Totalistic Transition\char`\"{} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_totalistic_transition_a2abffda1e16ade5c9cf67d748669b478}\label{class_totalistic_transition_a2abffda1e16ade5c9cf67d748669b478}} 
+\index{TotalisticTransition@{TotalisticTransition}!calcNextCell@{calcNextCell}}
+\index{calcNextCell@{calcNextCell}!TotalisticTransition@{TotalisticTransition}}
+\doxysubsubsection{\texorpdfstring{calcNextCell()}{calcNextCell()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_cell}{Cell}}$\ast$ Totalistic\+Transition\+::calc\+Next\+Cell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cell}{Cell}} $\ast$}]{c,  }\item[{\mbox{\hyperlink{class_cell}{Cell}} $\ast$$\ast$}]{neighbors,  }\item[{int}]{neighbor\+Size,  }\item[{\mbox{\hyperlink{class_cell_state}{Cell\+State}} $\ast$$\ast$}]{available\+States,  }\item[{int}]{nb\+States }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+calc\+Next\+Cell méthode virtuelle pure que l\textquotesingle{}on définit dans les classes filles qui correspondent aux différents types de transitions 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & cellule étudiée que l\textquotesingle{}on modifiera ou non \\
+\hline
+{\em neighbors} & tableau de voisin de la cellule \\
+\hline
+{\em neighbor\+Size} & nombre de voisins de la cellule \\
+\hline
+{\em available\+States} & tableau d\textquotesingle{}états disponibles \\
+\hline
+{\em nb\+States} & nombre d\textquotesingle{}états possibles \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+une nouvelle cellule (identique à c ou différente) suivant les règles de transition 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_transition_strategy_ad8fb09a8638a2fec709d090377d92772}{Transition\+Strategy}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_l_a_transition_ab264a9fef2fe79f88ba5cfc4b19d1031}{LATransition}}, \mbox{\hyperlink{class_l_l_transition_a6360195a36a9803404f084108ba26d65}{LLTransition}}, \mbox{\hyperlink{class_d_g_transition_af04200dd83ec613199af24d910176d7c}{DGTransition}}, \mbox{\hyperlink{class_b_b_transition_a7e71e3fba8c15a42eb6e0cd46e885182}{BBTransition}}, \mbox{\hyperlink{class_g_o_l_transition_a0b21f8eca27a4391dbc4293d77480820}{GOLTransition}}, and \mbox{\hyperlink{class_outer_totalistic_transition_a0d6132f55d5ecd1a57509fcc2cd998ce}{Outer\+Totalistic\+Transition}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/utils/\mbox{\hyperlink{transition__strategy_8h}{transition\+\_\+strategy.\+h}}\end{DoxyCompactItemize}

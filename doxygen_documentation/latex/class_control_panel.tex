@@ -1,0 +1,193 @@
+\hypertarget{class_control_panel}{}\doxysection{Control\+Panel Class Reference}
+\label{class_control_panel}\index{ControlPanel@{ControlPanel}}
+
+
+The \mbox{\hyperlink{class_control_panel}{Control\+Panel}} class classe centrale qui réunit tous les objets permettant de paramétrer la simulation et de gérer toutes les données persistantes (automates, voisinages, transitions, configurations)  
+
+
+
+
+{\ttfamily \#include $<$control\+\_\+panel.\+h$>$}
+
+Inheritance diagram for Control\+Panel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_control_panel}
+\end{center}
+\end{figure}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_control_panel_a40724534d8ae05878540ed63d08ce9ba}{automata\+Changed}} (int id)
+\begin{DoxyCompactList}\small\item\em automata\+Changed signal indiquant que l\textquotesingle{}automate courant à utiliser par le simulateur a changé \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control_panel_a49a5b392a15c5461ea8b3996e85c15a7}{stateadded}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_control_panel_ac3336d25a1cfd667de8110f162855d3a}{Control\+Panel}} (QWidget $\ast$parent, \mbox{\hyperlink{class_simulator_widget}{Simulator\+Widget}} $\ast$simulator\+Widget)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_control_panel}{Control\+Panel}} constructeur de la classe \mbox{\hyperlink{class_control_panel}{Control\+Panel}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_control_panel_aaa18bb1c97830df080f39d8abb2d1bd5}{$\sim$\+Control\+Panel}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la classe \mbox{\hyperlink{class_control_panel}{Control\+Panel}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control_panel_aaa2602c7f46c6ecacdae7cc61d20d648}{init\+Grid\+Settings}} ()
+\begin{DoxyCompactList}\small\item\em init\+Grid\+Settings délégation utilisée par le constructeur, initialise tous les objets ayant trait aux paramètres du réseau \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control_panel_a6431546a1a7f2943f6acf38b1f42606d}{init\+Automata\+Settings}} ()
+\begin{DoxyCompactList}\small\item\em init\+Automata\+Settings délégation utilisée par le constructeur, initialise tous les objets ayant trait aux paramètres de l\textquotesingle{}automate \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control_panel_aeb8ea445352076fccb5b9ef9c3e43646}{init\+Run\+Settings}} ()
+\begin{DoxyCompactList}\small\item\em init\+Run\+Settings délégation utilisée par le constructeur, initialise tous les objets ayant trait aux paramètres de l\textquotesingle{}exécution \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control_panel_aba5c527729da3bcca6bea9e80ea3a513}{set\+Nb\+Rows}} (int nb\+Rows)
+\begin{DoxyCompactList}\small\item\em set\+Nb\+Rows paramètre le nombre de lignes du réseau \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control_panel_a59e1dc606e2c69b290bd170d564cf845}{set\+Nb\+Cols}} (int nb\+Cols)
+\begin{DoxyCompactList}\small\item\em set\+Nb\+Cols paramètre le nombre de colonnes du réseau \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control_panel_a5d90310589a9154f9aa18f759d43e605}{set\+Cell\+Size}} (int cell\+Size)
+\begin{DoxyCompactList}\small\item\em set\+Cell\+Size paramètre la taille des cellules du réseau \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control_panel_a633c1600e0cc58c8f1a4d2e06a57b6ee}{init\+Event\+Handler}} ()
+\begin{DoxyCompactList}\small\item\em init\+Event\+Handler délégation utilisée par le constructeur, initialise la prise en charge de tous les événements qui lient les objets de la classe entre eux \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_control_panel}{Control\+Panel}} class classe centrale qui réunit tous les objets permettant de paramétrer la simulation et de gérer toutes les données persistantes (automates, voisinages, transitions, configurations) 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_control_panel_ac3336d25a1cfd667de8110f162855d3a}\label{class_control_panel_ac3336d25a1cfd667de8110f162855d3a}} 
+\index{ControlPanel@{ControlPanel}!ControlPanel@{ControlPanel}}
+\index{ControlPanel@{ControlPanel}!ControlPanel@{ControlPanel}}
+\doxysubsubsection{\texorpdfstring{ControlPanel()}{ControlPanel()}}
+{\footnotesize\ttfamily Control\+Panel\+::\+Control\+Panel (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent,  }\item[{\mbox{\hyperlink{class_simulator_widget}{Simulator\+Widget}} $\ast$}]{simulator\+Widget }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\mbox{\hyperlink{class_control_panel}{Control\+Panel}} constructeur de la classe \mbox{\hyperlink{class_control_panel}{Control\+Panel}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & widget parent du panneau de contrôle \\
+\hline
+{\em simulator\+Widget} & widget portant la partie simulateur de l\textquotesingle{}interface \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_control_panel_aaa18bb1c97830df080f39d8abb2d1bd5}\label{class_control_panel_aaa18bb1c97830df080f39d8abb2d1bd5}} 
+\index{ControlPanel@{ControlPanel}!````~ControlPanel@{$\sim$ControlPanel}}
+\index{````~ControlPanel@{$\sim$ControlPanel}!ControlPanel@{ControlPanel}}
+\doxysubsubsection{\texorpdfstring{$\sim$ControlPanel()}{~ControlPanel()}}
+{\footnotesize\ttfamily Control\+Panel\+::$\sim$\+Control\+Panel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur de la classe \mbox{\hyperlink{class_control_panel}{Control\+Panel}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_control_panel_a40724534d8ae05878540ed63d08ce9ba}\label{class_control_panel_a40724534d8ae05878540ed63d08ce9ba}} 
+\index{ControlPanel@{ControlPanel}!automataChanged@{automataChanged}}
+\index{automataChanged@{automataChanged}!ControlPanel@{ControlPanel}}
+\doxysubsubsection{\texorpdfstring{automataChanged}{automataChanged}}
+{\footnotesize\ttfamily void Control\+Panel\+::automata\+Changed (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+automata\+Changed signal indiquant que l\textquotesingle{}automate courant à utiliser par le simulateur a changé 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & identifiant du nouvel automate à utiliser \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_control_panel_a6431546a1a7f2943f6acf38b1f42606d}\label{class_control_panel_a6431546a1a7f2943f6acf38b1f42606d}} 
+\index{ControlPanel@{ControlPanel}!initAutomataSettings@{initAutomataSettings}}
+\index{initAutomataSettings@{initAutomataSettings}!ControlPanel@{ControlPanel}}
+\doxysubsubsection{\texorpdfstring{initAutomataSettings()}{initAutomataSettings()}}
+{\footnotesize\ttfamily void Control\+Panel\+::init\+Automata\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+init\+Automata\+Settings délégation utilisée par le constructeur, initialise tous les objets ayant trait aux paramètres de l\textquotesingle{}automate 
+
+\mbox{\Hypertarget{class_control_panel_a633c1600e0cc58c8f1a4d2e06a57b6ee}\label{class_control_panel_a633c1600e0cc58c8f1a4d2e06a57b6ee}} 
+\index{ControlPanel@{ControlPanel}!initEventHandler@{initEventHandler}}
+\index{initEventHandler@{initEventHandler}!ControlPanel@{ControlPanel}}
+\doxysubsubsection{\texorpdfstring{initEventHandler()}{initEventHandler()}}
+{\footnotesize\ttfamily void Control\+Panel\+::init\+Event\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+init\+Event\+Handler délégation utilisée par le constructeur, initialise la prise en charge de tous les événements qui lient les objets de la classe entre eux 
+
+\mbox{\Hypertarget{class_control_panel_aaa2602c7f46c6ecacdae7cc61d20d648}\label{class_control_panel_aaa2602c7f46c6ecacdae7cc61d20d648}} 
+\index{ControlPanel@{ControlPanel}!initGridSettings@{initGridSettings}}
+\index{initGridSettings@{initGridSettings}!ControlPanel@{ControlPanel}}
+\doxysubsubsection{\texorpdfstring{initGridSettings()}{initGridSettings()}}
+{\footnotesize\ttfamily void Control\+Panel\+::init\+Grid\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+init\+Grid\+Settings délégation utilisée par le constructeur, initialise tous les objets ayant trait aux paramètres du réseau 
+
+\mbox{\Hypertarget{class_control_panel_aeb8ea445352076fccb5b9ef9c3e43646}\label{class_control_panel_aeb8ea445352076fccb5b9ef9c3e43646}} 
+\index{ControlPanel@{ControlPanel}!initRunSettings@{initRunSettings}}
+\index{initRunSettings@{initRunSettings}!ControlPanel@{ControlPanel}}
+\doxysubsubsection{\texorpdfstring{initRunSettings()}{initRunSettings()}}
+{\footnotesize\ttfamily void Control\+Panel\+::init\+Run\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+init\+Run\+Settings délégation utilisée par le constructeur, initialise tous les objets ayant trait aux paramètres de l\textquotesingle{}exécution 
+
+\mbox{\Hypertarget{class_control_panel_a5d90310589a9154f9aa18f759d43e605}\label{class_control_panel_a5d90310589a9154f9aa18f759d43e605}} 
+\index{ControlPanel@{ControlPanel}!setCellSize@{setCellSize}}
+\index{setCellSize@{setCellSize}!ControlPanel@{ControlPanel}}
+\doxysubsubsection{\texorpdfstring{setCellSize()}{setCellSize()}}
+{\footnotesize\ttfamily void Control\+Panel\+::set\+Cell\+Size (\begin{DoxyParamCaption}\item[{int}]{cell\+Size }\end{DoxyParamCaption})}
+
+
+
+set\+Cell\+Size paramètre la taille des cellules du réseau 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell\+Size} & taille des cellules \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_control_panel_a59e1dc606e2c69b290bd170d564cf845}\label{class_control_panel_a59e1dc606e2c69b290bd170d564cf845}} 
+\index{ControlPanel@{ControlPanel}!setNbCols@{setNbCols}}
+\index{setNbCols@{setNbCols}!ControlPanel@{ControlPanel}}
+\doxysubsubsection{\texorpdfstring{setNbCols()}{setNbCols()}}
+{\footnotesize\ttfamily void Control\+Panel\+::set\+Nb\+Cols (\begin{DoxyParamCaption}\item[{int}]{nb\+Cols }\end{DoxyParamCaption})}
+
+
+
+set\+Nb\+Cols paramètre le nombre de colonnes du réseau 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb\+Cols} & nombre de colonnes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_control_panel_aba5c527729da3bcca6bea9e80ea3a513}\label{class_control_panel_aba5c527729da3bcca6bea9e80ea3a513}} 
+\index{ControlPanel@{ControlPanel}!setNbRows@{setNbRows}}
+\index{setNbRows@{setNbRows}!ControlPanel@{ControlPanel}}
+\doxysubsubsection{\texorpdfstring{setNbRows()}{setNbRows()}}
+{\footnotesize\ttfamily void Control\+Panel\+::set\+Nb\+Rows (\begin{DoxyParamCaption}\item[{int}]{nb\+Rows }\end{DoxyParamCaption})}
+
+
+
+set\+Nb\+Rows paramètre le nombre de lignes du réseau 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb\+Rows} & nombre de lignes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_control_panel_a49a5b392a15c5461ea8b3996e85c15a7}\label{class_control_panel_a49a5b392a15c5461ea8b3996e85c15a7}} 
+\index{ControlPanel@{ControlPanel}!stateadded@{stateadded}}
+\index{stateadded@{stateadded}!ControlPanel@{ControlPanel}}
+\doxysubsubsection{\texorpdfstring{stateadded}{stateadded}}
+{\footnotesize\ttfamily void Control\+Panel\+::stateadded (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/components/\mbox{\hyperlink{control__panel_8h}{control\+\_\+panel.\+h}}\item 
+src/components/\mbox{\hyperlink{control__panel_8cpp}{control\+\_\+panel.\+cpp}}\end{DoxyCompactItemize}
